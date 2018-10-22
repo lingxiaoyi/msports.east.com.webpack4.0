@@ -1,0 +1,45 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  min-height: 100%;
+}
+body{
+  background: #f4f4f4;
+}
+.main{
+
+  .order_list{
+    padding: 0 0 0 0.3rem;
+    margin-top: 0.22rem;
+    background: #fff;
+    li{
+      position: relative;
+      a{
+        display: block;padding: 0.2rem 0 ;border-bottom: 1px solid #eee;
+      }
+      .img{
+        width: 0.72rem;float: left;height:0.72rem;border-radius: 0.36rem;overflow: hidden;
+        img{
+          width: 0.72rem;
+        }
+      }
+      p{
+        line-height: 0.72rem;color: #333333;font-size: 0.3rem;float: left;margin-left: 0.1rem;
+      }
+      .btn{
+        width: 1.38rem;
+        height: 0.50rem;color: #ffffff;background-color: #ff5050;
+        border-radius: 0.24rem;font-size: 0.28rem;text-align: center;line-height: 0.5rem;position: absolute;right:0.3rem;top:0.3rem;
+        &.active{
+          background-color: #eeeeee;color: #666666;
+        }
+      }
+    }
+  }
+  .no_data{
+    text-align: center;
+    font-size: .3rem  ;
+    color: #999;
+    line-height: 0.8rem;
+  }
+}

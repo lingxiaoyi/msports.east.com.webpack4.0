@@ -1,0 +1,123 @@
+body.new-data{
+  height:100%;position: relative;
+}
+header{
+  .crumbs-data{width:3rem;height:100%;float: left;font-size: 0.28rem;color:#333333;line-height: 0.9rem;
+    i{
+      float:left;width:0.6rem;height:100%;background: url(../../public-resource/imgs/i-sanjiao.png) no-repeat center center;background-size: 0.1rem 0.18rem;
+    }
+    span{
+      float:left;height:100%;
+    }
+  }
+}
+nav.data{
+  height:0.71rem;border-bottom: 1px solid #e0e0e0;padding:0 0.31rem;background: #f9f8f8;
+  ul{text-align: center;    font-size: 0;}
+  li{
+    float: none;height:0.5rem;width:1.4rem;line-height: 0.5rem;font-size: 0.28rem;text-align: center;color:#5d5c5c;margin-top: 0.1rem;margin-right: 0.3rem;display: inline-block;
+    &.active{
+      color:#f62929;background: #fff;border: 1px solid #e6e6e6;border-radius: 0.5rem;line-height: 0.48rem;
+    }
+    &:first-child{width:1.7rem}
+    &:last-child{margin-right:0;}
+  }
+}
+.schedule .all-time{
+  right:1.6rem;
+}
+.data-all{
+  overflow-y: scroll;
+  .content{padding-bottom: 0}
+  .content .tab-b{width:100%;}
+  .content .tab-all{width:5.9rem;}
+  .content .tab-b tr{border-bottom: 1px solid #e0e0e0;font-size: 0.28rem;line-height: 0.8rem;color:#333;}
+  .content .tab-p th:first-child {
+   text-align: left;text-indent: 0.3rem;
+  }
+  .content .tab-p th.tc{
+    text-align: center;
+  }
+  .content .tab-p tr td:first-child {
+    width: 0.8rem;
+  }
+  .content .tab-p tr td img{
+    width:0.36rem;
+  }
+  .content .tab-p tr td:nth-child(2){text-align: left}
+  .content .tab-p tr:nth-child(-n+9) td:first-child{
+    color:#f62929;
+  }
+  .content .head{
+    width:100%;height:0.71rem;border-bottom: 1px solid #e9e9e9;text-align: center;
+    .btn{
+      width:0.7rem;height:0.7rem;display: inline-block;background-size: 0.17rem 0.29rem;background-repeat: no-repeat;background-position: center;
+    }
+    .btn-left{
+      background-image: url(../../public-resource/imgs/i-sanjiao-l.png);
+    }
+    .btn-right{
+      background-image: url(../../public-resource/imgs/i-sanjiao-r.png);
+    }
+    .tit{
+      display: inline-block;width:2.5rem;color:#333333;font-size: 0.28rem;line-height: 0.7rem;vertical-align: 0.25rem;height:0.7rem;font-weight: bold;
+    }
+  }
+  .match-info{
+    li{
+      border-bottom: 1px solid #e9e9e9;padding-bottom: 0.3rem;max-height: 100%;
+      &.tit{color:#333333;font-size: 0.28rem;line-height: 0.7rem;vertical-align: 0.25rem;height:0.7rem;font-weight: bold;text-align: center}
+      h3{font-weight: 400;margin-top: 0.3rem;text-align: center;}
+      h6{
+        color:#999999;font-size: 0.22rem;line-height: 0.52rem;text-indent: 0.22rem;font-weight: 400;
+      }
+      .item{
+        float: left;width:37.5%;
+        img{
+          width:0.6rem;display: block;margin: 0.25rem auto 0;
+        }
+        p{
+          text-align: center;font-size: 0.26rem;color:#333333;margin-top: 0.2rem;line-height: 0.26rem;
+        }
+      }
+      .m{
+        width:25%;float: left;margin-top: 0.25rem;
+        .score{
+          font-size: 0.46rem;color:#333333;width:100%;line-height: 0.46rem;
+          &>div{
+            display: inline-block;width:0.83rem;text-align: center;
+          }
+        }
+        .btn{
+          width:0.8rem;height:0.4rem;border:1px solid #007dd4;border-radius: 0.4rem;float: left;text-align: center;line-height: 0.4rem;font-size: 0.24rem;margin-top: 0.2rem;color:#007dd4;
+          &:last-child{float: right}
+        }
+        .btn-order{
+          width:1.3rem;height:0.5rem;border:1px solid #007dd4;border-radius: 0.5rem;text-indent: 0.58rem;line-height: 0.5rem;font-size: 0.24rem;margin: 0.2rem auto 0;background: url(../../public-resource/imgs/i-clock.png) no-repeat 0.25rem center ;background-size: 0.2rem;
+          color: #007dd4;
+        }
+        .btn-living{
+          width:1.3rem;height:0.4rem;border:1px solid #007dd4;border-radius: 0.5rem;text-align:center;line-height: 0.4rem;font-size: 0.24rem;margin: 0.2rem auto 0;
+          color: #007dd4;
+        }
+      }
+    }
+  }
+}
+.popup{
+  width:100%;height:100%;background:rgba(0,0,0,0.7);position: fixed;top:0;left:0;display: none;z-index: 999;
+  .content{
+      position: relative;top:20%;left:50%;transform: translateX(-50%);width:4.3rem;
+    img{
+      width:100%;
+    }
+    p{
+      font-size: 0.26rem;color:#fff;line-height: 0.6rem;text-align: center;
+    }
+  }
+}
+.data-main .content .tab-h{height:12rem;}
+.loading .txt{
+  width: 1.5rem;
+  margin: 0 auto;
+}

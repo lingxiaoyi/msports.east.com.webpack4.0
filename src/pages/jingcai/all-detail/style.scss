@@ -1,0 +1,949 @@
+//@import "~public/sass/hc/common.scss";
+//@import "~public/sass/hc/message.scss";
+html {
+  height: 100%;
+  background: #003a72 url("../../../public-resource/imgs/jingcai/detail_bg.png") center top no-repeat;
+  background-size: 100% auto;
+}
+
+body {
+  min-height: 100%;
+  padding-bottom: 1.4rem;
+  //background: url("../../../public-resource/imgs/jingcai/detail_banner.png") center top no-repeat;
+  background: none;
+  background-size: 100% auto;
+}
+
+.banner {
+  display: none;
+  height: 5rem;
+  position: relative;
+  .rule {
+    position: absolute;
+    right: .26rem;
+    top: .3rem;
+    font-size: .26rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #userInfo {
+    position: absolute;
+    width: 100%;
+    padding: 0 .26rem;
+    font-size: .28rem;
+    top: .24rem;
+    color: #fff;
+    img {
+      width: .74rem;
+      height: .74rem;
+      margin-right: .15rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      vertical-align: middle;
+    }
+    .icon {
+      position: absolute;
+      right: .54rem;
+      top: 50%;
+      margin-top: -.2rem;
+      line-height: .4rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 0 .3rem;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -.24rem;
+        width: .48rem;
+        height: .48rem;
+        border-radius: 50%;
+      }
+      &:before {
+        left: -.3rem;
+        background: url("../../../public-resource/imgs/jingcai/gold.png") center no-repeat;
+        background-size: 100% 100%;
+      }
+      &:after {
+        right: -.3rem;
+        background: url("../../../public-resource/imgs/jingcai/goldadd.png") center no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    /* .info {
+       display: inline-block;
+       padding-left: .1rem;
+       color: #fff;
+       background: url("../../../public-resource/imgs/jingcai/textshaow.png") center no-repeat;
+       background-size: 120% 140%;
+     }*/
+    .myjc {
+      display: none !important;
+      float: right;
+      background: url("../../../public-resource/imgs/jingcai/textshaow.png") center no-repeat;
+      background-size: 120% 140%;
+    }
+  }
+  #banner_link {
+    position: absolute;
+    bottom: .4rem;
+    left: 0;
+    width: 100%;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+    }
+    a {
+      float: left;
+      position: relative;
+      width: .68rem;
+      height: .68rem;
+      background: center no-repeat;
+      background-size: 100% auto;
+      margin: 0 .41rem;
+      span {
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: .24rem;
+        line-height: .48rem;
+        color: rgba(255, 255, 255, 0.7);
+        width: 1.2rem;
+      }
+    }
+    .coin {
+      background-image: url("../../../public-resource/imgs/jingcai/link_coin.png");
+    }
+    .history {
+      background-image: url("../../../public-resource/imgs/jingcai/link_his.png");
+    }
+    .matchs {
+      background-image: url("../../../public-resource/imgs/jingcai/link_match.png");
+    }
+    .rules {
+      background-image: url("../../../public-resource/imgs/jingcai/link_rule.png");
+    }
+    .hc {
+      background-image: url("../../../public-resource/imgs/jingcai/link_hc.png");
+    }
+  }
+}
+.match_head {
+  display: none;
+  padding: .46rem .24rem 0;
+  height: 1.1rem;
+  text-align: center;
+  position: relative;
+  span {
+    font-size: .34rem;
+    line-height: .6rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 .6rem;
+    background: url("../../../public-resource/imgs/jingcai/match_head_l.png") left center no-repeat, url("../../../public-resource/imgs/jingcai/match_head_r.png") right center no-repeat;
+    background-size: auto 60%;
+  }
+  a {
+    position: absolute;
+    right: 0.26rem;
+    bottom: 0.16rem;
+    text-align: left;
+    font-size: .24rem;
+    width: .86rem;
+    width: .86rem;
+    padding: 0 .1rem;
+    color: #fff;
+    background: #e55f56 url("../../../public-resource/imgs/arr-right-fff.png") .66rem center no-repeat;
+    background-size: auto 54%;
+    border-radius: .04rem;
+  }
+}
+.back_match{
+  display: none;
+  height: .9rem;
+  overflow: hidden;
+  a{
+    display: inline-block;
+    padding-left: .6rem ;
+    font-size: .32rem;
+    height: .9rem;
+    line-height: .96rem;
+    color: #fff;
+    background: url('../../../public-resource/imgs/arr-l-back-fff.png') .34rem center no-repeat;
+    background-size: auto 30% ;
+  }
+}
+.match {
+  //display: none;
+  margin: .4rem .24rem .2rem;
+  //border: 1px solid #e2e2e2;
+  border-radius: .06rem;
+
+  .header {
+    //height: 2.5rem;
+    padding: .16rem .34rem .1rem;
+    //border-bottom: 1px solid #d9d9d9;
+    background-color: #f5f5f5;
+    border-radius: .1rem;
+    .tit {
+      font-size: .24rem;
+      color: #666666;
+      .startTime {
+        float: right;
+        margin-right: -.1rem;
+        transform: scale(.9,.9);
+      }
+    }
+    .duel {
+      height: 1.4rem;
+      padding-top: .3rem;
+      text-align: center;
+      img {
+        display: block;
+        width: .74rem;
+        height: .7rem;
+        margin: -.2rem auto .04rem;
+        border-radius: .04rem;
+      }
+      .homeT, .visitT {
+        width: 1.6rem;
+        b {
+          font-weight: normal;
+          color: #333333;
+          font-size: .26rem;
+          line-height: 1;
+        }
+      }
+      .homeT {
+        float: left;
+      }
+      .visitT {
+        float: right;
+      }
+      .part_in {
+        display: inline-block;
+        position: relative;
+        width: 3rem;
+        height: 100%;
+        .coin {
+          color: #000;
+          line-height: .56rem;
+          position: absolute;
+          left: 50%;
+          top: -.04rem;
+          width: 4rem;
+          font-size: .26rem;
+          margin-left: -2rem;
+          span {
+            font-size: .4rem;
+            font-weight: 600;
+            color: #f52d2d;
+            padding-right: .1rem;
+          }
+        }
+        .num {
+          position: absolute;
+          left: 0;
+          bottom: .26rem;
+          font-size: .24rem;
+          line-height: 1;
+          width: 100%;
+          color: #999;
+        }
+      }
+    }
+  }
+  .bets {
+    li {
+      //height: 2.6rem;
+      text-align: center;
+      background-color: #f5f5f5;
+      //border-bottom: 1px dashed #d9d9d9;
+      //padding-bottom: .2rem;
+      border-radius: .1rem;
+      padding: 0 .2rem .2rem;
+      margin-top: .2rem;
+      position: relative;
+      .coin_bet {
+        position: relative;
+        text-align: center;
+        height: .5rem;
+        font-size: .24rem;
+        line-height: .5rem;
+        color: #fff;
+        font-weight: 600;
+        background: url("../../../public-resource/imgs/jingcai/coin_bb.png") center no-repeat;
+        background-size: 44% 100%;
+        span {
+          display: inline-block;
+          font-size: .3rem;
+          color: #ffe012;
+          margin: 0 .02rem ;
+          //transform: scale(.9, .9);
+        }
+        .count_down {
+          position: absolute;
+          right: -.1rem;
+          top: 0;
+          color: #e55f56;
+          font-size: .24rem;
+          font-weight: 400;
+          line-height: .6rem;
+          transform: scale(.84, .84);
+          b {
+            font-weight: 400;
+          }
+        }
+      }
+      .tit {
+        display: inline-block;
+        color: #333;
+        padding: .26rem 0;
+        font-size: .36rem;
+        line-height: .46rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .selList {
+        text-align: center;
+        li {
+          &:after, &:before {
+            content: none;
+          }
+          display: inline-block;
+          position: relative;
+          height: .9rem;
+          margin: 0 .07rem;
+          border-radius: .06rem;
+          border: 0 none;
+          background-color: #e55f56;
+          text-align: center;
+          font-size: .24rem;
+          line-height: .36rem;
+          span {
+            margin: 0 .05rem;
+          }
+          b {
+            position: absolute;
+            top: 0.08rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 120%;
+            margin: 0;
+            font-size: .28rem;
+            font-weight: 900;
+            line-height: .46rem;
+            color: #fff;
+          }
+          .chance {
+            line-height: .3rem;
+            color: #e55f56;
+            width: 100%;
+            margin: .11rem auto 0;
+            display: block;
+            transform: scale(.9, .9);
+          }
+          .odds {
+            color: #ffda30;
+            display: block;
+            margin: .46rem auto 0;
+            height: .4rem;
+            transform: scale(.9, .9);
+          }
+        }
+        .sel {
+          background-color: #f52d2d;
+        }
+      }
+      .sel_3 {
+        li {
+          width: 1.92rem;
+        }
+      }
+      .sel_2 {
+        li {
+          width: 3rem;
+        }
+      }
+      &:after, &:before {
+        position: absolute;
+        content: '';
+        width: .05rem;
+        height: .3rem;
+        background-color: #f5f5f5;
+        top: -.25rem;
+      }
+      &:after {
+        left: .87rem;
+      }
+      &:before {
+        right: .87rem;
+      }
+      &.matchnot {
+        margin-top: 0;
+        &:after, &:before {
+          display: none;
+        }
+      }
+    }
+    .betEnd {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: url("../../../public-resource/imgs/jingcai/ended.png") 92% 44% no-repeat;
+        background-size: auto 26%;
+      }
+      .coin_bet {
+        background-image: url("../../../public-resource/imgs/jingcai/coin_g.png");
+        span {
+          color: #fff;
+        }
+      }
+      .selList {
+        .buy {
+          border-color: #f00;
+          b {
+            color: #f00;
+          }
+          .chance {
+          }
+          .odds {
+            color: #999;
+            i {
+              color: #0c8efd;
+            }
+          }
+        }
+      }
+    }
+    .hot {
+      .tit {
+        padding-left: .36rem;
+        position: relative;
+        i {
+          position: absolute;
+          top: .24rem;
+          left: 0;
+          content: '';
+          width: .32rem;
+          height: .4rem;
+          margin-right: .1rem;
+          background: url("../../../public-resource/imgs/jingcai/hot2.gif") center no-repeat;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+
+  &.end {
+    display: none;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.5) url('../../../public-resource/imgs/jingcai/ended.png') center no-repeat;
+      background-size: 2.32rem 1.4rem;
+    }
+  }
+}
+
+.betting {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  .sel_box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+    //border-top-right-radius: ;
+    transform: translate(0, 100%);
+    background-color: #fff;
+    .sel_list {
+      padding: .2rem .07rem;
+      border-bottom: 1px solid #eaeaea;
+      li {
+        float: left;
+        margin: .15rem .1rem;
+        width: 1.62rem;
+        height: .68rem;
+        text-align: center;
+        border: 1px solid #bfbfbf;
+        border-radius: .06rem;
+        line-height: .68rem;
+        font-size: .28rem;
+        color: #666;
+        &.sel {
+          color: #e55f56;
+          border-color: #e55f56;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0;
+        clear: both;
+      }
+    }
+    .sel_info {
+      color: #666;
+      font-size: .28rem;
+      padding: .13rem .26rem;
+      line-height: .62rem;
+      span {
+        color: #e55f56;
+      }
+      .rule {
+        font-size: .26rem;
+        float: right;
+        color: #4b94f8;
+        padding-left: .36rem;
+        background: url("../../../public-resource/imgs/jingcai/rule.png") left center no-repeat;
+        background-size: auto 50%;
+      }
+      .bbk {
+        position: relative;
+        text-indent: .4rem;
+        &.unsel {
+          color: #bbb;
+          span {
+            color: #bbb;
+          }
+        }
+      }
+      i {
+        position: absolute;
+        left: 0;
+        top: .13rem;
+        width: .34rem;
+        height: .34rem;
+        border: 1px solid #c9c9c9;
+        border-radius: 50%;
+      }
+      .sel {
+        i{
+          border: 0 none;
+          background: url("../../../public-resource/imgs/jingcai/sel_bbk.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .btns {
+      button, span {
+        float: left;
+        height: 1rem;
+        color: #fff;
+      }
+      .balance {
+        width: 40%;
+        padding: .14rem 0 0 .4rem;
+        font-size: .3rem;
+        line-height: .38rem;
+        background-color: #333333;
+        i {
+          color: #969696;
+          font-size: .24rem;
+          line-height: .34rem;
+        }
+      }
+      .submit {
+        width: 60%;
+        line-height: 1rem;
+        font-size: .32rem;
+        background-color: #e55f56;
+      }
+    }
+  }
+}
+
+.money_win {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  .alt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 3rem;
+    width: 5.4rem;
+    padding-top: .64rem;
+    border-radius: .3rem;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    .tit {
+      font-size: .32rem;
+      line-height: 1;
+    }
+    p {
+      font-size: .26rem;
+      line-height: 1.22rem;
+    }
+    .sel {
+      border-top: 1px solid #999;
+      button {
+        width: 50%;
+        font-size: .35rem;
+        height: .9rem;
+      }
+      .qx {
+        float: left;
+        border-right: 1px solid #999;
+      }
+      .qd {
+        color: #0c8efd;
+        float: right;
+      }
+    }
+  }
+}
+
+.bottom_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 1.1rem;
+  padding: .18rem .24rem;
+  background-color: rgba(0, 46, 90, 0.85);
+  //background-color: #002e5a;
+  div {
+    text-align: center;
+    font-size: .32rem;
+    color: #fff;
+    line-height: .8rem;
+    text-indent: .4rem;
+  }
+  .put_code {
+    float: left;
+    width: 3.4rem;
+    height: 100%;
+    background: #2f63b0 url("../../../public-resource/imgs/jingcai/icon_put.png") .6rem center no-repeat;
+    background-size: auto 46%;
+    border-radius: .1rem;
+  }
+  .share_link {
+    float: right;
+    width: 3.4rem;
+    height: 100%;
+    background: #e55f56 url("../../../public-resource/imgs/jingcai/icon_share.png") .6rem center no-repeat;
+    background-size: auto 46%;
+    border-radius: .1rem;
+  }
+}
+
+#upwinshare {
+  display: none;
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  .share_cont {
+    position: absolute;
+    //height: 6.7rem;
+    width: 100%;
+    bottom: -100%;
+    background-color: #fff;
+    transition: bottom .3s;
+    padding: .44rem .6rem .6rem;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+    h4 {
+      font-size: .34rem;
+      line-height: .48rem;
+    }
+    p {
+      font-size: .26rem;
+      line-height: .48rem;
+      span {
+        color: #f00;
+        font-weight: 800;
+      }
+    }
+    .code {
+      padding: .4rem 0;
+      text-align: center;
+      b {
+        font-size: .5rem;
+        color: #282828;
+      }
+      span {
+        display: none;
+        margin-left: .2rem;
+        color: #1482f0;
+        font-size: .28rem;
+      }
+      input {
+        display: none;
+      }
+      &:after{
+        //position: absolute;
+        content: "长按复制";
+        margin-left: .2rem;
+        color: #1482f0;
+        font-size: .28rem;
+      }
+    }
+    .share_btn {
+      text-align: center;
+      span {
+        display: inline-block;
+        font-size: .28rem;
+        line-height: .48rem;
+        color: #999;
+        i {
+          display: inline-block;
+          width: .8rem;
+          height: .24rem;
+          background: url('../../../public-resource/imgs/jingcai/share_boder.png') center no-repeat;
+          background-size: auto 100%;
+        }
+      }
+    }
+    .btns {
+      padding-top: .2rem;
+      li {
+        float: left;
+        height: 1.24rem;
+        width: 1.2rem;
+        margin: 0 0.186rem;
+        i {
+          display: block;
+          margin: 0 auto;
+          width: 1rem;
+          height: 1rem;
+          background: center no-repeat;
+          background-size: 85% auto;
+        }
+        b {
+          display: block;
+          text-align: center;
+          font-size: .26rem;
+          line-height: .6rem;
+          color: #000;
+        }
+      }
+      .pyq i {
+        background-image: url('../../../public-resource/imgs/jingcai/pyq.png');
+      }
+      .wx i {
+        background-image: url('../../../public-resource/imgs/jingcai/wx.png');
+      }
+      .qq i {
+        background-image: url('../../../public-resource/imgs/jingcai/qq.png');
+      }
+      .web i {
+        background-image: url('../../../public-resource/imgs/jingcai/web.png');
+      }
+    }
+  }
+}
+
+#shareBtn {
+
+}
+
+#all_match {
+  display: none;
+  position: fixed;
+  bottom: .4rem;
+  z-index: 13;
+  left: 50%;
+  height: .8rem;
+  width: 4.9rem;
+  transform: translate(-50%, 0);
+  color: #234e27;
+  line-height: .8rem;
+  font-size: .36rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: .4rem;
+  box-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.4);
+  background: linear-gradient(40deg, #d9f929, #bcf751, #b3f75d, #9df67b)
+}
+
+#code_upwin {
+  display: none;
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  .put_cont {
+    position: absolute;
+    width: 6.4rem;
+    padding: 3.8rem 0 .6rem;
+    background: #fff url("../../../public-resource/imgs/jingcai/code_upwin.png") top center no-repeat;
+    background-size: 100% auto;
+    top: 50%;
+    left: 50%;
+    border-radius: .1rem;
+    transform: translate(-50%, -50%);
+    .putCode {
+      //display: none;
+      input {
+        display: block;
+        margin: 0 auto .9rem;
+        height: .9rem;
+        width: 5.3rem;
+        font-size: .3rem;
+        border-radius: .1rem;
+        border: 1px solid #e9e9e9;
+        background-color: #f1f1f1;
+        color: #666;
+        text-align: center;
+        &:focus {
+          color: #333;
+        }
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        height: .76rem;
+        width: 5.1rem;
+        font-weight: 800;
+        font-size: .36rem;
+        line-height: .76rem;
+        color: #fff;
+        border: 1px solid #60aaf8;
+        border-radius: .4rem;
+        box-shadow: 0 .04rem .1rem rgba(96, 170, 248, 0.4);
+        background: linear-gradient(40deg, #4db2f8, #3797f7, #166ff5)
+        //background-color: #ddf;
+      }
+    }
+    .mes{
+      .tit{
+        font-size: .36rem;
+        line-height: 1;
+        margin-bottom: .2rem;
+        color: #333;
+        text-align: center;
+      }
+      .info{
+        font-size: .28rem;
+        line-height: .32rem;
+        color: #999;
+        margin: 0 auto;
+        width: 5.6rem;
+        span{
+          color: #f00;
+        }
+      }
+    }
+    .succe {
+      display: none;
+    }
+    .fail{
+      display: none;
+    }
+    .close {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: .6rem;
+      height: .6rem;
+      margin-left: -.3rem;
+      margin-top: 1rem;
+      background: url("../../../public-resource/imgs/jingcai/code_upwin_close.png") center no-repeat;
+      background-size: auto .6rem;
+    }
+  }
+}
+
+body.sure {
+  .money_win {
+    z-index: 110;
+    display: block;
+  }
+  .betting {
+    background: none;
+    .sel_box {
+      box-shadow: 0 -.14rem .26rem #bbb;
+    }
+  }
+}
+
+body.share {
+  #upwinshare {
+    display: block;
+    .share_cont {
+      bottom: 0;
+    }
+  }
+}
+
+body.show {
+  .betting {
+    display: block;
+    top: 0;
+    z-index: 100;
+    .sel_box {
+      transform: translate(0, 0);
+      transition: transform .3s;
+    }
+  }
+}
+
+.console {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  left: 0;
+  height: 2.6rem;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  .content {
+    min-height: 100%;
+  }
+}
+
+#reload {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  bottom: 2rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .3rem;
+}

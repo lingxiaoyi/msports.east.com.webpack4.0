@@ -1,0 +1,27 @@
+<script>
+    <% if (IS_PRODUCTION) { %>
+    var _sportsType_ = "$!{categoryFirst}";
+    var _articleTagCodes_ = "$!{codeList}";
+    var _isOriginal_ = "$!{page.isoriginal}";
+    var _yiji_ = "$!{yiji}";
+    var _erji_ = "$!{erji}";
+    var _sanji_ = "$!{sanji}";
+    var _newstype_ = "$!{newstype}";
+    var _isdftt_ = "$!{isdftt}";
+    var _ttyiji_= "$!{page.dftttp1stid}";
+    var _tterji_= "$!{page.dftttp2ndid}";
+    var _ttsanji_= "$!{page.dftttp3rdid}"
+    <% }else { %>
+    var _sportsType_ = 'CBA';
+    var _articleTagCodes_ = '900052';
+    var isOriginal = 1;
+    var _yiji_ = 'null';
+    var _erji_ = 'null';
+    var _sanji_ = "null";
+    var _newstype_ = 'null';
+    var _isdftt_ = "0";
+    var _ttyiji_= "0006";
+    var _tterji_= "5010";
+    var _ttsanji_= "";
+    <% } %>
+</script>

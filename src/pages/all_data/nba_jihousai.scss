@@ -1,0 +1,105 @@
+.data-rank{
+  position: relative;
+}
+nav.data-rank ul{
+  position: relative;
+  width:7rem;left: 0.5rem;
+}
+.back{
+    width: 0.5rem;
+  height: 100%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAiCAYAAABStIn6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY2QUQzMEE5NTFGNTExRThCQTI4ODNCNTQ5Q0U3NTYxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY2QUQzMEFBNTFGNTExRThCQTI4ODNCNTQ5Q0U3NTYxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjZBRDMwQTc1MUY1MTFFOEJBMjg4M0I1NDlDRTc1NjEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjZBRDMwQTg1MUY1MTFFOEJBMjg4M0I1NDlDRTc1NjEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4xNu5AAAAB0klEQVR42qyVPSjEcRjH/3c4ZaCuTCfTDRYmZbCgDIQyKDKIKG+TDMLmJYNM5+UoMlwuKXXCgGOwKIsshtswXV3dcoXE96nvv54uL7//j6c+3T1P///37ve8/XzRaNSxNB/YBEcg4XfsbRkMgn3QZCs0Cyb4vRhM2QiNgjnl34Nur0K9IKL8FGgBGS9CHWCHSRZ7poh8OqZCjWAPFNHPUCTlPmAiVAsOQQn9HGhlbhxToSpwAsrov4J2cJP/4E9CleAMlNN/l+qA5FcPfyckL1+ACvofYIhHdEyF5BjnIKxik6yYYyokCT0GNSq2AFZ+q4gWCoADUK9i6xwHx1SoAOyyN1yLgTHTbvWzUyOsiGsJMMAkGwstgmEVuwI97BnHi9C/mAhNgw0Va+BcBbwKSR7GQTxv0rfVpBsfTdq/j3Old8+qTY4kuV3gWsVGwLxNsmVFtIE7FZtR+9lT1bKgWS8t3hj9NuVPyxUDntQdtgU6bfrokf8srcYozh/w3JAPXKtZNdhys9bZdPYtj5RTq0bapNpmRC45f2/0g+BULz8vs5Zg5dyNEKJYyGZoYxwn18IUC9pM/1re1pRcxW3XiN7jL2Cp8A8rSG6WUrZD8lOAAQDxEFfgOhqbFgAAAABJRU5ErkJggg==) no-repeat center center;
+  background-size: 0.18rem 0.34rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.match-group{
+  overflow: hidden;
+}
+.match{
+  margin-right: 0.3rem;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  .icon{
+	float:left;
+	margin: 0.1rem 0 0 0.1rem;
+	&:first-child{
+		margin-left: 0;
+  	}
+	.team{
+	  text-align: center;
+	}
+  }
+  .teams{
+	overflow: hidden;
+  }
+  img{
+	height:0.7rem;
+	width: 0.7rem;
+  }
+  .line{
+	height:0.3rem;
+	border:1px solid #333333;
+	border-top: 0;
+	margin: 0.05rem 0.2rem 0;
+	text-align: center;
+  }
+  .line-vertical{
+	height:0.3rem;
+	border-left: 1px solid #333333;
+  }
+  &:first-child{
+	margin-left: 0.3rem;
+  }
+}
+.match-group-top2,.match-group-bottom2{
+  padding: 0 0.4rem;
+  .icon{
+	margin-left: 1.1rem;
+  }
+  .match:last-child{
+	margin-left: 0.8rem;
+  }
+}
+
+.match-group-top3,.match-group-bottom3{
+  padding: 0 1.3rem;
+  .icon:last-child{
+	margin-left: 2.9rem;
+  }
+}
+
+.match-group-center{
+  	.match{
+	  margin-left: 2.3rem;
+	}
+  	.labels{
+	  float: left;
+	  margin: 0 0.2rem;
+	  .score,.match-name{
+		height: 0.5rem;
+		line-height: 0.5rem;
+		padding: 0 0.2rem;
+	  }
+	  .match-name{
+		background-color:red;
+		color: #FFFFFF;
+		border-radius: 0.06rem;
+	  }
+	}
+}
+
+.bottom{
+  .line{
+	border: 1px solid #333333;
+	border-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0.05rem;
+  }
+}
+
+#duelTab{
+  padding: 0.2rem 0;
+}

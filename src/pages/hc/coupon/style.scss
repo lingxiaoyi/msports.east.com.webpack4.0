@@ -1,0 +1,137 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+
+html {
+  min-height: 100%;
+  background-color: #f5f5f5;
+}
+
+.main {
+  .tab_nav {
+    padding: 0 .3rem;
+    height: .88rem;
+    background-color: #fff;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 1.6rem;
+      height: .88rem;
+      font-size: .28rem;
+      line-height: .88rem;
+      color: #666;
+      margin: 0 .2rem;
+      &.sel {
+        color: #eb4432;
+        border-bottom: .04rem solid #ff4646;
+      }
+    }
+  }
+  .tickets {
+    padding: .3rem;
+    li {
+      height: 2rem;
+      margin-bottom: .3rem;
+      background-image: url("../../../public-resource/imgs/hc/bg-coupon-gray.png");
+      background-size: cover;
+      .left {
+        float: left;
+        width: 2.19rem;
+        height: 2rem;
+        color: #fff;
+        text-align: center;
+        .value {
+          width: 2.2rem;
+          height: 1.5rem;
+          font-size: .24rem;
+          line-height: 1.8rem;
+          b {
+            font-weight: normal;
+            font-size: .8rem;
+          }
+        }
+        .type {
+          opacity: .7;
+          font-size: .24rem;
+          line-height: 1;
+        }
+
+      }
+      .right {
+        overflow: hidden;
+        height: 2rem;
+        padding:0 .4rem;
+        position: relative;
+        h6 {
+          font-size: .32rem;
+          line-height: .72rem;
+        }
+        p {
+          font-size: .24rem;
+          color: #999;
+          line-height: .32rem;
+        }
+        .time {
+          position: absolute;
+          left: .4rem;
+          bottom: .2rem;
+          color: #f42a2a;
+        }
+        i {
+          display: none;
+        }
+      }
+      &.can_use {
+        background-image: url("../../../public-resource/imgs/hc/bg-coupon.png");
+      }
+      &.link {
+        .left {
+          .value {
+            height: 1.6rem;
+            background: url("../../../public-resource/imgs/hc/hb-coupon.png") center no-repeat;
+            background-size: .96rem 1.24rem;
+          }
+          .type {
+            font-size: .26rem;
+            opacity: 1;
+          }
+        }
+        .right {
+          position: relative;
+          i {
+            display: block;
+            position: absolute;
+            width: 1.5rem;
+            height: .6rem;
+            line-height: .6rem;
+            text-align: center;
+            right: .2rem;
+            bottom: .6rem;
+            color: #fff;
+            background-color: #ff7e44;
+            border-radius: .3rem;
+          }
+        }
+      }
+      &.un_use {
+        .right {
+          .time {
+            color: #999;
+          }
+        }
+      }
+    }
+    .no_data{
+      text-align: center;
+      font-size: .3rem  ;
+      line-height: 8rem ;
+      height: 5rem;
+      color: #999;
+      background: url("../../../public-resource/imgs/hc/no_data_coupon.png") center no-repeat;
+      background-size: auto 2.5rem;
+      border-bottom: 0 none;
+    }
+    #libao {
+      display: none;
+    }
+  }
+}

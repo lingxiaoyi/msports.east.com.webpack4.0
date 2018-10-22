@@ -1,0 +1,25 @@
+@import "~public/sass/hc/common.scss";
+.main{
+  padding: 0 0.54rem;overflow: hidden;background: #fff;
+  .img{
+    margin-top: 0.8rem;
+    width: 100%;
+    height:4.1rem;
+    background-image: url(~public/imgs/hc/stop-bg.jpg);
+    background-size: 5.08rem 4.1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  h3{
+    color: #fa0006;font-size: 0.32rem;margin: 0.5rem 0 0.3rem;line-height: 0.32rem;
+  }
+  p{
+    font-size: .28rem;color: #434343;line-height: .50rem;
+    span{
+      color: #f03c3c;
+      &.underLine{
+        text-decoration: underline;
+      }
+    }
+  }
+}

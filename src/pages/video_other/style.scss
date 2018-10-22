@@ -1,0 +1,112 @@
+/*!*213px显示屏样式 LG Optimus One*!
+@media screen and (min-width: 212px) {
+  html {font-size: 28.4px;}
+}
+!*320px显示屏样式 苹果4/4S/5C/5S黑莓Z30 *!
+@media screen and (min-width: 319px){
+  html {font-size: 42.6666px;}
+}
+!*360px显示屏样式 索尼Z1*!
+@media screen and (min-width: 359px){
+  html {font-size: 48px;}
+}
+@media screen and (min-width: 374px) {
+  html {font-size: 50px;}
+}
+!*384px显示屏样式 黑莓Z10 谷歌 Nexus 6 LG Optimus G*!
+@media screen and (min-width: 383px){
+  html {font-size: 51.2px;}
+}
+!*399px显示屏样式 三星galaxyNote*!
+@media screen and (min-width: 399px){
+  html {font-size: 53.2px;}
+}
+!*414px显示屏样式 苹果6plus*!
+@media screen and (min-width: 414px){
+  html {font-size: 55.2px;}
+}
+!*424px显示屏样式 LG 4X *!
+@media screen and (min-width: 423px){
+  html {font-size: 56.5333px;}
+}
+!*480px显示屏样式 索尼MT27i Xperia sola*!
+@media screen and (min-width: 479px){
+  html {font-size: 64px;}
+}
+!*540px显示屏样式 摩托罗拉Droid3/4/Razr Atrix 4g*!
+@media screen and (min-width: 539px){
+  html {font-size: 72px;}
+}
+!*640px显示屏样式*!
+@media screen and (min-width: 639px){
+  html {font-size: 85.3333px;}
+}
+@media only screen and (min-width: 750px) {
+  body{width: 750px;}
+}*/
+.f0{font-size: 0;}
+body{font-size: 16px; line-height: 1; margin: 0 auto;}
+a{-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);}
+input::-webkit-input-placeholder { color: #d0d0d0; }
+textarea::-webkit-input-placeholder { color: #d0d0d0; }
+body{padding-top: 0 !important; color: #333;}
+/*.video-wrap{position: relative; width: 100%; overflow: hidden; background-color: #000; height: 4.22rem;}*/
+html, body {
+  margin: 0;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content, .video-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+.related{
+  display: block;height:100%;position: absolute;top:0;left: 0;width:100%;z-index: 5;
+  text-align: center;padding-top: 20%;z-index: 100;
+}
+.related.pause{
+  background: url(../../public-resource/imgs/i-play.png) no-repeat  center ;background-size:1rem  ;
+}
+
+.video-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  .tips{
+    text-align: center;position: absolute;top: 20%;color:#fff;width:100%;font-size: 0.32rem;z-index: 99;padding:0 0.5rem;
+  }
+}
+
+.video-box .video {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+/*.video-loading{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6);}
+.video-loading-wrap{position: absolute; top: 50%; left: 50%; width: 32px; height: 32px; margin-top: -16px; margin-left: -16px; z-index: 1;} */
+.video-loading{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,1);}
+.video-loading .img{position: absolute; left: 50%; top: 50%; width: 103px; height: 25px; margin-top: -28px; margin-left: -52px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4AAAAyCAQAAAC+RiwtAAAE90lEQVR42u1csXLTQBBdM/TxH0SioKAAMcxQMWOZis52QUUR+wtIZiigslVRJuYLzl9A8gVSPoBBdFT4+AOlJzGFHUd3Wunu5NucHHurSKOcTvv27b496dxawN6aao/2LtiDs7ca9lh1wZx+Dm0IhOMMUmtje+Dljjhwp94WnzQBAPArLm/hNWc+hEPrU5tChp4/hWPh+BwG1u75Hfq5owGcI9cE0NYYSRUyIcS5owlEymtaq3MBpH5iwpwjCC1Dk6DTBQDBfQAAF1ZjVXQwHhyh1vy7BEyKl1yacxj4qXFas8gbncSzpvuGdst8Twq5jnRdVHP8WBEGwwLgHEZIWARrL8Rz38/cgMOFhBJXxmrdMpdPJTjzh4UzdcFRca0YciMknfYFcPvA3Ki1iPwOWSk3m2AZUu3aEtsO3UjpTI4JAjsvqSjNMIbOTjz3V7Pm+F1ljpFTU9dKrXDPzWT9HKFFUYSz+gwm679Tn7kTBNS84dbAiTQqS6uWlMYCarK666BGE0piaenjpzWTkxyZS+aPc5F56zCXi4kpAs8UAuA+r7VCQPIsJ2u98rPgVLrKcWVxrBDRXqJaU6fEu//w/iy1HX/CjcC5oYwkW7zRGz+1OHKs7LOGyjFOi6XekDmk4BwRtJ/ba+wpNwDn95i0W5EXPMsXbsTaoa8MAzLm3IverATnZkIKTh9RSmAZ/vKuonG8ecbNwKGdTudeoeFWx04Q7uu86giFGfHqwHcJTh9NRKfIWa9QSjOk2x5UJjW74HRX8wiEllKdWRbCqkEE8Lzi4kpwrmmVWhuNdp2uPEDOTRykolCrYooh4pWGHCFzisvxUCj3edr3rLoJW/YMCJPm8pWEeIee4pkuISmA4/3IK9bZK07DnKGh+0KrzsIWFg9Im4DQmLs+qkPv/MZfR67S2pngPg9NTfVtqqxUv1yrMaTqeUJIm0npazr3heQPLoPjWkhPUd7kqtEb5gocOe30SiVqy2IT2hxwEkRmi+tvplLaIjiRhoym1VJ21wdm0viJIlwuFMzmbxklOCcVj59JacdbMWEC22pM4v4MmAQX3pJyzeC1DE5qkGr4ajKU4FAK6SL3l18IxMIdu9rg8HesWU0otbVJR+9LgblZRYtqNKH/Hg443PLoPYu85D1WA5ytZs4LUnBEsXEsfVC8vGJR6PROTHjzkMER7cryeJ6lTgeAv2e7B07TXrSxEvZWrGTvBcH9rhDIHw7yD2wXwfFIpXSirERin8NXR1yfN7sDjm3Dt4MshESq3jLCqz9T3g1BwBszk7Y+b9y+pqa0sKHgfDRJtrvBHPsr0guN8JCvGQGXgsarDptmgTMsfGaI149T1N35T9DtC+mLjQPkXPmdqA4438qcFJf2EWUOk7VJNZEPNV/CBcqO4QCN5Y4Go+42DHpC1LMNwTmDDF6CZ7JvDwXnpsxJobHDxMyfELJOHF0svMtX1B1pFTxD9VRxw2AGXQvcmyLV7wg6ZwI7j1M1ODTui5TutTd6oGSIrstTGCHXmfY5SQlLMQAdgFOt6RnMIIEx0egc7VT0oME3pdjpcyQffMpcgROVFkoG043FLqtMssXRR1rQMGQPtJ6lMKuZ+ByAk6G/ncEhEjbaRtY+la9eWdMr75Nas0lhVmsTZPK5EC4tlWD/uv1NaHZva9JjmClhKUvdl18SY3D25s72P+nVYPsPOjprWoddaEoAAAAASUVORK5CYII=") no-repeat center; background-size: contain;}
+@-webkit-keyframes ball-beat {
+  50% {opacity: 0.2; -webkit-transform: scale(0.75); transform: scale(0.75); }
+  100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+}
+@keyframes ball-beat {
+  50% {opacity: 0.2; -webkit-transform: scale(0.75); transform: scale(0.75); }
+  100% {opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
+}
+.ball-beat{position: absolute; left: 50%; top: 50%; width: 70px; height: 22px; margin-left: -35px; margin-top: 14px;}
+.ball-beat > div {background-color: #fff; width: 15px; height: 15px; border-radius: 100%; margin: 2px; -webkit-animation-fill-mode: both; animation-fill-mode: both; display: inline-block; -webkit-animation: ball-beat 0.7s 0s infinite linear; animation: ball-beat 0.7s 0s infinite linear; }
+.ball-beat > div:nth-child(2n-1) {-webkit-animation-delay: 0.35s !important; animation-delay: 0.35s !important; }

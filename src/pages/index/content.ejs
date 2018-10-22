@@ -1,0 +1,192 @@
+<div class="lincoapp-tab3" id="headNav">
+    <div class="header">
+        <a href="/" class="idx_ico">东方体育</a>
+        <a href="./hc/personal.html" class="user"></a>
+        <a href="./downloadapp.html?pagefrom=index&from=H5dftiyu" class="app"></a>
+    </div>
+    <div class="tab-scroll-wrap">
+        <div class="nav-new">
+            <ul>
+            </ul>
+            <span class="line"></span>
+        </div>
+        <div class="nav-setBtn"></div>
+    </div>
+    <div class="pull-down-load-tips" style="">
+        <i class="iloading"></i><span class="txt">下拉刷新</span>
+    </div>
+</div>
+<div class="nav-setBox">
+    <div class="nav_top">
+        <i class="nav_back"></i>
+        全部频道
+    </div>
+    <div class="nav_set_top">
+        <b>我的定制</b>
+        <span>长按进行排序</span>
+        <button>恢复默认排序</button>
+    </div>
+    <ul class="nav_set_item"></ul>
+</div>
+<div id="mainSection" class="swiper-container home-swiper-container ">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-type="tuijian">
+            <div class="sec-news-list">
+                <ul>
+                    <% if (IS_PRODUCTION) { %>
+                    <div class="indexItem">
+                        <?if(!empty($hot)){?>
+                        <p class="tit"><?=$hot['title']?><span class="tag"><?=$hot['tags']['name']?></span></p>
+                        <?}?>
+                        <?switch ($big['type']){
+                            case 1:?>
+                        <!--大图新闻-->
+                        <a class="bigImg" href="<?=$big['url']?>" style="background-image: url(<?=$big['img']?>">
+                            <p><?=$big['title']?></p>
+                        </a>
+                        <?break;
+                            case 2:?>
+                        <!--小图新闻-->
+                        <section class="item-news-list">
+                            <li class="clearfix">
+                                <a href="<?=$big['url']?>"
+                                   suffix="top4">
+                                    <div class="img">
+                                        <img src="<?=$big['img']?>" class="lazy" data-src="" data-echo="<?=$big['img']?>">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title"><?=$big['title']?></div>
+                                        <div class="source">
+                                            <div class="tag-zd"><?=$big['tags']['name']?></div>
+                                            <div class="l"><?=$big['writer']?></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </section>
+                        <?break;
+                            case 3:?>
+                        <!--大图视频-->
+                        <a class="live bigImg" href="<?=$big['url']?>" style="background-image: url(<?=$big['img']?>)">
+                            <p><?=$big['title']?></p>
+                        </a>
+                        <?break;
+                            case 4:?>
+                        <!--大图直播流-->
+                        <div class="live ">
+                            <p><?=$big['title']?></p>
+                            <div class="videoBox">
+                                <video preload="auto"  loop="loop" preload="none" controls="true"
+                                       x5-video-player-type="h5" x5-video-player-fullscreen="true"
+                                       x5-video-orientation="portraint" x-webkit-airplay="true"
+                                       webkit-playsinline="true" playsinline="true" data-type="vgaoxiao"
+                                       poster="<?=$big['img']?>"  >
+                                    <source src="<?=$big['url']?>"/>
+                                </video>
+                            </div>
+                        </div>
+                        <?break;
+                            default:
+                                break;
+                        }?>
+                        <section class="item-news-list">
+                            <?foreach ($small as $k=>$v){?>
+                            <li class="clearfix">
+                                <a href="<?=$v['url']?>" suffix="top4">
+                                    <div class="img">
+                                        <img src="<?=$v['img']?>" class="lazy" data-src="" data-echo="<?=$v['img']?>">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title"><?=$v['title']?></div>
+                                        <div class="source">
+                                            <div class="tag-zd"><?=$v['tags']['name']?></div>
+                                            <div class="l"><?=$v['writer']?></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <?}?>
+                        </section>
+                        <?if(!empty($hot)){?>
+                        <a href="<?=$hot['url']?>" class="show_more">点击查看更多世界杯消息 <i></i>&nbsp;&nbsp;>> </a>
+                        <?}?>
+                        <li class="adSet gg clearfix bdgg-wrap"></li>
+                        <div class="nav_tab_first">
+                            <a href="./saishi.html?type=saishi">今日赛事</a><a href="./saishi.html?type=all">全部联赛</a><a href="./hc/index.html">专家预测</a><a href="./all_data.html?datatype=t&classtype=nba">数据</a>
+                        </div>
+                    </div>
+                    <% } else { %>
+                    <div class="indexItem">
+                        <p class="tit">世界杯火热进行中 <span class="tag">荷兰</span></p>
+                        <div class="live" style="background-image: url(//imgmini.eastday.com/video/vtiyu/20180914/20180914191442095507419_1_mwpm_03200403.jpg);">
+                            <p>戈登：不要仅凭一场比赛就去评判哈登</p>
+                            <div class="videoBox">
+                                <video preload="auto"  loop="loop" preload="none" controls="true"
+                                       x5-video-player-type="h5" x5-video-player-fullscreen="true"
+                                       x5-video-orientation="portraint" x-webkit-airplay="true"
+                                       webkit-playsinline="true" playsinline="true" data-type="vgaoxiao"
+                                       poster="//imgmini.eastday.com/video/vtiyu/20180914/20180914191442095507419_1_mwpm_03200403.jpg">
+                                    <source src="//video.mv.wa5.com/live-gssports1/live-gssports1--20180827000206.m3u8"
+                                            type="application/vnd.apple.mpegurl"/>
+                                </video>
+                            </div>
+                        </div>
+                        <a class="bigImg" href="#" style="background-image: url(//imgmini.eastday.com/video/vtiyu/20180914/20180914191442095507419_1_mwpm_03200403.jpg);">
+                            <p>戈登：不要仅凭一场比赛就去评判哈登</p>
+                        </a>
+                        <section class="item-news-list">
+                            <li class="clearfix">
+                                <a href="https://msports.eastday.com/a/180914101421137000000.html?qid=null&amp;ishot=0&amp;recommendtype=-1&amp;idx=4&amp;pgnum=1&amp;from=top4&amp;dataType=tuijian&amp;typeName=%E6%8E%A8%E8%8D%90&amp;pgtype=tuijian"
+                                   suffix="top4">
+                                    <div class="img">
+                                        <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
+                                             class="lazy" data-src=""
+                                             data-echo="https://05imgmini.eastday.com/mobile/20180914/20180914101421_7fde6cd0fa9ec8a65d458b00555e8be9_1_mwpm_03200403.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">火箭启动3换1大交易，喜迎第四巨头！</div>
+                                        <div class="source">
+                                            <div class="tag-zd">NBA</div>
+                                            <div class="l">NBA观察员</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="https://msports.eastday.com/a/180914101421137000000.html?qid=null&amp;ishot=0&amp;recommendtype=-1&amp;idx=4&amp;pgnum=1&amp;from=top4&amp;dataType=tuijian&amp;typeName=%E6%8E%A8%E8%8D%90&amp;pgtype=tuijian"
+                                   suffix="top4">
+                                    <div class="img">
+                                        <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
+                                             class="lazy" data-src=""
+                                             data-echo="https://05imgmini.eastday.com/mobile/20180914/20180914101421_7fde6cd0fa9ec8a65d458b00555e8be9_1_mwpm_03200403.jpg">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">火箭启动3换1大交易，喜迎第四巨头！</div>
+                                        <div class="source">
+                                            <div class="tag-zd">NBA</div>
+                                            <div class="l">NBA观察员</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </section>
+                        <a href="#" class="show_more">点击查看更多世界杯消息 <i></i>&nbsp;&nbsp;>> </a>
+                        <li class="adSet gg clearfix bdgg-wrap">
+                        </li>
+                        <div class="nav_tab_first">
+                            <a href="./saishi.html?type=saishi">今日赛事</a><a href="./saishi.html?type=all">全部联赛</a><a href="./hc/index.html">专家预测</a><a
+                                    href="./all_data.html?datatype=t&classtype=nba">数据</a>
+                        </div>
+                    </div>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="loading-tips1 l-btn-refresh1">
+                <div>
+                    <i class="iloading rotating"> </i>正在加载
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

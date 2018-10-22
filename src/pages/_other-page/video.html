@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .block-player{
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+        }
+        .block-player:before{
+            display: block;
+            content: "";
+            padding-top: 56.25%;
+        }
+        .block-player .player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="block-player">
+<iframe id="player" class="player" src="./html/video_other.html?advVideo=http://mv.eastday.com/vtiyu/20180521/20180521184907020495155_1_06400360.mp4&advJump=https%3A%2F%2Fwww.vivo.com%3Faa%3Dxxx&showNetTip=1"
+        allowfullscreen frameborder="0" scrolling="no"></iframe></div>
+</body>
+<script>
+    function onAdvClick(advJump){
+
+    }
+
+</script>
+</html>

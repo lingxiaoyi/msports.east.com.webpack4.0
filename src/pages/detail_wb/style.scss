@@ -1,0 +1,262 @@
+header{
+  background: #fff;border-top: 0;padding:0;position: relative;
+  .back{
+    width:0.96rem;height:0.88rem;background:url("../../public-resource/imgs/i-back.png") no-repeat center center;float: left;background-size: 0.18rem 0.34rem;position: absolute;left: 0;
+  }
+  .text{
+    width: 100%;
+    font-size: 0.36rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.88rem;
+    letter-spacing: 0;
+    color: #333333;text-align: center;
+  }
+}
+.sec1 {
+  padding:0 0.3rem;
+  .row-t{
+    margin-top: 0.3rem;
+    .head {
+      width: 0.7rem;
+      height: 0.7rem;
+      float: left;
+      overflow: hidden;
+      border-radius: 50%;
+      background: #e3e2e2;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .info {
+    width: 6.1rem;
+    float: right;
+    .row {
+      .l {
+        float: left;
+        width: 3rem;
+        .name {
+          font-size: 0.26rem;
+          color: #666666;
+          margin-top: 0.05rem;
+          line-height: 0.26rem;
+        }
+        .time {
+          font-size: 0.22rem;
+          color: #999999;
+          margin-top: 0.13rem;
+          line-height: 0.22rem;
+        }
+      }
+      .r {
+        float: right;
+        margin-top: 0.06rem;
+        i {
+          width: 0.27rem;
+          height: 0.28rem;
+          float: left;
+          background: url("../../public-resource/imgs/i-zan-c.png") no-repeat;
+          background-size: 100%;
+          &.active {
+            background: url("../../public-resource/imgs/i-zan-c-a.png") no-repeat;
+            background-size: 100%;
+          }
+        }
+        span {
+          font-size: 0.22rem;
+          color: #999999;
+          line-height: 0.32rem;
+          float: left;
+          margin-left: 0.11rem;
+        }
+      }
+    }
+    p {
+      color: #333333;
+      line-height: 0.42rem;
+      font-size: 0.3rem;
+      margin-top: 0.21rem;
+      overflow: hidden;
+    }
+    .comment-content-maxheight {
+      max-height: 0.84rem;
+    }
+    .J_expand {
+      margin-top: 0.1rem;
+      background-color: #e9e9e9;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 5px 17px 5px 5px;
+      color: #999;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAgCAYAAACLmoEDAAACEElEQVRYR+2WwU3DQBBFZzaKfaUDoAKgA6iAUAHxJbs+ESqAVACc7M3FoQKgAkIFQAVAB1yTKDtokC1ZEQmetXMAxadImd19+2f2zyD8oQ//ECtsYNeVrf+t7HA43G+32+9RFH36Kphl2dZsNtvp9Xovkj3EyqZpeo+I24gYSQ9jML4sEWVE9GGM6awVllWZTCbjHPhIApyDPgLAaxAEHWl2xMoWSlhrRwBw6pyL4jjm3yu/JEm6SqkMAG611t3f4n/63xuWN7PWXgLABQBcaq0HywBKceda62sfUF5TC5Y3KBQjopExJloEyTPQcc71q2Rg1UVqw5YezRgA3oIgOOJa5NqeTqdcn7uIeCip7WXAjcAWwM65ESKSc+5GKXVGREhEnTiO331TX17XGCxvWnKKPQB48nnxjZYB12ir1XpZlVaOWVWfbGHz+XxfWsNiZdM0vUZEtqxz6WGlB3lFRLfGmL6kPMSwZcsior4x5qbqgdZahrsCgIHWmm1P9HnBVrGsJRZWuYk03hTy9jkmoucwDE9+ap/5o7tDxIO6FuatbHFzBi5Z1knZppIk2VFK3bGFKaW6db22NuyCZfE09j3cFEMLT1dhGB5Kh5bGy2BJXR4TEY+RPP49+A4ta4ddGG68XnyjTaGK13CtNtVi19Zuq1ykTkwjD6wOgGTtBlailiR2o6xELUnsRlmJWpLYL/t9DDAAxBZbAAAAAElFTkSuQmCC);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 40%;
+    }
+  }
+  .content {
+    p{
+      margin: 0.15rem 0;
+      font-size: 0.32rem;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 0.48rem;
+      letter-spacing: 0;
+      color: #333333;
+    }
+    .img1{
+      img{
+        width:100%;
+      }
+    }
+    .img2{
+      .img-box{
+        width:3.4rem;float: left;max-height:3.4rem;overflow: hidden;margin-right: 0.1rem;
+        img{width:100%;}
+      }
+      .img-box:nth-of-type(2n){
+        margin-right: 0;
+      }
+    }
+    .img3{
+      .img-box{
+        width:2.26rem;float: left;max-height:2.26rem;overflow: hidden;margin-right: 0.06rem;
+        img{width:100%;}
+      }
+      .img-box:last-child{
+        margin-right: 0;
+      }
+    }
+    .reply{
+      width:100%;background: #f5f5f5 ;border-radius: 0.04rem;padding:0.1rem 0.2rem 0.3rem;margin-top: 0.15rem;
+      .row{
+        line-height: 0.42rem;font-size: 0.26rem;margin-top: 0.15rem;
+        span{
+          color:#007dd4;padding-right: 0.1rem;
+        }
+      }
+      .btn-all{
+        color:#007dd4;font-size: 0.26rem;line-height: 0.42rem;margin-top: 0.15rem;
+      }
+    }
+    .tips{
+      height:0.7rem;border-top: 1px solid #e6e6e6;line-height: 0.7rem;margin-top: 0.2rem;
+      .from{
+        width: 2rem;
+        font-size: 0.22rem;
+        font-weight: normal;
+        font-stretch: normal;
+        color: #999999;
+        float: left;
+      }
+
+      .tip{
+        float: right;
+        i{
+          width:0.27rem;height:0.28rem;display: inline-block;background-size: cover;background-repeat: no-repeat;
+        }
+        span{
+          font-size: 0.22rem;color: #999999;margin-left: 0.11rem;display: inline-block;
+        }
+      }
+
+      .zan{
+        i{
+          background-image: url("../../public-resource/imgs/i-zan-c.png");vertical-align: 0;
+          &.active{
+            background: url("../../public-resource/imgs/i-zan-c-a.png") no-repeat;background-size: 100%;
+          }
+        }
+      }
+      .num{
+        margin-left: 0.54rem;
+        i{
+          background-image: url("../../public-resource/imgs/i-reply.png");vertical-align: -0.05rem;
+        }
+      }
+    }
+  }
+}
+.sec2{
+  h3{
+    font-size: 0.32rem;
+    color: #333333;
+    line-height:0.32rem;
+    font-weight: 400;
+    padding-left: 0.27rem;
+    margin: 0.3rem 0 0.1rem 0;
+  }
+  li{
+    padding:0.31rem 0.24rem 0 0.27rem;
+    .head{
+      width:0.7rem;height: 0.7rem;float: left;overflow: hidden;border-radius: 50%;background: #e3e2e2;color:#222;
+      img{
+        width:100%;
+      }
+    }
+    .info{
+      width:6.1rem;float: right;border-bottom: 1px solid #e6e6e6;padding-bottom: 0.25rem;
+      .row{
+        .l{
+          float: left;width:3rem;
+          .name{
+            font-size: 0.26rem;color: #666666;margin-top: 0.05rem;line-height: 0.26rem;
+          }
+          .time{
+            font-size: 0.22rem;color: #999999;margin-top: 0.13rem;line-height: 0.22rem;
+          }
+        }
+        .r{
+          float: right;margin-top: 0.06rem;
+          i{
+            width:0.27rem;height:0.28rem;float: left; background: url("../../public-resource/imgs/i-zan-c.png") no-repeat;
+            background-size: 100%;
+            &.active{
+              background: url("../../public-resource/imgs/i-zan-c-a.png") no-repeat;background-size: 100%;
+            }
+          }
+          span{
+            font-size: 0.22rem;color: #999999;line-height: 0.32rem;float: left;margin-left: 0.11rem;
+          }
+        }
+      }
+      p{
+        color: #333333;line-height: 0.42rem;font-size: 0.3rem;margin-top: 0.21rem;overflow: hidden;
+      }
+      .comment-content-maxheight{
+        max-height:0.84rem;
+      }
+      .J_expand{
+        margin-top: 0.1rem;
+        background-color: #e9e9e9;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 17px 5px 5px;
+        color: #999;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAgCAYAAACLmoEDAAACEElEQVRYR+2WwU3DQBBFZzaKfaUDoAKgA6iAUAHxJbs+ESqAVACc7M3FoQKgAkIFQAVAB1yTKDtokC1ZEQmetXMAxadImd19+2f2zyD8oQ//ECtsYNeVrf+t7HA43G+32+9RFH36Kphl2dZsNtvp9Xovkj3EyqZpeo+I24gYSQ9jML4sEWVE9GGM6awVllWZTCbjHPhIApyDPgLAaxAEHWl2xMoWSlhrRwBw6pyL4jjm3yu/JEm6SqkMAG611t3f4n/63xuWN7PWXgLABQBcaq0HywBKceda62sfUF5TC5Y3KBQjopExJloEyTPQcc71q2Rg1UVqw5YezRgA3oIgOOJa5NqeTqdcn7uIeCip7WXAjcAWwM65ESKSc+5GKXVGREhEnTiO331TX17XGCxvWnKKPQB48nnxjZYB12ir1XpZlVaOWVWfbGHz+XxfWsNiZdM0vUZEtqxz6WGlB3lFRLfGmL6kPMSwZcsior4x5qbqgdZahrsCgIHWmm1P9HnBVrGsJRZWuYk03hTy9jkmoucwDE9+ap/5o7tDxIO6FuatbHFzBi5Z1knZppIk2VFK3bGFKaW6db22NuyCZfE09j3cFEMLT1dhGB5Kh5bGy2BJXR4TEY+RPP49+A4ta4ddGG68XnyjTaGK13CtNtVi19Zuq1ykTkwjD6wOgGTtBlailiR2o6xELUnsRlmJWpLYL/t9DDAAxBZbAAAAAElFTkSuQmCC);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40%;
+      }
+    }
+    &:last-child .info{
+      border:0;
+    }
+    .reply{
+      width:100%;background: #f5f5f5 ;border-radius: 0.04rem;padding:0.1rem 0.2rem 0.3rem;float: left;margin-top: 0.15rem;
+      .row{
+        line-height: 0.42rem;font-size: 0.26rem;margin-top: 0.15rem;
+        span{
+          color:#007dd4;padding-right: 0.1rem;
+        }
+      }
+      .btn-all{
+        color:#007dd4;font-size: 0.26rem;line-height: 0.42rem;margin-top: 0.15rem;
+      }
+    }
+  }
+}
+.no-more{
+  color: #999999;font-size: 0.28rem;line-height: 1rem;text-align: center;width:7.02rem;border-top: 1px solid #e6e6e6;margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+<script>
+    <% if (IS_PRODUCTION) { %>
+    var _sportsType_="$!{categoryFirst}";
+    var _typeCode_="$!{videocodes}";
+    var _yiji_="$!{yiji}";
+    var _erji_="$!{erji}";
+    var _sanji_="$!{sanji}";
+    var _newstype_="$!{newstype}";
+    var _isdftt_="$!{isdftt}";
+    <% }else { %>
+    var _sportsType_="比赛录像";
+    var _typeCode_="900377_900233|900233_900233|900091_900233";
+    var _yiji_="900001";
+    var _erji_="";
+    var _sanji_="";
+    var _newstype_="video";
+    var _isdftt_="0";
+    <% } %>
+</script>

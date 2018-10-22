@@ -1,0 +1,56 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  min-height: 100%;
+}
+.main{
+  background-color: #fff;
+}
+
+.content{
+  background: url("../../../public-resource/imgs/hc/close_payment_fail.png") center no-repeat;
+  background-size: auto 40% ;
+  height: 6.6rem;
+  position: relative;
+  .state{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%,0);
+    font-size: .32rem;
+    color: #666;
+    .success{
+      display: none;
+    }
+  }
+}
+.links{
+  text-align: center;
+  font-size: .32rem;
+  line-height: .82rem;
+  a{
+    display: inline-block;
+    padding: 0 .4rem;
+    margin: 0 .2rem;
+    background-color: #f33;
+    color: #fff;
+    border: 1px solid #f33;
+    border-radius: .1rem;
+  }
+}
+
+.state1{
+  .content{
+    background-image: url("../../../public-resource/imgs/hc/close_payment_success.png");
+    .state{
+      .fail{
+        display: none;
+      }
+      .success{
+        display: inline;
+      }
+    }
+  }
+}
+
+

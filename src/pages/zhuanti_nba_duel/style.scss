@@ -1,0 +1,118 @@
+header{
+  height:1.19rem;background: url(../../public-resource/imgs/zhuanti/zhuanti-bg-nba.jpg);
+  background-size: cover;border:0;
+  h2{
+    line-height: 1.19rem;text-align: center;font-size: 0.36rem;color: #ffffff;
+  }
+}
+.main{
+  .menu{
+    height:0.88rem;background-color: #f5f5f5;
+    ul{
+      text-align: center;
+      li{
+        display: inline-block;text-align: center;height:0.88rem;padding:0 0.3rem;color: #333333;font-size: 0.30rem;line-height: 0.88rem;position: relative;vertical-align: middle;
+        &.active{
+          color: #ff3333;
+          &::before{
+            content: '';
+            position: absolute;bottom:0;left: 50%;transform: translateX(-50%);
+            width:0.4rem;height:0.04rem;	background-color: #ff3333;
+          }
+        }
+      }
+    }
+  }
+  .tab-bd{
+    width:100%;
+    &>.item{
+      display: none;
+    }
+    &>.item:first-child{
+      display: block;
+    }
+    .tab-h{
+      text-align: center;margin-top: 0.4rem;
+      ul{
+        li{
+          display: inline-block;width:1rem;height:0.5rem;line-height: 0.5rem;background: #f5f5f5;border-radius: 0.04rem;font-size: 0.24rem;color:#333333;
+          &.active{
+            background: #ff4037;color:#fff;
+          }
+        }
+      }
+    }
+    .sec-news-list {
+      margin-top: 0.15rem;background: #f5f5f5;display: none;
+      li{
+        margin-bottom: 0.2rem;background: #fff;position: relative;max-height:4.85rem ;overflow: hidden;
+        .row1{
+           border-bottom: 1px solid #ededed;padding: 0.2rem 0;
+          img{
+            display: inline-block;width:0.8rem;height:0.8rem;
+          }
+          p{
+            font-size: 0.26rem;
+          }
+          h3{
+            font-size: 0.44rem;margin-top: 0.2rem;
+          }
+        }
+        .row{
+          text-align: left;padding: 0.2rem 0;
+          .num{
+            font-size: 0.32rem;margin-top: 0.1rem;
+          }
+          p{
+            color: #999999;font-size: 0.2rem;margin-top: 0.05rem;
+          }
+          h4{
+            color: #666666;font-size: 0.22rem;font-weight: 400;margin-top: 0.15rem;margin-bottom: 0.1rem;
+          }
+          .state.living{
+            width: 0.86rem;
+            height: 0.36rem;
+            background-color: #ff4037;
+            border-radius: 4px;
+            line-height: 0.36rem;color:#fff;
+            display: inline-block;
+          }
+          .state.nostart{
+            width: 0.86rem;
+            height: 0.36rem;
+            background-color: #fff;
+            line-height: 0.36rem;
+            display: inline-block;
+            color:#007dd4;
+            font-size: 12px;
+          }
+          .state.ending{
+            width: 0.86rem;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 0.26rem;color: #0c8efd;text-align: right;
+            background: url(../../public-resource/imgs/zhuanti/i-huigu.png) no-repeat;background-size: 0.22rem 0.2rem;background-position: 0.05rem center;
+          }
+        }
+        .more{
+          width:1rem;height:0.4rem;background:url(../../public-resource/imgs/zhuanti/i-down-arr.png) no-repeat center center;background-size: 0.2rem 0.2rem;margin: 0.1rem auto 0.1rem;
+        }
+      }
+      &:first-child{
+        display: block;
+      }
+    }
+    .col-1{
+      text-align: center;width:2.5rem;float: left;
+    }
+    .col-2{
+      text-align: center;width:2.5rem;float: left;
+    }
+  }
+}
+#noMore{
+  text-align: center;margin-top: 0.2rem;border-bottom: 0;
+}

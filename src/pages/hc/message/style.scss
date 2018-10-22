@@ -1,0 +1,46 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  min-height: 100%;
+}
+body{
+  background-color: #f5f5f5;
+}
+.main{
+  li{
+    padding: 0.37rem 0.24rem;background: #fff;border-bottom: 1px solid #eee;
+    .img{
+      width: 0.86rem;height:0.86rem;background: url(~public/imgs/hc/i-message2.png) no-repeat;background-size: cover;float: left;position: relative;
+      &.active::after{
+        content: '';
+        width: 0.12rem;
+        height: 0.12rem;
+        background-color: #fb3338;
+        position: absolute;
+        right: 0;top:0;
+        border-radius: 50%;
+      }
+    }
+    .info{
+      float: left;margin-left: 0.22rem;width:5.8rem;
+      h3{
+        font-size: 0.32rem;font-weight: normal;color: #333333;
+        span{
+          float: right;	color: #999999;font-size: 12px;line-height: 0.32rem;
+        }
+      }
+      p{
+        color: #999999;font-size: 12px;margin-top: 0.1rem;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        height: 14px;
+      }
+    }
+    &:nth-child(2){
+      .img{
+        width: 0.86rem;height:0.86rem;background: url(~public/imgs/hc/i-message1.png) no-repeat;background-size: cover;
+      }
+    }
+  }
+}

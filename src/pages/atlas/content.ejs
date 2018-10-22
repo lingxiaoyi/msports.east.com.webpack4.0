@@ -1,0 +1,57 @@
+<% if (IS_PRODUCTION) { %>
+<div id="swiperContainer" class="swiper-container fs-swiper-container">
+    <div class="swiper-wrapper">
+        #set($idx=0)
+        #foreach($img in $!{page.imgs})
+        <div class="swiper-slide">
+            <div class="slide-wrap">
+                <img data-src="$!{page.converthttps($img.src)}" class="swiper-lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="info">
+                #set($index=$idx+1)
+                <h3><span>$index</span><span>/</span><span>$!{page.imgs.size()}</span>$!{page.title}</h3>
+                <p>$!{pzws[$idx]}</p>
+            </div>
+        </div>
+        #set($idx=$idx+1)
+        #end
+    </div>
+</div>
+<% }else { %>
+<div id="swiperContainer" class="swiper-container fs-swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide-wrap">
+                <img data-src="//imgsports.eastday.com/res/upload/img/2018-01-29/b894045d837f30482febd59d66b3df66_320_180.jpeg" class="swiper-lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="info">
+                <h3><span>1</span><span>/</span><span>5</span>  梅西失点巴萨0-1遭绝杀梅西失点巴萨0-1遭绝杀梅西失点巴萨0-1遭绝杀</h3>
+                <p>上半场，丹尼斯-苏亚雷斯推射稍稍偏出。易边再战，保利尼奥疑似受伤被换下场。罗贝托造点，梅西主罚的点球被迭戈-洛佩斯扑出。</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-wrap">
+                <img data-src="//imgsports.eastday.com/res/upload/img/2018-01-29/81a127f9e97db7d373dea38335744e7d_320_180.jpeg" class="swiper-lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+
+            <div class="info">
+                <h3><span>2</span><span>/</span><span>5</span>  梅西失点巴萨0-1遭绝杀</h3>
+                <p>上半场，丹尼斯-苏亚雷斯推射稍稍偏出。易边再战，保利尼奥疑似受伤被换下场。罗贝托造点，梅西主罚的点球被迭戈-洛佩斯扑出。</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide-wrap">
+                <img data-src="//imgsports.eastday.com/res/upload/img/2018-01-29/a04c7b82d10e753d02b936c5b4182958_320_180.jpeg" class="swiper-lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="info">
+                <h3><span>3</span><span>/</span><span>5</span>  梅西失点巴萨0-1遭绝杀</h3>
+                <p>上半场，丹尼斯-苏亚雷斯推射稍稍偏出。易边再战，保利尼奥疑似受伤被换下场。罗贝托造点，梅西主罚的点球被迭戈-洛佩斯扑出。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>

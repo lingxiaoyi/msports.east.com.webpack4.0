@@ -1,0 +1,319 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+
+.main {
+  background: #fff;
+  .person-info {
+    padding: .3rem;
+    height: 1.5rem;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    .img {
+      width: 0.9rem;
+      height: 0.9rem;
+      overflow: hidden;
+      border-radius: 50%;
+      float: left;
+      img {
+        height: 100%;
+        width: 100% ;
+      }
+    }
+    .info {
+      margin-left: 0.2rem;
+      float: left;
+      h3 {
+        font-size: 0.30rem;
+        line-height: .9rem;
+      }
+      p {
+        font-size: 0.26rem;
+        color: #ff0000;
+        margin-top: 0.06rem;
+        i {
+          width: 0.18rem;
+          height: 0.2rem;
+          display: inline-block;
+          background: url(../../../public-resource/imgs/jingcai/i-coin.png);
+          background-size: cover;
+          margin-right: 0.1rem;
+        }
+      }
+    }
+    a, .binded {
+      float: right;
+      line-height: .9rem;
+      font-size: .28rem;
+    }
+    .binded{
+      color: #999999;
+    }
+    a{
+      color: #ff0000;
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      border-bottom: 1px solid #e4e4e4;
+      &:last-of-type {
+        border-bottom: 0 none;
+      }
+      .row1 {
+        background-color: #f5f5f5;
+        height: 0.5rem;
+        line-height: 0.48rem;
+        font-size: 0.24rem;
+        border-bottom: 1px solid #e4e4e4;
+        .tag {
+          width: 1.38rem;
+          height: 100%;
+          font-size: 0.28rem;
+          text-align: center;
+          float: left;
+          background-repeat: no-repeat;
+          background-size: cover;
+          &.waiting {
+            color: #ffffff;
+            background-image: url(../../../public-resource/imgs/jingcai/i-tag-wait.png);
+          }
+          &.guessing {
+            color: #ffffff;
+            background-image: url(../../../public-resource/imgs/jingcai/i-tag-win.png);
+          }
+          &.wrong {
+            color: #ffffff;
+            background-image: url(../../../public-resource/imgs/jingcai/i-tag-wrong.png);
+          }
+          &.cancel {
+            color: #666;
+            background-image: url(../../../public-resource/imgs/jingcai/i-tag-wait.png);
+          }
+        }
+        span {
+          float: left;
+          color: #666666;
+          margin-left: 0.15rem;
+        }
+        .time {
+          float: right;
+          margin-right: 0.25rem;
+          color: #999999;
+        }
+      }
+      .row2 {
+        padding: 0 0.22rem 0.2rem;
+        h3 {
+          padding: 0.3rem 0;
+          color: #333333;
+          font-size: 0.32rem;
+          border-bottom: 1px solid #e4e4e4;
+          font-weight: normal;
+        }
+        .items {
+          font-size: 0.28rem;
+          color: #999999;
+          padding: 0;
+          position: relative;
+          padding-bottom: .3rem;
+          .item {
+            width: 3.2rem;
+            float: left;
+            line-height: 0.28rem;
+            margin-top: 0.3rem;
+            span {
+              color: #333333;
+            }
+          }
+          .bonus {
+            display: none;
+          }
+          .get_moeny{
+            display: none;
+            position: absolute;
+            right: 0.2rem;
+            top: 50%;
+            transform: translate(0,-50%);
+            background-color: #2c9cfd;
+            color: #fff;
+            height: .5rem;
+            width: 1.2rem;
+            border-radius: .25rem ;
+            box-shadow: 0 .03rem .1rem #cee8ff;
+            //box-shadow: 0 .1rem .1rem #666;
+            &.end{
+              background-color: #d2d2d2;
+              box-shadow: none;
+            }
+          }
+        }
+        a {
+          color: #ff0000;
+          margin-top: 0.3rem;
+          font-size: 0.28rem;
+          display: block;
+        }
+      }
+      .watermark {
+        display: none;
+        width: 1.61rem;
+        height: 0.89rem;
+        background-size: cover;
+        position: absolute;
+        right: 0.43rem;
+        bottom: 0.76rem;
+        &.zhong {
+          background-image: url(../../../public-resource/imgs/jingcai/bg-win-price.png);
+        }
+      }
+      & {
+        .tag {
+          &.waiting {
+            display: block;
+          }
+          &.guessing {
+            display: none;
+          }
+          &.wrong {
+            display: none;
+          }
+          &.cancel {
+            display: none;
+          }
+        }
+      }
+      &.result1 {
+        .row1 {
+          .tag {
+            &.waiting {
+              display: none;
+            }
+            &.guessing {
+              display: none;
+            }
+            &.wrong {
+              display: block;
+            }
+            &.cancel {
+              display: none;
+            }
+          }
+        }
+      }
+      &.result3, &.result4 {
+        .tag {
+          &.waiting {
+            display: none;
+          }
+          &.guessing {
+            display: block;
+          }
+          &.wrong {
+            display: none;
+          }
+          &.cancel {
+            display: none;
+          }
+        }
+        .row2 {
+          .bonus {
+            display: block;
+          }
+          .get_moeny{
+            display: block;
+          }
+        }
+        .watermark {
+          display: block;
+        }
+      }
+      &.result5 {
+        .tag {
+          &.waiting {
+            display: none;
+          }
+          &.guessing {
+            display: none;
+          }
+          &.wrong {
+            display: none;
+          }
+          &.cancel {
+            display: block;
+          }
+        }
+      }
+    }
+    .nodata{
+      text-align: center;
+      line-height: 2rem;
+      font-size: .4rem ;
+      color: #ddd;
+    }
+  }
+}
+.upwin{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  .up_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 4.2rem;
+    width: 5.6rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    padding-top: .56rem;
+    text-align: center;
+    i{
+      display: block;
+      margin: 0 auto;
+      height: .8rem;
+      background: url("../../../public-resource/imgs/jingcai/failicon.png") center no-repeat;
+      background-size: auto 100% ;
+    }
+    .tit{
+      font-weight: 600;
+      color: #333;
+      font-size: .34rem ;
+      line-height: .94rem;
+    }
+    p{
+      font-size: .26rem;
+      color: #999;
+    }
+    button{
+      display: block;
+      margin: .42rem auto 0;
+      height: .8rem;
+      width: 5rem;
+      color: #fff;
+      background-color: #fd5954;
+      border-radius: .1rem;
+      box-shadow: 0 .1rem .1rem #fed9d9;
+    }
+  }
+}
+.console {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 0;
+  height: 2.6rem;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  .content {
+    min-height: 100%;
+  }
+}

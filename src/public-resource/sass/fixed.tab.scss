@@ -1,0 +1,78 @@
+.tab-btns{
+  width:7.5rem;height:1rem;background: #fff;border-top: 1px solid #cccccc;position: fixed;bottom:0;z-index: 99;
+  li{
+    width:25%;float: left;
+    a{
+      display: block;
+    }
+    icon{
+      width:100%;height:0.6rem;background-size: cover;display: block;background-repeat: no-repeat;background-position: center center;
+      margin-top: 0.08rem;
+    }
+    p{
+      font-size: 12px;color: #828282;text-align: center;line-height: 12px;
+    }
+    &.active p {color: #fb3338;}
+    &:nth-child(1){
+      icon{
+        background-image: url(~public/imgs/hc/i-home.png);background-size: 0.4rem 0.41rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-home-a.png);
+        }
+      }
+    }
+    /*&:nth-child(2){
+      icon{
+        background-image: url(~public/imgs/hc/i-expert.png);background-size: 0.48rem 0.42rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-expert-a.png);
+        }
+      }
+    }*/
+    &:nth-child(2){
+      icon{
+        background-image: url(~public/imgs/hc/i-match.png);background-size: 0.44rem 0.42rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-match-a.png);
+        }
+      }
+    }
+    &:nth-child(3){
+      icon{
+        background-image: url(~public/imgs/hc/i-find.png);background-size: 0.48rem 0.48rem;
+        background-position: center 0.05rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-find-a.png);
+        }
+      }
+    }
+    &:nth-child(4){
+      icon{
+        background-image: url(~public/imgs/hc/i-data.png);background-size: 0.48rem 0.48rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-data-a.png);
+        }
+      }
+    }
+    &:last-child{
+      icon{
+        background-image: url(~public/imgs/hc/i-my.png);background-size: 0.41rem 0.41rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-my-a.png);
+        }
+      }
+    }
+  }
+}

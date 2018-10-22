@@ -1,0 +1,251 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+
+html {
+  background: url("../../../public-resource/imgs/jingcai/successBG_2.png") top center ;
+  background-size: 100% auto;
+
+}
+
+body {
+  background: url("../../../public-resource/imgs/jingcai/successBG.png") top center no-repeat;
+  background-size: 100% auto;
+  padding-top: 2rem;
+}
+
+.info_header {
+  h3 {
+    font-size: .32rem;
+  }
+}
+
+.part1 {
+  position: relative;
+  height: 5.4rem;
+  width: 7rem;
+  padding-top: 1rem;
+  margin: 0 auto ;
+  background: #fff;
+  border-radius: .1rem;
+  box-shadow: 0 0 .4rem #000;
+  .userInfo {
+    height: 2.3rem;
+    width: 100%;
+    margin-top: -1.7rem;
+    .img {
+      margin: 0 auto;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: .08rem solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+      text-align: center;
+      font-size: .3rem;
+      line-height: 1rem;
+      color: #666;
+    }
+  }
+  .word {
+    text-align: center;
+    color: #000;
+    font-size: .32rem;
+    line-height: 1;
+  }
+  .content {
+    position: relative;
+    margin: 0.4rem auto 0;
+    padding: .4rem 0;
+    background-color: #f1f1f1;
+    width: 6.5rem;
+    height: 2.6rem;
+    font-size: .24rem;
+    border-radius: .1rem;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 1.8rem;
+      background-color: #d8d8d8;
+      top: .4rem;
+      left: 2.9rem;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0;
+      clear: both;
+    }
+    .left{
+      float: left;
+      width: 2.9rem;
+      height: 100%;
+      padding: 0 .3rem;
+      text-align: center;
+      div{
+        float: left;
+        height: 100%;
+      }
+      .h,.v{
+        width: .8rem;
+        color: #666;
+        img{
+          display: block;
+          width: 100%;
+          border-radius: .08rem;
+          margin-bottom: .3rem;
+        }
+      }
+      .vs{
+        width: .5rem;
+        line-height: 1.6rem;
+        color: #999;
+      }
+    }
+    .right{
+      float: right;
+      width: 3.6rem;
+      padding: .26rem ;
+      height: 100%;
+      .title{
+        height: .6rem;
+        line-height: .28rem;
+        color: #333;
+      }
+      .sel{
+        margin-top: .2rem;
+        line-height: .36rem;
+        b{
+          font-weight: 600;
+          color: #f52d2d;
+        }
+      }
+    }
+  }
+}
+.part2{
+  height: 4rem;
+  padding-top: .3rem;
+  .tit{
+    //height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: .42rem;
+    color: #fff;
+    //background: url("../../../public-resource/imgs/jingcai/success_coin.png") center no-repeat;
+    background-size: 2.7rem auto;
+    b{
+      color: #f1fa08;
+    }
+  }
+  .share{
+    display: none;
+    margin: 0 auto .4rem;
+    height: 1.1rem;
+    width: 6.5rem;
+    background: url("../../../public-resource/imgs/jingcai/success_btn.png") center no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .32rem ;
+    font-weight: 600;
+    color: #234e27;
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .jy,.djs{
+    color: #fff;
+    text-align: center;
+    font-size: .24rem;
+  }
+  .jy{
+    line-height: .8rem;
+    b{
+      color: #e6f309;
+    }
+  }
+  .djs{
+    line-height: .5rem;
+
+  }
+}
+.part3{
+  margin-left: .25rem;
+  height: 6rem;
+  padding-left: .3rem;
+  padding-top: 1.6rem;
+  background: url("../../../public-resource/imgs/jingcai/success_part3.png") top center no-repeat;
+  background-size:100% auto;
+  ul{
+    width: 6.4rem;
+    height: 3.7rem;
+    overflow-y: scroll;
+    li{
+      height: 1.17rem;
+      //background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      &:last-of-type{
+        border-bottom: 0 none;
+      }
+      div{
+        height: 100%;
+      }
+      .fl{
+        padding-top: .16rem;
+        width: 4rem;
+        font-size: .28rem;
+        line-height: .42rem;
+        span{
+          font-size: .24rem ;
+          line-height: 1;
+        }
+        img{
+          float: left;
+          margin-right: .1rem ;
+          border-radius: 50%;
+          width: .8rem;
+          height: .8rem;
+          border: .03rem solid rgba(255,255,255,.3);
+        }
+      }
+      .fr{
+        padding-left: 1rem;
+        font-size: .28rem;
+        line-height: 1.16rem;
+        background: url("../../../public-resource/imgs/jingcai/success_jy.png") left center no-repeat;
+        background-size: auto .4rem ;
+      }
+    }
+    .self{
+        .fr{
+          background: none;
+        }
+    }
+  }
+}
+.console{
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 2.6rem;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  .content{
+    min-height: 100%;
+  }
+}

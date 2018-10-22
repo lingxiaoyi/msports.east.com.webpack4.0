@@ -1,0 +1,213 @@
+<% if (IS_PRODUCTION) { %>
+<article id="J_article" class="J-article article">
+    <div id="title">
+        <div class="article-title">
+            <h1 class="title">$!{page.title}</h1>
+        </div>
+        <div class="article-src-time">
+            <span class="src">$!{page.pageSource}</span>
+            <span class="date">$!{time}</span>
+        </div>
+    </div>
+    <div id="content" class="J-article-content article-content">
+        #set($idx=0)
+        #foreach($zw in $!{zws})
+        #if($zw == "" || $zw == "null")
+        #elseif($zw.contains("$#imgidx"))
+        #set($img = $!{imgs.get($idx).src})
+        #set($gifimg = $!gifimglist[$idx])
+        #set($paddingValue=$!{imgs.get($idx).imgheight}*1.0/$!{imgs.get($idx).imgwidth}*100)
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:$paddingValue%;" href="javascript:;" data-size="$!{imgs.get($idx).imgwidth} x $!{imgs.get($idx).imgheight}">
+                <img width="100%" alt="$!{page.title}" src="$!{page.converthttps($img)}" data-weight="588" data-width="$!{imgs.get($idx).imgwidth}"
+                    data-height="$!{imgs.get($idx).imgheight}" gif-minisrc="$!{page.converthttps($gifimg)}" data-src="$!{page.converthttps($img)}">
+            </a>
+        </figure>
+        #set($idx=$idx+1)
+        #else
+        <p class="section txt">$zw</p>
+        #end
+        #end
+    </div>
+    <p class="article-tag clearfix">
+        #foreach($param in ${tagMap})
+        <a href="${HOME_URL}query-tag.html?typecode=${key}&name=${value}">${value} </a>
+        #end
+    </p>
+</article>
+<% }else { %>
+<article id="J_article" class="J-article article">
+    <div id="title">
+        <div class="article-title">
+            <h1 class="title">好先生第二部《恋爱先生》开拍啦！胡歌将取代孙红雷，搂着江疏影</h1>
+        </div>
+        <div class="article-src-time">
+            <span class="src">来源：青衫负雪旗</span>
+            <span class="date">09-20 14:36</span>
+        </div>
+        <div class="lottery-box">
+        </div>
+    </div>
+
+    <div id="content" class="J-article-content article-content">
+        <p class="section txt">
+            北京时间3月24日，16-17赛季NBA常规赛继续进行随着热剧<a href="//msports.eastday.com/query-tag.html?typecode=900242&amp;name=詹姆斯&from=h5maowenben">詹姆斯</a>北京时间3月24日，16-17赛季NBA常规赛继续进行好先生的完结，其在中国电视剧中引起强烈反响！一时之间孙红雷被誉为国民老公风头一时无俩而好先生一剧被誉为“现象级”神剧，其犀利言辞胜似美剧的节奏感，无不给观众一个新的感官感受，而且在感情上给观众眼前焕然一新的感觉。而据好先生编剧所说，其实好先生是一个三部曲。现着手拍摄第二部。小编看来第一部都这么火这第二三部显然火是必不可少得了而好先生一剧被誉为“现象级”神剧，其犀利言辞胜似美剧的节奏感，</p>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 65.71%;" href="javascript:;" data-size="595x391">
+                <img width="100%" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
+                    data-weight="595" data-width="595" data-height="391" data-echo="//02.imgmini.eastday.com/mobile/20160920/20160920143629_efc51d5f1b0f77e8aa79a55806d8a89e_1.jpeg"
+                    alt="亚足联发文祝贺巴林主裁判成功执法，他的判罚导致尼昂的入球">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 66.33%;" href="javascript:;" data-size="588x390">
+                <img width="100%" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
+                    data-weight="588" data-width="588" data-height="390" data-echo="//02.imgmini.eastday.com/mobile/20160920/20160920143629_efc51d5f1b0f77e8aa79a55806d8a89e_1.jpeg"
+                    alt="亚足联发文祝贺巴林主裁判成功执法，他的判罚导致尼昂的入球">
+            </a>
+        </figure>
+        <!--<figure class="section img">
+            <a class="img-wrap" style="padding-bottom:50.0%;" href="javascript:;" data-size="400 x 200">
+                <img width="100%" alt="默滕斯世界波助比利时大胜，凯恩补时旧主，英格兰险胜弱旅" src="" data-weight="588" data-width="400" data-height="200" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_2e12f9eec114386704a1ebd0588bfb52_2.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:50.0%;" href="javascript:;" data-size="400 x 200">
+                <img width="100%" alt="默滕斯世界波助比利时大胜，凯恩补时旧主，英格兰险胜弱旅" src="" data-weight="588" data-width="400" data-height="200" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_7295947382f2fb72675350dc1f2679ee_3.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:50.0%;" href="javascript:;" data-size="400 x 200">
+                <img width="100%" alt="" src="" data-weight="588" data-width="400" data-height="200" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_d8eed4cabb032e122ec86033abf851c4_4.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:50.0%;" href="javascript:;" data-size="400 x 200">
+                <img width="100%" alt="" src="" data-weight="588" data-width="400" data-height="200" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_965e77cc17afb90a3a8694a7b508b157_5.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:50.0%;" href="javascript:;" data-size="400 x 200">
+                <img width="100%" alt="" src="" data-weight="588" data-width="400" data-height="200" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_145f6601486b2426f9413c19ef593d2a_6.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom:49.09560723514212%;" href="javascript:;" data-size="387 x 190">
+                <img width="100%" alt="默滕斯世界波助比利时大胜，凯恩补时旧主，英格兰险胜弱旅" src="" data-weight="588" data-width="387" data-height="190" gif-minisrc="" data-echo="https://imgsports.eastday.com/sports/img/20180619/20180619044222_5f05cc381b83612329db434c54577cd1_13.gif">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 65.71%;"
+               href="javascript:;"
+               data-size="595x391">
+                <img width="100%" alt=""
+                     src=""
+                     data-weight="595" data-width="595" data-height="391" data-echo="//02.imgmini.eastday.com/mobile/20160920/20160920143629_efc51d5f1b0f77e8aa79a55806d8a89e_1.jpeg">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 65.71%;"
+               href="javascript:;"
+               data-size="595x391">
+                <img width="100%" alt=""
+                     src=""
+                     data-weight="595" data-width="595" data-height="391" data-echo="//02.imgmini.eastday.com/mobile/20160920/20160920143629_efc51d5f1b0f77e8aa79a55806d8a89e_1.jpeg">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 65.71%;"
+               href="javascript:;"
+               data-size="595x391">
+                <img width="100%" alt=""
+                     src=""
+                     data-weight="595" data-width="595" data-height="391" data-echo="//02.imgmini.eastday.com/mobile/20160920/20160920143629_efc51d5f1b0f77e8aa79a55806d8a89e_1.jpeg">
+            </a>
+        </figure>
+        <figure class="section img">
+            <a class="img-wrap" style="padding-bottom: 65.71%;"
+               href="javascript:;"
+               data-size="595x391">
+                <img width="100%" alt=""
+                     src=""
+                     data-weight="595" data-width="595" data-height="391" data-echo="//imgsports.wa5.com/res/upload/ue/image/20170922/1506093290239106.jpg">
+            </a>
+        </figure>-->
+    </div>
+
+    <!-- <div class="copyright">来源：东方体育   欢迎分享，转载请注明出处。</div>-->
+    <p class="article-tag clearfix">
+        <a href="query-tag.html?typecode=900049&name=足球">勇士</a>
+        <a href="query-tag.html?typecode=900477&name=中国足球">凯尔特人</a>
+    </p>
+</article>
+<% } %>
+<!-- news_check 适配安卓 -->
+<div id="news_check">
+    <!-- 猜你感兴趣 -->
+    <div id="J_interest_news" class="interest-news"></div>
+    <!-- 热点新闻 -->
+    <div id="J_hot_news" class="hot-news">
+        <!--<div id="hotComment" class="comment-list">
+            <ul></ul>
+            <a class="get-more" href="">打开App查看全部热门评论</a>
+        </div>-->
+    </div>
+</div>
+<!-- 图片浏览 -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 双十一 -->
+<div class="advertisement_cover">
+    <div class="advertisement_1">
+        <div class="content">
+            <!-- <div class="left_bk"></div> -->
+            <div class="right_cs">×</div>
+            <a class="url_1" href="javascript:void(0)">
+                <div><span></span></div>
+                <div>
+                    <div>天猫<span>618</span>年中大促</div>
+                    <div><span><span></div>
+                    <!-- <div><span>复制口令→打开淘宝→即可参与</span></div> -->
+                </div>
+            </a>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+                <a id="advertisement_1" href="https://s.click.taobao.com/t?e=m%3D2%26s%3DGCcB4cC2yGocQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAqlHSL4Fo%2BiiGcvgIVjTTAfXO%2BqAgJq5vM8ddJICenQ6RcYLL5pMoFgo07GipboIMlH%2FhwblmzC5AgLbN2peQYN8isIqg9litAZn%2By0keumoL1zhcxbolbm1jhC3ZxnWVeoPXyFbMSxd">查看</a>
+            </div>
+        </div>
+    </div>
+    <div class="advertisement_2">
+        <a href="javascript:void(0)"></a>
+    </div>
+    <div class="advertisement_3">
+        <!-- <div><span>广告</span></div> -->
+        <div class="skip"><span>跳过</span></div>
+        <div><a id="advertisement_3" href="https://s.click.taobao.com/t?e=m%3D2%26s%3DGCcB4cC2yGocQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAqlHSL4Fo%2BiiGcvgIVjTTAfXO%2BqAgJq5vM8ddJICenQ6RcYLL5pMoFgo07GipboIMlH%2FhwblmzC5AgLbN2peQYN8isIqg9litAZn%2By0keumoL1zhcxbolbm1jhC3ZxnWVeoPXyFbMSxd"></a></div>
+    </div>
+</div>

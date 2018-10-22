@@ -1,0 +1,32 @@
+
+.content-main {
+  padding: 0 0.2rem;
+  padding-bottom: 83px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.content-main p {
+  font-size: 16px;
+  line-height: 36px;
+  color: #646464;
+  margin: 16px 0 0;
+}
+.content-main .underLine {
+  font-weight: 700;
+}
+.content-main h3 {
+  line-height: 2;
+  margin: 16px 0 0;
+}
+.content-main h2 {
+  margin-top: 0.4rem;
+  line-height: 1;
+  margin-bottom: 0.54rem;
+}
+.content-main h2, .content-main h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>东方体育</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobwww.baidu.comile-web-app-status-bar-style">
+    <script>
+        (function (doc, win) {
+            // 分辨率Resolution适配
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750 && clientWidth <= 1000 ) {
+                        docEl.style.fontSize = 100 + 'px';
+                    } else if(clientWidth >= 1000){
+                        docEl.style.fontSize = 100 * (1000 / 750) + 'px';
+                    }else{docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';}
+                };
+            // Abort if browser does not support addEventListener
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            recalc();
+        })(document, window);
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c896b53ffd7c03b0ca07eadc357aa772";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, nav, section, article, aside, footer, figure, figcaption, menu, button { margin: 0;padding: 0 }
+        body{ font-family: "Hiragino Sans GB", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; color: #666666; background-color: #fff;font-size: 0.2rem;
+            position: relative;}
+        table { border-collapse: collapse; border-spacing: 0 }
+        fieldset, img { border: 0 }
+        hr{border:0;height:1px; background-color: #D9D9D9;}
+        ul, li, ol { list-style: none; }
+        input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit }
+        button, input { border: 0;background: 0; -webkit-appearance: none;outline: 0 }
+        a { -webkit-touch-callout: none; text-decoration: none; color: #666666; outline: 0 }
+        a:hover{ text-decoration: none; }
+        em, i { font-style: normal }
+        em { color: #ff7200 }
+        ::-webkit-input-placeholder { color: #999 }
+        label {cursor:pointer;}
+        *{ box-sizing:border-box; -ms-word-break:break-all;word-break:break-all;-ms-word-wrap:break-word;word-wrap:break-word;}
+        .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+        *html .clearfix{height:1%; zoom: 1;}
+        .clearfix{display:block; zoom: 1;}
+        /*正文样式*/
+        html{height:100%;}
+        body{height:100%;overflow:hidden;}
+        .main a{
+            display:block;width:100%;height:100%;overflow: hidden;position: fixed;
+        }
+        .main .img{
+            width:7.5rem;
+        }
+        .main .img img{
+            width:100%;    display: block;
+        }
+        .tishi{
+            width: 5rem;
+            height: 1rem;
+            font-size: 0.32rem;
+            background: rgba(0,0,0,0.8);
+            color: #fff;
+            text-align: center;
+            line-height: 1rem;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            border-radius: 0.06rem;
+            transform: translateX(-50%) translateY(-50%);
+            display: none;
+        }
+        .btn-tishi{
+            width:4rem;height:0.7rem;line-height: 0.7rem;border:2px solid #fff;border-radius: 0.08rem;text-align: center;font-size: 0.36rem;position: absolute;top:10rem;color:#fff;left: 1.75rem;z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <a href="" class="btn-down" id="J_download">
+        <div class="img"><img src="//msports.eastday.com/h5/img/download-pic.png" alt=""/></div>
+        <div class="btn-tishi">
+            立即下载
+        </div>
+    </a>
+</div>
+<script>
+    var u = navigator.userAgent, app = navigator.appVersion;
+    var ua = navigator.userAgent.toLowerCase();
+    var $J_download= document.getElementById('J_download');
+
+    /** 封装ajax函数
+     * @param {string}opt.type http连接的方式，包括POST和GET两种方式
+     * @param {string}opt.url 发送请求的url
+     * @param {boolean}opt.async 是否为异步请求，true为异步的，false为同步的
+     * @param {object}opt.data 发送的参数，格式为对象类型
+     * @param {function}opt.success ajax发送并接收成功调用的回调函数
+     **/
+    function ajax(opt) {
+        opt = opt || {}
+        opt.method = opt.method.toUpperCase() || 'POST'
+        opt.url = opt.url || ''
+        opt.async = opt.async || true
+        opt.data = opt.data || null
+        opt.success = opt.success || function() {}
+        var xmlHttp = null
+        if (XMLHttpRequest) {
+            xmlHttp = new XMLHttpRequest()
+        } else {
+            xmlHttp = new ActiveXObject('Microsoft.XMLHTTP')
+        }
+        var params = []
+        for (var key in opt.data) {
+            params.push(key + '=' + opt.data[key])
+        }
+        var postData = params.join('&')
+        if (opt.method.toUpperCase() === 'POST') {
+            xmlHttp.open(opt.method, opt.url, opt.async)
+            xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8')
+            xmlHttp.send(postData)
+        } else if (opt.method.toUpperCase() === 'GET') {
+            xmlHttp.open(opt.method, opt.url + '?' + postData, opt.async)
+            xmlHttp.send(null)
+        }
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                opt.success(xmlHttp.responseText)
+            }
+        }
+    }
+    function getUrlParam(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)') // 构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg) // 匹配目标参数
+        if (r != null) return decodeURI(r[2])
+        return null // 返回参数值
+    }
+
+    if (getUrlParam('qid') === 'pcqr') {
+        if(ua.match(/MicroMessenger/i)=="micromessenger") {//微信下
+            $J_download.setAttribute('href', 'http://a.app.qq.com/o/simple.jsp?pkgname=com.songheng.eastsports');
+            window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.songheng.eastsports'
+        } else {
+            if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){//苹果
+                $J_download.setAttribute('href', 'https://itunes.apple.com/cn/app/id1239732694?mt=8');
+                window.location.href='https://itunes.apple.com/cn/app/id1239732694?mt=8'
+            }else{//安卓
+                $J_download.setAttribute('href','http://msports.eastday.com/data/apk/dongfangtiyu_pc.apk');
+                window.location.href='http://msports.eastday.com/data/apk/dongfangtiyu_pc.apk'
+            }
+        }
+    }else{
+        ajax({
+            method: 'GET',
+            url: '//msports.eastday.com/data/log_app/log_h5.js',
+            data: {},
+            success: function(result) {
+                var download_url=JSON.parse(result)[0].download_url
+                if(ua.match(/MicroMessenger/i)=="micromessenger") {//微信下
+                    $J_download.setAttribute('href', 'http://a.app.qq.com/o/simple.jsp?pkgname=com.songheng.eastsports');
+                    window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.songheng.eastsports'
+                } else {
+                    if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){//苹果
+                        $J_download.setAttribute('href', 'https://itunes.apple.com/cn/app/id1239732694?mt=8');
+                        window.location.href='https://itunes.apple.com/cn/app/id1239732694?mt=8'
+                    }else{//安卓
+                        $J_download.setAttribute('href',download_url);
+                        window.location.href=download_url
+                    }
+                }
+            }
+        })
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

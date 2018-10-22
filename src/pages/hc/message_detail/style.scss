@@ -1,0 +1,60 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  min-height: 100%;
+}
+body{
+  background-color: #f5f5f5;
+}
+.main{
+  li{
+    padding: 0 0.24rem;
+    .time{
+      width: 1.70rem;
+      height: 0.42rem;
+      background-color: #e3e3e3;
+      border-radius: 0.21rem;
+      text-align: center;
+      line-height: 0.42rem;
+      color: #999999;
+      font-size: 12px;margin: 0.3rem auto;
+    }
+    .row{
+      &.feedback{
+        .img{
+          width: 0.86rem;height:0.86rem;background: url(~public/imgs/hc/i-message1.png) no-repeat;background-size: 0.86rem 0.86rem;float: left;position: relative;
+        }
+      }
+      .img{
+        width: 0.86rem;height:0.86rem;background: url(~public/imgs/hc/i-message2.png) no-repeat;background-size: 0.86rem 0.86rem;float: left;position: relative;
+      }
+      .info{
+        float: left;margin-left: 0.3rem;width:4.92rem;
+        padding:0.3rem 0.32rem;line-height: 0.36rem;font-size: .28rem;background: #fff;position: relative;
+        &:after {
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          border: solid transparent;
+          pointer-events: none;
+          content: "";
+          border-color: rgba(136, 183, 213, 0);
+          border-right-color: #fff;
+          border-width: 0.12rem;
+          top: 0.18rem;
+          right: 100%;
+        }
+        a{
+          color: #fb3338;
+        }
+        h4{
+          background-color: #f1f1f1;
+          border-radius: 0.06rem;
+          padding: 0.15rem 0.2rem;line-height: .36rem;color: #999999;font-size: 0.26rem;font-weight: normal;
+          font-stretch: normal;margin-top: 0.15rem;
+        }
+      }
+    }
+  }
+}

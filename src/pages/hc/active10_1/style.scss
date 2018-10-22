@@ -1,0 +1,431 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+
+.main {
+  position: relative;
+  .top {
+    height: 6rem;
+    background: url("../../../public-resource/imgs/hc/active10_1/top.png") center -1rem no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    p {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 5.2rem;
+      transform: translate(-50%, -50%);
+      margin-top: -.46rem;
+      margin-left: .04rem;
+      font-size: .4rem;
+      line-height: 1rem;
+      background: url("../../../public-resource/imgs/hc/active10_1/djs.png") center no-repeat;
+      background-size: 100% auto;
+      span {
+        width: 1.34rem;
+        text-indent: .3rem;
+        float: right;
+      }
+    }
+    &:before {
+      content: '';
+      display: block;
+      height: 2.6rem;
+      background: url("../../../public-resource/imgs/hc/active10_1/top.png") top center no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  .title {
+    padding: .5rem 0 .3rem;
+    text-align: center;
+    h3 {
+      height: .6rem;
+      width: 4rem;
+      padding: 0 .3rem;
+      display: inline-block;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 1.2rem;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+      }
+      &:before {
+        right: 100%;
+        margin-right: .1rem;
+        background-position: right center;
+        background-image: url("../../../public-resource/imgs/hc/active10_1/tit_l.png");
+      }
+      &:after {
+        left: 100%;
+        margin-left: -.16rem;
+        background-position: left center;
+        background-image: url("../../../public-resource/imgs/hc/active10_1/tit_r.png");
+      }
+      b {
+        position: absolute;
+        height: .3rem;
+        bottom: 0.1rem;
+        left: 0;
+        right: 0;
+        background-color: #f7d6c4;
+        border-radius: .15rem;
+      }
+      p {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        transform: translate(-50%, 0);
+        color: #1b1b1b;
+        font-size: .34rem;
+        line-height: .42rem;
+        height: .42rem;
+        z-index: 1;
+      }
+    }
+  }
+  .rule {
+    position: absolute;
+    width: .7rem;
+    height: 1rem;
+    top: 7.8rem;
+    left: 0;
+    border-top-right-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    background-image: linear-gradient(135deg, #5eaaff, #c117f9);
+    padding-top: .12rem;
+    text-align: center;
+    color: #fff;
+    font-size: .26rem;
+    line-height: .36rem;
+    font-weight: 700;
+    z-index: 1;
+  }
+  .hongbao {
+    display: none;
+    position: absolute;
+    width: .7rem;
+    height: 1.1rem;
+    top: 5.8rem;
+    left: 0;
+    background: url("../../../public-resource/imgs/hc/active10_1/hongbao.png") top center no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 48%;
+      bottom: 10%;
+      transform: translate(-50%, -10%);
+      width: .52rem;
+      height: .52rem;
+      background: url("../../../public-resource/imgs/hc/active10_1/hb3.png") top center no-repeat;
+      background-size: 100% auto;
+      animation: hbImg 2s infinite;
+    }
+     @keyframes hbImg {
+         0% {background-position: top center;}
+        49.95% {background-position: top center;}
+        50% {background-position: bottom center;}
+       100% {background-position: bottom center;}
+     }
+  }
+  .rule_win {
+    display: none;
+    position: fixed;
+    width: 100%;
+    border-radius: .1rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 6.5rem;
+      padding: 0 .5rem;
+      background-color: #fff;
+      border-radius: .1rem;
+      .title {
+        h3 {
+          width: 2rem;
+        }
+      }
+      .rule1 {
+        color: #ff3749;
+        font-weight: 700;
+        font-size: .3rem;
+        line-height: .5rem;
+      }
+      .rule2 {
+        color: #1d1d1d;
+        font-size: .28rem;
+        line-height: .5rem;
+      }
+      .rule3 {
+        padding-left: .2rem;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          top: 0%;
+          left: 0;
+          transform: translate(0, .24rem);
+          width: .08rem;
+          height: .08rem;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+        }
+      }
+      .colse {
+        margin: 0.3rem auto;
+        height: .66rem;
+        width: 2.64rem;
+        line-height: .66rem;
+        color: #fff;
+        font-size: .36rem;
+        line-height: .66rem;
+        text-align: center;
+        border-radius: .33rem;
+        background-image: linear-gradient(to left, #ff5f53, #ff475d);
+      }
+    }
+  }
+  .yuq {
+    &.s3, &.s4 {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        left: -.3rem;
+        top: -.14rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-position: center;
+        background-size: 100% auto;
+      }
+    }
+    &.s3:before {
+      background-image: url("../../../public-resource/imgs/hc/active10_1/get_ico.png");
+    }
+    &.s4:before {
+      background-image: url("../../../public-resource/imgs/hc/active10_1/end_ico.png");
+    }
+  }
+  .parts {
+    .list {
+      .yuq {
+        height: 2.5rem;
+        width: 6.1rem;
+        margin: 0 auto;
+        background: center top no-repeat;
+        background-size: 100% auto;
+        p span {
+          opacity: .7;
+        }
+      }
+      .yuq_p1_1 {
+        &.s1 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_1_1.png");
+        }
+        &.s2 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_1_2.png");
+        }
+        &.s3 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_1_3.png");
+        }
+        &.s4 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_1_4.png");
+        }
+      }
+      .yuq_p1_8 {
+        &.s1 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_8_1.png");
+        }
+        &.s2 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_8_2.png");
+        }
+        &.s3 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_8_3.png");
+        }
+        &.s4 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p1_8_4.png");
+        }
+      }
+      .yuq_p2 {
+        &.s1 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p2_1.png");
+        }
+        &.s2 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p2_2.png");
+        }
+        &.s3 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p2_3.png");
+        }
+        &.s4 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p23_4.png");
+        }
+      }
+      .yuq_p3 {
+        &.s1 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p3_1.png");
+        }
+        &.s2 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p3_2.png");
+        }
+        &.s3 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p3_3.png");
+        }
+        &.s4 {
+          background-image: url("../../../public-resource/imgs/hc/active10_1/yhq_p23_4.png");
+        }
+      }
+    }
+  }
+  .part1 {
+    .yuq {
+      position: relative;
+      p {
+        position: absolute;
+        left: .4rem;
+        bottom: .4rem;
+        color: #fff;
+        font-size: .24rem;
+        line-height: .36rem;
+        span {
+          display: inline-block;
+          font-size: .24rem;
+          transform-origin: left center;
+          transform: scale(.8, .8);
+        }
+      }
+      &.s3, &.s4 {
+        &:before {
+          left: -.3rem;
+          top: -.1rem;
+        }
+      }
+    }
+  }
+  .part2, .part3 {
+    .yuq {
+      b {
+        float: left;
+        font-size: 1rem;
+        line-height: 2.1rem;
+        height: 2rem;
+        width: 2.2rem;
+        text-indent: .8rem;
+      }
+      p {
+        float: left;
+        height: 2rem;
+        width: 2.6rem;
+        padding: .56rem 0.1rem 0;
+        font-size: .24rem;
+        line-height: .3rem;
+        span {
+          padding-top: .14rem;
+          display: inline-block;
+          font-size: .24rem;
+          line-height: .3rem;
+          transform-origin: left center;
+          transform: scale(.9, .9);
+        }
+      }
+    }
+    .yuq.s3, .yuq.s4 {
+      b {
+        color: #cfcfcf;
+      }
+      p {
+        color: #929193;
+      }
+    }
+  }
+  .part2 {
+    .title h3 b {
+      background-color: #e2d6f6;
+    }
+    .yuq {
+      b {
+        color: #7f2ee4;
+      }
+      p {
+        color: #5460cf;
+      }
+    }
+  }
+
+  .part3 {
+    .yuq {
+      b {
+        color: #ff3e4b;
+      }
+      p {
+        color: #ff3e4b;
+      }
+    }
+  }
+  .bottom {
+    height: 2rem;
+    background: url("../../../public-resource/imgs/hc/active10_1/bottom.png") center bottom no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.noTime {
+  .top {
+    height: 7rem;
+    background-position: center top;
+    p {
+      display: block;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  .hongbao {
+    top: 6.8rem;
+  }
+  .rule {
+    top: 6.8rem;
+  }
+  &.downApp {
+    .rule {
+      top: 8.8rem;
+    }
+  }
+}
+
+.downApp {
+  .hongbao {
+    display: block;
+  }
+}
+
+.fixed {
+  .rule {
+    position: fixed;
+    top: .8rem;
+    z-index: 10;
+  }
+  &.downApp {
+    .hongbao {
+      position: fixed;
+      top: .8rem;
+      z-index: 10;
+    }
+    .rule {
+      top: 2.8rem;
+    }
+  }
+}

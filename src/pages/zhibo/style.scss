@@ -1,0 +1,48 @@
+body{
+  background: #3e9409;
+}
+.main{
+  width:7.5rem;height:100%;background: url(../../public-resource/imgs/zhibo/zhibo-bg.jpg) no-repeat;background-size: cover;overflow: hidden;
+  .head{
+    text-align: center;margin-top: 0.4rem;
+    .sub1{
+      display: inline-block; text-align: center;margin-top: 0.2rem;
+      .img{
+        width: .8rem; display: inline-block;
+        img{
+          width:100%;
+        }
+      }
+      p{
+        font-size: 0.24rem;height:0.34rem;border-radius: 0.34rem;background: #e4e3d1;padding:0 0.4rem;margin-top: 0.1rem;max-width: 2rem;overflow: hidden;
+      }
+    }
+    .info{
+      width:3.4rem;overflow: hidden;display: inline-block;vertical-align: 0.1rem;
+      h6{
+        color:#666666;font-size: 0.2rem;
+      }
+      h2{
+        color:#000;font-size: 0.3rem;margin-top: 0.24rem;
+      }
+      h3{
+        color:#666666;font-size: 0.28rem;margin-top: 0.1rem;
+        i{
+          display: inline-block;width:0.24rem;height:0.24rem;background: url(../../public-resource/imgs/zhibo/i-time.png) no-repeat;background-size: cover;vertical-align: -0.02rem;margin-right: 0.1rem;
+        }
+      }
+    }
+  }
+  .v-box{
+    width:6.9rem;height:4rem;margin:0.8rem  auto 0;border: 4px solid #fff;
+  }
+  .content{
+    padding:0.9rem 0.25rem;
+    h3{
+      background: url(../../public-resource/imgs/zhibo/zhibo-title.png) no-repeat;background-size: cover;width:2.69rem;height:0.55rem;line-height: 0.55rem;text-indent:0.65rem ;color:#010101;font-size: 0.28rem;
+    }
+    p{
+      color:#010101;font-size: 0.28rem;line-height: 0.6rem;margin-top: 0.2rem;
+    }
+  }
+}

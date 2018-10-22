@@ -1,0 +1,68 @@
+//@import "~public/sass/hc/common.scss";
+//@import "~public/sass/hc/message.scss";
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+.header{
+  height: .8rem;
+  text-align: center;
+  color: #333;
+  font-size: .32rem ;
+  line-height: .8rem;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+  .back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4rem;
+    text-align: left;
+    text-indent: .68rem;
+    color: #999;
+    height: 100%;
+    background: url("../../../public-resource/imgs/jingcai/i_back_icon.png") .4rem center no-repeat;
+    background-size: .18rem .3rem ;
+  }
+}
+.main{
+  padding:  .2rem  .6rem .5rem;
+  h3{
+    font-size: .34rem;
+    line-height: .6rem;
+  }
+  p{
+    font-size: .3rem ;
+    line-height: .52rem;
+    color: #333;
+    margin-bottom: .24rem;
+    position: relative;
+    i{
+      position: absolute;
+      left: -.4rem;
+      top: 0;
+      font-weight: 600;
+      color: #b4b4b4;
+    }
+  }
+  .mb2{
+    margin-top: .6rem;
+  }
+  .rule{
+    text-indent: .4rem;
+    margin-bottom: .15rem;
+  }
+  .rule2{
+    margin-top: 0rem;
+    text-indent: 2em;
+  }
+  .rule3{
+    color: #252525;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    text-indent: .4rem;
+  }
+}

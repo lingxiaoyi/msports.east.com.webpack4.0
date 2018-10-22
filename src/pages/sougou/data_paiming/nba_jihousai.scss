@@ -1,0 +1,89 @@
+.match-group{
+  overflow: hidden;
+}
+.match{
+  margin-right: 0.3rem;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  .icon{
+	float:left;
+	margin: 0.1rem 0 0 0.1rem;
+	&:first-child{
+		margin-left: 0;
+  	}
+	.team{
+	  text-align: center;
+	}
+  }
+  .teams{
+	overflow: hidden;
+  }
+  img{
+	height:0.7rem;
+	width: 0.7rem;
+  }
+  .line{
+	height:0.3rem;
+	border:1px solid #333333;
+	border-top: 0;
+	margin: 0.05rem 0.2rem 0;
+	text-align: center;
+  }
+  .line-vertical{
+	height:0.3rem;
+	border-left: 1px solid #333333;
+  }
+  &:first-child{
+	margin-left: 0.3rem;
+  }
+}
+.match-group-top2,.match-group-bottom2{
+  padding: 0 0.4rem;
+  .icon{
+	margin-left: 1.1rem;
+  }
+  .match:last-child{
+	margin-left: 0.8rem;
+  }
+}
+
+.match-group-top3,.match-group-bottom3{
+  padding: 0 1.3rem;
+  .icon:last-child{
+	margin-left: 2.9rem;
+  }
+}
+
+.match-group-center{
+  	.match{
+	  margin-left: 2.3rem;
+	}
+  	.labels{
+	  float: left;
+	  margin: 0 0.2rem;
+	  .score,.match-name{
+		height: 0.5rem;
+		line-height: 0.5rem;
+		padding: 0 0.2rem;
+	  }
+	  .match-name{
+		background-color:red;
+		color: #FFFFFF;
+		border-radius: 0.06rem;
+	  }
+	}
+}
+
+.bottom{
+  .line{
+	border: 1px solid #333333;
+	border-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0.05rem;
+  }
+}
+
+#duelTab{
+  padding: 0.2rem 0;
+}

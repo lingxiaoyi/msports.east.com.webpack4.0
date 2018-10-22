@@ -1,0 +1,208 @@
+@font-face {
+  /* font-properties */
+  font-family: pictos;
+  src: url(~public/font/zero.woff),
+  url(~public/font/zero.ttf),
+  url(~public/font/zero.svg),
+  url(~public/font/zero.eot);
+}
+
+header {
+  font-size: 0.36rem;
+  background: #fff;
+  border-top: 0;
+  padding: 0;
+  position: relative;
+  .back {
+    width: 1rem;
+    height: 100%;
+    background: url(~public/imgs/hc/i-back.png) no-repeat center center;
+    background-size: 0.18rem 0.34rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  h3 {
+    font-weight: 400;
+    height: 100%;
+    line-height: 0.9rem;
+    text-align: center;
+  }
+  icon {
+    width: 1rem;
+    height: 100%;
+    background: url(~public/imgs/hc/i-home-x1.png) no-repeat center center;
+    background-size: 0.34rem 0.32rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.info_header {
+  position: relative;
+  .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: .3rem center;
+    line-height: .88rem;
+    text-indent: .68rem;
+    width: 2rem;
+  }
+  h3 {
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
+  }
+}
+
+.main {
+  background: #f5f5f5;
+  .sec1 {
+    background: #fff;
+    padding: 0.1rem 0.2rem 0.3rem;
+    font-size: 0.32rem;
+    p {
+      line-height: 0.42rem;
+      margin-top: 0.2rem;
+      span {
+        color: #ff3333;
+      }
+    }
+  }
+}
+
+.tab-btns {
+  width: 7.5rem;
+  height: 1rem;
+  background: #fff;
+  border-top: 1px solid #cccccc;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  li {
+    width: 25%;
+    float: left;
+    a {
+      display: block;
+    }
+    icon {
+      width: 100%;
+      height: 0.6rem;
+      background-size: cover;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 0.08rem;
+    }
+    p {
+      font-size: 12px;
+      color: #828282;
+      text-align: center;
+      line-height: 12px;
+    }
+    &.active p {
+      color: #fb3338;
+    }
+    &:nth-child(1) {
+      icon {
+        background-image: url(~public/imgs/hc/i-home.png);
+        background-size: 0.4rem 0.41rem;
+      }
+      &.active {
+        icon {
+          background-image: url(~public/imgs/hc/i-home-a.png);
+        }
+      }
+    }
+    /*&:nth-child(2){
+      icon{
+        background-image: url(~public/imgs/hc/i-expert.png);background-size: 0.48rem 0.42rem;
+      }
+      &.active{
+        icon{
+          background-image: url(~public/imgs/hc/i-expert-a.png);
+        }
+      }
+    }*/
+    &:nth-child(2) {
+      icon {
+        background-image: url(~public/imgs/hc/i-match.png);
+        background-size: 0.44rem 0.42rem;
+      }
+      &.active {
+        icon {
+          background-image: url(~public/imgs/hc/i-match-a.png);
+        }
+      }
+    }
+    &:nth-child(3) {
+      icon {
+        background-image: url(~public/imgs/hc/i-find.png);
+        background-size: 0.48rem 0.48rem;
+        background-position: center 0.05rem;
+      }
+      &.active {
+        icon {
+          background-image: url(~public/imgs/hc/i-find-a.png);
+        }
+      }
+    }
+    &:nth-child(4) {
+      icon {
+        background-image: url(~public/imgs/hc/i-data.png);
+        background-size: 0.48rem 0.48rem;
+      }
+      &.active {
+        icon {
+          background-image: url(~public/imgs/hc/i-data-a.png);
+        }
+      }
+    }
+    &:last-child {
+      icon {
+        background-image: url(~public/imgs/hc/i-my.png);
+        background-size: 0.41rem 0.41rem;
+      }
+      &.active {
+        icon {
+          background-image: url(~public/imgs/hc/i-my-a.png);
+        }
+      }
+    }
+  }
+}
+
+.hc_upwin {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  .content {
+    position: absolute;
+    width: 5.2rem;
+    height: 9rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../../public-resource/imgs/hc/upwin.png") top center no-repeat;
+    background-size:100% auto;
+    a{
+      display: block;
+      width: 100%;
+      height: 7rem;
+    }
+    .colse {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+}

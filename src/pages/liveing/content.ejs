@@ -1,0 +1,423 @@
+<div class="zhibo_head" id="zhiboHead">
+    <div class="top">
+        <div class="big-box clearfix">
+            <div class="left">
+                <p class="sub2"><img src="<%= DIRS.BUILD_FILE.images['logo_default'] %>"></p>
+                <p class="sub1"></p>
+                <p class="sub3">
+                    <span class="zan1 fl"></span>
+                    <span class="num fl" id="zanNum1">0</span>
+                </p>
+            </div>
+            <div class="mid" id="headScore">
+                <div class="title"></div>
+                <h3>
+                    <span class="home-score">0</span>
+                    -
+                    <span class="visit-score">0</span>
+
+                    <!--<div class="single">
+                        王者荣耀职业联赛秋季赛第八周第一日
+                    </div>-->
+
+                </h3>
+            </div>
+            <div class="right">
+                <p class="sub2"><img src="<%= DIRS.BUILD_FILE.images['logo_default'] %>"></p>
+                <p class="sub1"></p>
+                <p class="sub3">
+                    <span class="num c0096ff" id="zanNum2">0</span>
+                    <span class="zan2"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="process">
+            <div class="red"></div>
+            <div class="blue"></div>
+        </div>
+    </div>
+    <div class="menu" id="zhiboMenu"></div>
+</div>
+<div class="zhibo_body">
+    <div class="zhibo-txt-main zhibo-data-content">
+        <!--第一节开始-->
+        <ul class="zhibo-txt-ul" id="livebox">
+            <!--<li>
+                <div class="t">
+                    <div class="circle red"></div>
+                    <div class="score">100-96</div>
+                    <div class="time">第四节</div>
+                </div>
+                <div class="text-box">
+                    <p>努尔基奇和马基斯-克里斯跳球，冯莱得到篮球</p>
+                    <img src="img/pic.jpg" alt=""/>
+                </div>
+            </li>
+            <li>
+                <div class="t">
+                    <div class="circle red"></div>
+                </div>
+                <div class="text-box">
+                    <p>暂无数据</p>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+    <div class="zhibo-data-content sec-news-list"  style="display: none" id="matchNews"></div>
+    <div class="zhibo-data-content"  style="display: none" id="chatRoom">
+        <ul>
+            <!--<li class="l clearfix">
+                <div class="pic"><img src="http://00.imgmini.eastday.com/dcminisite/portrait/40f15445f515b693801074b1f3645101.jpg" alt=""></div>
+                <div class="info">
+                    <p>
+                        <span class="name">阿Q小妹</span>
+                        <span class="time">10分钟前</span>
+                    </p>
+                    <h3>纽约尼克斯 阵容调整 (詹宁斯，布兰登; 武贾西奇,萨沙; 埃尔南戈麦斯,威利; 贝克罗恩库兹明斯卡斯,明道加斯)</h3>
+                </div>
+            </li>
+            <li class="r clearfix">
+                <div class="pic"><img src="http://00.imgmini.eastday.com/dcminisite/portrait/40f15445f515b693801074b1f3645101.jpg" alt=""></div>
+                <div class="info">
+                    <p>
+                        <span class="name">阿Q小妹</span>
+                        <span class="time">10分钟前</span>
+                    </p>
+                    <h3>纽约尼克斯 阵容调整 (詹宁斯，布兰登; 武贾西奇,萨沙; 埃尔南戈麦斯,威利; 贝克罗恩库兹明斯卡斯,明道加斯)</h3>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+    <div class="zhibo-data-content" id="zhiboDataContent"  style="display: none">
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data" id="matchResult">
+            <h3><span></span>赛况</h3>
+            <table>
+                <!--<tr>
+                    <th>球队</th>
+                    <th>第1节</th>
+                    <th>第2节</th>
+                    <th>第3节</th>
+                    <th>第4节</th>
+                    <th>总分</th>
+                </tr>
+                <tr>
+                    <td><img src="img/logo-qishi.png" alt=""/></td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>29</td>
+                    <td>111</td>
+                </tr>-->
+            </table>
+            <div class="foot-saikuang">
+                <div class="head-team clearfix">
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="football-chart clearfix">
+                    <div class="m">
+                        <div class="time-line">
+                            <!-- <div class="time-box">
+                                 <div class="time">0′</div>
+                                 <div class="rows">
+                                     <div class="row"> <div class="text">比赛开始</div> <div class="i-koushao icon"></div></div>
+                                 </div>
+                             </div>
+                             <div class="time-box second">
+                                 <div class="time">0′</div>
+                                 <div class="rows">
+                                     <div class="row"><div class="text">奈史密斯换上</div>  <div class="i-top icon"></div></div>
+                                     <div class="row"> <div class="text">斯诺格拉斯红牌</div> <div class="i-red icon"></div></div>
+                                     <div class="row"> <div class="text">斯诺格拉斯红牌</div> <div class="i-red icon"></div></div>
+                                 </div>
+                             </div>
+                             &lt;!&ndash;左侧的1个&ndash;&gt;
+                             <div class="time-box">
+                                 <div class="time">0′</div>
+                                 <div class="rows">
+                                     <div class="row"> <div class="text">奈史密斯黄牌</div> <div class="i-yellow icon"></div></div>
+                                 </div>
+                             </div>
+                             &lt;!&ndash;左侧的2个&ndash;&gt;
+                             <div class="time-box second">
+                                 <div class="time">0′</div>
+                                 <div class="rows ">
+                                     <div class="row"> <div class="text">奈史密斯换上</div> <div class="i-top icon"></div></div>
+                                     <div class="row"> <div class="text">奈史密斯换下</div> <div class="i-down icon"></div></div>
+                                 </div>
+                             </div>
+                             &lt;!&ndash;右侧的1个&ndash;&gt;
+                             <div class="time-box">
+                                 <div class="time">0′</div>
+                                 <div class="rows right">
+                                     <div class="row">
+                                         <div class="i-down icon"></div><div class="text">奈史密斯换下</div>
+                                     </div>
+                                 </div>
+                             </div>
+                             &lt;!&ndash;右侧的2个&ndash;&gt;
+                             <div class="time-box second">
+                                 <div class="time">95′</div>
+                                 <div class="rows right ">
+                                     <div class="row"> <div class="i-top icon"></div><div class="text">奈史密斯换上</div> </div>
+                                     <div class="row"> <div class="i-down icon"></div><div class="text">奈史密斯换下</div> </div>
+                                 </div>
+                             </div>
+                             <div class="time-box">
+                                 <div class="time">0′</div>
+                                 <div class="rows">
+                                     <div class="row">
+                                         <div class="text">比赛结束</div>  <div class="i-koushao-end icon"></div>
+                                     </div>
+                                 </div>
+                             </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data" id="teamStats">
+            <h3><span></span>球队统计</h3>
+            <div class="content-team">
+                <div class="row">
+                    <div class="num"><img class="home-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/></div>
+                    <div class="m">VS</div>
+                    <div class="num"><img class="visit-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/></div>
+                </div>
+                <!--
+                        <div class="row">
+                            <div class="num">39%</div>
+                            <div class="m">
+                                <div class="line l"><span></span></div>
+                                <div class="text">投篮命中率</div>
+                                <div class="line s"><span></span></div>
+                            </div>
+                            <div class="num">42%</div>
+                        </div>-->
+            </div>
+        </section>
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data" id="playerSta" style="display: none">
+            <h3><span></span>球员统计</h3>
+            <div class="host">
+                <h3 class="team"><img  class="home-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content-player clearfix">
+                    <table class="player">
+                        <tr>
+                            <th>球员</th>
+                        </tr>
+                        <!-- <tr>
+                             <td>凯文-杜兰特</td>
+                         </tr>-->
+                    </table>
+                    <div class="player-data">
+                        <table>
+                            <tr>
+                                <th>位置</th>
+                                <th>出场时间</th>
+                                <th>投篮</th>
+                                <th>三分</th>
+                                <th>罚球</th>
+                                <th>前篮板</th>
+                                <th>后篮板</th>
+                                <th>总篮板</th>
+                                <th>助攻</th>
+                                <th>抢断</th>
+                                <th>盖帽</th>
+                                <th>失误</th>
+                                <th>犯规</th>
+                                <th>+/-</th>
+                                <th>得分</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="visit">
+                <h3 class="team mt20"><img class="visit-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content-player clearfix">
+                    <table class="player">
+                        <tr>
+                            <th>球员</th>
+                        </tr>
+                    </table>
+                    <div class="player-data"><table>
+                            <tr>
+                                <th>位置</th>
+                                <th>出场时间</th>
+                                <th>投篮</th>
+                                <th>三分</th>
+                                <th>罚球</th>
+                                <th>前篮板</th>
+                                <th>后篮板</th>
+                                <th>总篮板</th>
+                                <th>助攻</th>
+                                <th>抢断</th>
+                                <th>盖帽</th>
+                                <th>失误</th>
+                                <th>犯规</th>
+                                <th>+/-</th>
+                                <th>得分</th>
+                            </tr>
+                        </table></div>
+                </div>
+            </div>
+            <!--<h3 class="team mt20"><img src="img/logo-qishi.png" alt=""/>热火</h3>-->
+        </section>
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data history-data" id="historyData">
+            <h3><span></span>交锋历史</h3>
+            <table>
+                <!--<tr>
+                    <th>日期</th>
+                    <th>赛事</th>
+                    <th>主队</th>
+                    <th>比分</th>
+                    <th>客队</th>
+                </tr>-->
+                <!--<tr>
+                    <td>2017-03-12</td>
+                    <td>NBA常规赛</td>
+                    <td>热火</td>
+                    <td> 104-89 </td>
+                    <td>勇士</td>
+                </tr>-->
+            </table>
+        </section>
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data history-data" id="recentRecord">
+            <h3><span></span>最近战绩</h3>
+            <div class="home-team">
+                <h3 class="team"><img class="home-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content">
+                    <table>
+                        <!--<tr>
+                            <th>日期</th>
+                            <th>赛事</th>
+                            <th>主队</th>
+                            <th>比分</th>
+                            <th>客队</th>
+                        </tr>
+                        <tr>
+                            <td>2017-03-12</td>
+                            <td>NBA常规赛</td>
+                            <td>热火</td>
+                            <td> 104-89 </td>
+                            <td>勇士</td>
+                        </tr>
+                        <tr>
+                            <td>2017-03-12</td>
+                            <td>NBA常规赛</td>
+                            <td>热火</td>
+                            <td> 104-89 </td>
+                            <td>勇士</td>
+                        </tr>-->
+                    </table>
+                </div>
+            </div>
+            <div class="visit-team">
+                <h3 class="team"><img class="visit-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content">
+                    <table>
+                        <!--<tr>
+                            <th>日期</th>
+                            <th>赛事</th>
+                            <th>主队</th>
+                            <th>比分</th>
+                            <th>客队</th>
+                        </tr>
+                        <tr>
+                            <td>2017-03-12</td>
+                            <td>NBA常规赛</td>
+                            <td>热火</td>
+                            <td> 104-89 </td>
+                            <td>勇士</td>
+                        </tr>
+                        <tr>
+                            <td>2017-03-12</td>
+                            <td>NBA常规赛</td>
+                            <td>热火</td>
+                            <td> 104-89 </td>
+                            <td>勇士</td>
+                        </tr>-->
+                    </table>
+                </div>
+            </div>
+            <div class="content-team">
+                <div class="row">
+                    <div class="num"><img  class="home-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/></div>
+                    <div class="m">VS</div>
+                    <div class="num"><img   class="visit-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/></div>
+                </div>
+                <!--<div class="row">
+                    <div class="num">39%</div>
+                    <div class="m">
+                        <div class="line l"><span></span></div>
+                        <div class="text">胜率</div>
+                        <div class="line s"><span></span></div>
+                    </div>
+                    <div class="num">42%</div>
+                </div>-->
+            </div>
+        </section>
+        <div class="separate-line"></div>
+        <section class="sec zhibo-data history-data" id="futureSchedule">
+            <h3><span></span>未来赛程</h3>
+            <div class="home-team">
+                <h3 class="team"><img class="home-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content">
+                    <table>
+                    </table>
+                </div>
+            </div>
+            <div class="visit-team">
+                <h3 class="team"><img class="visit-team-logo" src="<%= DIRS.BUILD_FILE.images['logo_default'] %>" alt=""/><i>--</i></h3>
+                <div class="content">
+                    <table>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div class="no-more">没有更多了~</div>
+    </div>
+    <!--<div class="zhibo-data-content hc-fangan">
+        <ul>
+            <li>
+                <a href="">
+                <div class="row1 clearfix">
+                    <div class="img">
+                        <img src="http://00.imgmini.eastday.com/dcminisite/portrait/91e39d280c6ea2ac7c9bb16227fdbc96.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="name">李科</div>
+                        <div class="tags clearfix">
+                            <div class="tag">近3场中3场</div>
+                            <div class="tag">14连红</div>
+                        </div>
+                    </div>
+                    <div class="per">
+                        <p class="num">100<span>%</span></p>
+                        <p>命中率</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <p>nba关注度最高的比赛：科比球衣退役仪式，勇士给湖人一个面子吗？</p>
+                </div>
+                <div class="row3 clearfix">
+                    <div class="time">5分钟前发布</div>
+                    <div class="bar"></div>
+                    <div class="yuanbao">
+                        28元宝 <i></i>
+                    </div>
+                </div></a>
+            </li>
+        </ul>
+    </div>-->
+</div>
+<div class="v-box" id="vBox">
+    <video id="J_video" class="video" src="" data-type="vgaoxiao" poster="http://09.imgmini.eastday.com/video/vtiyu/20171123/20171123234323219303323_1_mwpm_05501609.jpeg" type="video/mp4" preload="none" controls="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint" x-webkit-airplay="true" webkit-playsinline="true"  playsinline="true" width="100%" height="100%"></video>
+    <div class="close">×</div>
+</div>

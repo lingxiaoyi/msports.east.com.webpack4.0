@@ -1,0 +1,59 @@
+<!--<div class="close"></div>-->
+
+<div class="load_form" id="pass_login">
+    <h3>密码登录</h3>
+    <div class="form_box">
+        <div class="put_box">
+            <input class="account " type="text" placeholder="手机号或东方头条账号">
+        </div>
+        <div class="put_box">
+            <input class="password " type="password" placeholder="请输入登录密码">
+            <i class="pass_toggle"></i>
+        </div>
+        <button class="load_btn">登录</button>
+    </div>
+    <div class="links">
+        <a href="./resetpass.html" class="forget">忘记密码</a>
+        <a href="javascript:void(0)" class="verification">验证码登录</a>
+    </div>
+</div>
+
+<div class="load_form none" id="code_login">
+    <!--<div class="back"></div>-->
+    <div class="icon-h"></div>
+    <div class="form_box">
+        <div class="put_box">
+            <input class="account " type="text" placeholder="请输入手机号">
+        </div>
+        <div class="put_box">
+            <input class="password " type="text" placeholder="请输入验证码">
+            <i class="get_code wait">获取验证码</i>
+        </div>
+        <div id="verify_box">
+            <div class="content_box">
+                <p class="tit">请输入图形验证码 <span id="refresh">换一张</span></p>
+                <div id="v_container"></div>
+                <input type="text" id="verify_input" value="" placeholder="请输入验证码"/>
+                <p class="info">验证码错误，请重新输入</p>
+                <button id="verifybutton">确定</button>
+            </div>
+        </div>
+        <button class="load_btn">登录</button>
+    </div>
+    <div class="links">
+        <a href="javascript:void(0)" class="verification">账号密码登录</a>
+    </div>
+</div>
+<div class="third_party">
+    <div class="cont">
+        <h5 class="tit">社交账号登录</h5>
+        <ul class="third_load">
+            <li class="qq">QQ登录</li>
+            <li class="wx">微信登录</li>
+            <li class="web">微博登录</li>
+        </ul>
+    </div>
+</div>
+<div class="desc">
+    若未注册，登录则默认为注册。点击登录按钮，则代表你同 意<a href="/useragreement.html">《东方体育用户协议(含隐私政策)》</a>
+</div>

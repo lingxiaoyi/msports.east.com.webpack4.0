@@ -1,0 +1,71 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  background-color: #f0f0f0;
+}
+body{
+  background: none;
+}
+.main{
+  padding-top: .2rem;
+  background: none;
+  .put_box{
+    background-color: #fff;
+    padding-left: .48rem;
+    font-size: .3rem;
+    line-height: 1rem;
+    margin-bottom: .8rem;
+    div{
+      height: 1rem;
+      color: #999;
+      input{
+        width: 5rem;
+        color:#333
+      }
+    }
+    .number{
+      border-bottom: 1px solid #e3e3e3;
+    }
+  }
+  .saveBtn{
+    display: block;
+    height: .8rem;
+    width: 6.3rem;
+    margin: 0 auto;
+    background-color: #d6d7db;
+    color: #fff;
+    border-radius: .1rem;
+    font-size: .34rem;
+    &.red{
+      background-color: #f44b50;
+    }
+  }
+  .rule{
+    padding:.6rem .6rem;
+    line-height: .5rem;
+    .tit{
+      font-size: .3rem  ;
+      color: #666;
+    }
+    p{
+      font-size: .28rem;
+      color: #999;
+    }
+  }
+}
+
+.console {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  height: 2.6rem;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  .content {
+    min-height: 100%;
+  }
+}

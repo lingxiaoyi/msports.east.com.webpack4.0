@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://msports.eastday.com/h5/css/base.css"/>
+</head>
+<body>
+</body>
+<script>
+    /**
+     * 获取url中的参数
+     * @param {any} name   参数名
+     * @returns
+     */
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg); //匹配目标参数
+        if (r != null) return unescape(r[2]);
+        return null; //返回参数值
+    }
+</script>
+<script type="text/javascript">
+    var sogou_ad_id=getUrlParam('sogou_ad_id');
+    var sogou_ad_width=20;
+    var sogou_ad_height=getUrlParam('sogou_ad_height');//5
+    var sogou_ad_float=0;
+    var sogou_ad_close=1;
+</script>
+<script type="text/javascript" src="//infy.theta.sogoucdn.com/wap/js/wp.js"></script>
+</html>

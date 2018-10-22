@@ -1,0 +1,23 @@
+<script>
+    <% if (IS_PRODUCTION) { %>
+    var _matchId_="$!{page.matchid}";
+    var _articleTagCodes_="$!{codeList}";
+    var  _page_type="zhanbao";
+    var _sportsType_="$!{categoryFirst}";
+    var _yiji_="$!{yiji}";
+    var _erji_="$!{erji}";
+    var _sanji_="$!{sanji}";
+    var _newstype_="$!{newstype}";
+    var _isdftt_="$!{isdftt}";
+    <% }else { %>
+    var _matchId_='1492556400000072781';
+    var _articleTagCodes_='900052';//900293
+    var _page_type='zhanbao';
+    var _sportsType_="中超";
+    var _yiji_="900004";
+    var _erji_="900005";
+    var _sanji_="";
+    var _newstype_="news";
+    var _isdftt_="0";
+    <% } %>
+</script>

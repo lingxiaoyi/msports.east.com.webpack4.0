@@ -1,0 +1,239 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html{
+  min-height: 100%;
+}
+body{
+  background-color: #f5f5f5;
+}
+header{
+  border: 0;
+}
+nav{
+  width:100%;font-size: 0.3rem;color: #333333;line-height: 0.56rem;border-bottom: 1px solid #dcdcdc;background: #fff;
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;float: none;position: relative;padding: 0 0.2rem;
+      &.active{
+        color: #ff3333;
+        &:after{
+          content: "";
+          position: absolute;
+          height: .05rem;
+          width: .2rem;
+          left: 50%;
+          margin-left: -.1rem;
+          bottom: 0;
+          background-color: #f33;
+        }
+      }
+    }
+  }
+}
+.main{
+  background: none;
+  .order_list{
+    display: none;
+    &:nth-of-type(1){display: block}
+    .date{
+      font-size: .24rem;
+      line-height: .5rem;
+      padding: 0 .3rem;
+      color: #999;
+      background-color: #eef0f6;
+    }
+    li {
+      /*border-bottom: 1px solid #eee;*/margin-bottom: 0.16rem;padding: 0 .24rem;overflow: hidden;background: #fff;
+      .order-num{
+        font-size: 12px;line-height: 0.56rem;color: #999999;height: 0.56rem;background: #fff;border-bottom:1px solid #e6e6e6;
+        .l{
+          float: left;
+        }
+        .r{
+          float: right;
+        }
+      }
+      .line_1{
+        margin-bottom: .2rem;margin-top: 0.3rem;
+        .img{
+          float: left;
+          width: .57rem;
+          height: .57rem;
+          border: 1px solid #f0f0f0;
+          border-radius: 50%;
+          overflow: hidden;background: url(//msports.eastday.com/h5/img/portrait.png);background-size: cover;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info{
+          float: left;
+          padding-left: .2rem;
+          b{
+            font-weight: 400;
+            color: #333;
+            line-height: .57rem;
+            font-size: .28rem;
+            display: block;
+          }
+          .tag{
+            display: inline-block;
+            font-size: .24rem;
+            line-height: .32rem;
+            border: 1px solid #000;
+            border-radius: .17rem ;
+            padding: 0 .12rem;
+          }
+          .b{
+            color: #f33;
+            border-color: #f99;
+          }
+          .r{
+            color: #1b76ff;
+            border-color: #8ab9ff;
+          }
+        }
+        .mz{
+          float: right;
+          color: #f33;
+          font-size: .28rem ;
+        }
+        .fr{
+          text-align: right;
+          .state{
+            line-height: .47rem;
+          }
+          .success{
+            color: #12b601;
+          }
+          .fail{
+            color: #ff4646;
+          }
+          .close{
+            color: #ff4646;
+          }
+          .wait{
+            color: #0096ff;
+          }
+        }
+      }
+      .line_2{
+        font-size: .34rem ;
+        line-height: .48rem;
+        margin: 0 0 0.2rem;
+      }
+      .line_3{
+        height: .5rem;
+        background-color: #f5f5f5;
+        line-height: 0.5rem;
+        border-radius: .05rem;
+        text-align: center;color: #666666;margin-top: 0.05rem;
+        .tag{
+          float: left;
+          width: 1.1rem;
+          color: #6699ff;
+          background: #e2eeff;
+          border-radius: 0.05rem 0 0 0.05rem;
+        }
+        .tag2{
+          float: left;
+          width: 1.29rem;
+          position: relative;
+          &:after{
+            content: '';
+            position: absolute;
+            height: .18rem;
+            width: 1px;
+            right: 0;
+            top: 50%;
+            background-color: #d3d2d2;
+            transform: translate(0,-50%);
+          }
+        }
+        .tag3{
+          float: left;
+          width: 3.47rem;
+          position: relative;
+          &:after{
+            content: '';
+            position: absolute;
+            height: .2rem;
+            width: 1px;
+            right: 0;
+            top: 50%;
+            background-color: #d3d2d2;
+            transform: translate(0,-50%);
+          }
+        }
+        .tag4{
+          float: left;
+          width:1.1rem;
+        }
+      }
+      .line_4{
+        position: relative;
+        line-height:.5rem;
+        font-size: 12px;margin: .25rem 0 0.15rem;
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+        .end{
+          color: #999;float: left;
+        }
+        .ch{
+          color:#ff4646;padding-left:0.25rem;float: right;background: url(~public/imgs/hc/order-info-i.png) no-repeat;background-size: 0.22rem 0.22rem;background-position: left center;
+        }
+        .mark{
+          float: right;width:0.4rem;height:0.4rem;background-size: cover;background-position: center center;margin-top: 0.05rem;
+          &.red{
+            background-image: url(~public/imgs/hc/i-mark-hong.png);
+          }
+          &.black{
+            background-image: url(~public/imgs/hc/i-mark-hei.png);
+          }
+          &.zou{
+            background-image: url(~public/imgs/hc/i-mark-zou.png);
+          }
+        }
+        .col1, .col2{
+          float: left;position: relative;color: #999999;
+          b{
+            padding: 0 0.1rem;
+          }
+          span{
+            color: #f42a2a;
+          }
+        }
+
+        .btns{
+          float: right;
+          .btn{
+            width: 1.34rem;
+            height: 0.50rem;
+            line-height: 0.5rem;
+            background-color: #ffffff;
+            border-radius: 0.06rem;
+            border: solid 1px #e6e6e6;
+            float: left;margin-right: 0.2rem;color: #666666;text-align: center;	font-size: 0.26rem;
+            &:last-child{
+              color: #fff;background-color: #ff3333;margin-right: 0;border: 0;
+            }
+          }
+        }
+      }
+    }
+    .no_data{
+      text-align: center;
+      font-size: .3rem  ;
+      line-height: 9.5rem ;
+      height: 6rem;
+      color: #999;
+      background: url("../../../public-resource/imgs/hc/no_data_order.png") center no-repeat;
+      background-size: auto 3rem;
+    }
+  }
+}

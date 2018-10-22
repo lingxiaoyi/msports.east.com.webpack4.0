@@ -1,0 +1,462 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+@import "../recharge/style";
+
+body {
+  background: #f5f5f5;
+}
+
+
+.recommend,.order-content {
+  margin-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  background: #fff;
+  h3 {
+    font-size: 0.30rem;
+    padding-top: 0.3rem;
+    text-indent: 0.3rem;
+    background: #fff;
+  }
+  ul {
+    padding: 0 .24rem .4rem;
+    li {
+      padding-top: .4rem;
+      border-bottom: 1px solid #eee;
+      .line_1 {
+        height: .9rem;
+        margin-bottom: .2rem;
+        .img {
+          float: left;
+          width: .9rem;
+          height: .9rem;
+          border: 1px solid #f0f0f0;
+          border-radius: 50%;
+          overflow: hidden;background: url(//msports.eastday.com/h5/img/portrait.png);background-size: cover;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info {
+          float: left;
+          padding-left: .2rem;
+          b {
+            font-weight: 400;
+            color: #333;
+            line-height: .56rem;
+            font-size: .28rem;
+            margin-top: -0.08rem;
+            display: block;
+          }
+          .tag {
+            display: inline-block;
+            font-size: .24rem;
+            line-height: .32rem;
+            border: 1px solid #000;
+            border-radius: .17rem;
+            padding: 0 .12rem;
+          }
+          .b {
+            color: #f33;
+            border-color: #f99;
+          }
+          .r {
+            color: #1b76ff;
+            border-color: #8ab9ff;
+          }
+        }
+        .mz {
+          float: right;
+          color: #f33;
+          font-size: .24rem;
+          text-align: center;
+          margin-top: -0.08rem;
+          b {
+            font-size: .5rem;
+            font-weight: bolder;
+          }
+        }
+      }
+      .line_2 {
+        font-size: .34rem;
+        line-height: .48rem;
+        margin: 0 0 0.2rem;
+      }
+      .line_3 {
+        height: .5rem;
+        background-color: #f5f5f5;
+        line-height: 0.5rem;
+        border-radius: .05rem;
+        text-align: center;
+        color: #666666;
+        margin-top: 0.05rem;
+        .tag {
+          float: left;
+          width: 1.1rem;
+          color: #6699ff;
+          background: #e2eeff;
+          border-radius: 0.05rem 0 0 0.05rem;
+        }
+        .tag2 {
+          float: left;
+          width: 1.29rem;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            height: .18rem;
+            width: 1px;
+            right: 0;
+            top: 50%;
+            background-color: #d3d2d2;
+            transform: translate(0, -50%);
+          }
+        }
+        .tag3 {
+          float: left;
+          width: 3.47rem;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            height: .2rem;
+            width: 1px;
+            right: 0;
+            top: 50%;
+            background-color: #d3d2d2;
+            transform: translate(0, -50%);
+          }
+        }
+        .tag4 {
+          float: left;
+          width: 1.1rem;
+        }
+      }
+      .line_4 {
+        position: relative;
+        line-height: .6rem;
+        font-size: .24rem;
+        margin-top: .2rem;
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        .time {
+          color: #999;
+          float: left;
+          padding-right: .26rem;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: '';
+            height: .18rem;
+            width: 1px;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: #e6e6e6;
+          }
+        }
+        .yb {
+          float: left;
+          color: #f33;
+          padding-right: .32rem;
+          text-indent: .28rem;
+          background: url(~public/imgs/hc/yuanbao.png) center right no-repeat;
+          background-size: auto .22rem;
+        }
+        .end {
+          color: #999;
+          text-indent: .28rem;
+          float: left;
+        }
+        .mark {
+          float: right;
+          width: 0.36rem;
+          height: 0.36rem;
+          background-size: cover;
+          background-position: center center;
+          margin-top: 0.12rem;
+          &.red {
+            background-image: url(~public/imgs/hc/i-mark-hong.png);
+          }
+          &.black {
+            background-image: url(~public/imgs/hc/i-mark-hei.png);
+          }
+          &.zou {
+            background-image: url(~public/imgs/hc/i-mark-zou.png);
+          }
+        }
+      }
+    }
+    li:last-child {
+      border: 0;
+    }
+  }
+}
+.pay-box{
+  width:7.5rem;background-color: #000000;position: fixed;bottom:0;color: #ffffff;font-size: 0.32rem;
+  opacity: 0.9;height:1rem;z-index: 99;
+  .item{
+    float: left;text-indent: 0.3rem;width:4.9rem;
+    p{
+      margin-top: 0.15rem;
+    }
+    p:nth-child(2){
+      font-size: 12px;color: #969696;margin-top: -0.04rem;
+    }
+  }
+  .item:last-child{
+    float: left;width:2.6rem;background-color: #ff3333;text-align: center;text-indent: 0;line-height: 1rem;
+    &.disabled{
+      background-color: #666666;
+    }
+  }
+}
+
+.empty-box {
+  width: 7.5rem;
+  height: 1rem;
+}
+
+.coupon-box {
+  position: absolute;
+  top: 0;
+  background: #f5f5f5;
+  min-height: 100%;
+  width: 7.5rem;
+  z-index: 999;
+  ul {
+    margin-top: 0.4rem;
+    overflow: hidden;
+  }
+  li {
+    height: 2rem;
+    margin-bottom: .3rem;
+    background-size: cover;
+    padding: 0 0.3rem;
+    .check {
+      width: 0.44rem;
+      height: 0.44rem;
+      border: solid 0.03rem #b4b4b4;
+      border-radius: 50%;
+      float: left;
+      margin-right: 0.23rem;
+      margin-top: 0.78rem;
+      background-size: cover;
+      &.active {
+        background-image: url(~public/imgs/hc/i-check-agree.png);
+        border: 0;
+      }
+    }
+    .left {
+      float: left;
+      width: 2.19rem;
+      height: 2rem;
+      color: #fff;
+      text-align: center;
+      .value {
+        width: 2.2rem;
+        height: 1.5rem;
+        font-size: .24rem;
+        line-height: 1.8rem;
+        b {
+          font-weight: normal;
+          font-size: .8rem;
+        }
+      }
+      .type {
+        opacity: .7;
+        font-size: .24rem;
+        line-height: 1;
+      }
+
+    }
+    .right {
+      overflow: hidden;
+      height: 2rem;
+      padding-left: .4rem;
+      position: relative;
+      h6 {
+        font-size: .32rem;
+        line-height: .72rem;
+      }
+      p {
+        font-size: .24rem;
+        color: #999;
+        line-height: .32rem;
+      }
+      .time {
+        position: absolute;
+        left: .4rem;
+        bottom: .2rem;
+        color: #f42a2a;
+      }
+      i {
+        display: none;
+      }
+    }
+    .can_use {
+      background-image: url(~public/imgs/hc/bg-coupon.png);
+      width: 6.23rem;
+      float: left;
+      background-size: cover;
+    }
+  }
+  .content-main {
+    padding: 0 0.2rem;
+    padding-bottom: 83px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  .content-main p {
+    font-size: 16px;
+    line-height: 36px;
+    color: #646464;
+    margin: 16px 0 0;
+  }
+  .content-main .underLine {
+    font-weight: 700;
+  }
+  .content-main h3 {
+    line-height: 2;
+    margin: 16px 0 0;
+  }
+  .content-main h2 {
+    margin-top: 0.4rem;
+    line-height: 1;
+    margin-bottom: 0.54rem;
+  }
+  .content-main h2, .content-main h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+  }
+}
+/*order*/
+.order-box{
+  .order-num{
+    font-size: 12px;line-height: 0.56rem;color: #999999;padding: 0 0.2rem;height: 0.56rem;background: #fff;border-bottom:1px solid #e6e6e6;margin-top: 0.2rem;
+    .l{
+      float: left;
+    }
+    .r{
+      float: right;
+    }
+  }
+  .order-content{
+    overflow: hidden;padding: 0;margin: 0;
+    ul{
+      margin-top: 0.16rem;padding: 0 .24rem 0.2rem;
+    }
+    li{
+      padding:0;
+      .line_1{
+        height: 0.56rem;
+        .img{
+          width:0.56rem;height: 0.56rem;border: solid 1px #e6e6e6;
+        }
+        .info b{
+          height: 0.56rem;
+          margin-top: 0;font-size: 0.26rem;
+        }
+      }
+      .line_2{
+        font-size: 0.34rem;line-height: 0.48rem;color: #222222;
+      }
+    }
+  }
+  .order-row3{
+    height: 0.88rem;background: #fff;padding: 0 0.2rem;margin-top: 0.2rem;line-height: 0.88rem;
+    h3{
+      color: #333333;font-size: 0.32rem;float: left;font-weight: 400;
+    }
+    p{
+      color: #333;font-size: 0.28rem;float: right;height:0.88rem;
+      &.disabled{
+        color: #999999;
+      }
+      i{
+        display: inline-block;background: url(~public/imgs/hc/i-arrow-order.png) no-repeat;width:0.25rem;height:0.88rem;background-size: 0.16rem 0.26rem;background-position: center right;vertical-align: -0.34rem;
+      }
+    }
+  }
+  .recharge-sec3{
+    background-color: #fff;margin-top: 0.2rem;
+    .row{
+      font-size: .32rem;
+      line-height: 1rem;
+      margin: 0 0.24rem;
+      color: #333;
+      position: relative;
+      text-indent: .56rem;
+      background: 0 center no-repeat;
+      background-size: .38rem .38rem ;
+      i{
+        position: absolute;
+        width: .4rem;
+        height: .4rem;
+        right: 0;
+        top: .3rem;
+        border: solid 1px #cfced3;border-radius: 0.2rem;
+      }
+      &.sel{
+        i::after{
+          content: '';
+          width: 0.16rem;
+          height: 0.16rem;
+          background-color: #ff3333;border-radius: 0.08rem;position: absolute;top:50%;left: 50%;transform: translate(-50%, -50%);
+        }
+      }
+      span{
+        color: #999999;font-size: 12px;
+      }
+      &[data-type="yb"]{
+        background-image: url("~public/imgs/hc/i-yuanbao-order.png");
+        border-bottom: 1px solid #f5f5f5; background-size: .38rem .28rem ;
+      }
+      &[data-type="wx"]{
+        background-image: url("~public/imgs/hc/i-wx-order.png");
+        border-bottom: 1px solid #f5f5f5;
+      }
+      &[data-type="zfb"]{
+        background-image: url("~public/imgs/hc/i-zfb-order.png"); background-size: .38rem .3rem ;
+      }
+      a{
+        font-size: 0.28rem;float: right;height:1rem;color: #268eff;
+        b{
+          display: inline-block;background: url(~public/imgs/hc/i-arrow-order.png) no-repeat;width:0.25rem;height:0.88rem;background-size: 0.16rem 0.26rem;background-position: center right;vertical-align: -0.34rem;
+        }
+      }
+    }
+  }
+  footer{
+    padding: .23rem .24rem 0 ;
+    .agreement{
+      font-size: 12px;
+      color: #b4b4b4;
+      text-indent: .4rem;
+      line-height: .36rem;
+      position: relative;
+      i{
+        position: absolute;
+        left: 0;
+        top: 0.03rem;
+        width: .28rem;
+        height: .28rem;
+        border-radius: 4px;
+        border: solid 1px #c6c6c6;
+        &.agree{
+          background: url("~public/imgs/hc/i-duihao-order.png") no-repeat;background-size: 0.19rem 0.14rem ;background-position: center center;
+        }
+      }
+      span{
+        color: #268eff;
+      }
+      a{color: #268eff;}
+    }
+  }
+}

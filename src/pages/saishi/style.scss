@@ -1,0 +1,479 @@
+@import "~public/sass/fixed.tab.scss";
+nav{
+  width:7.5rem;font-size: 0.32rem;color: #333333;line-height: 0.72rem;border-bottom: 2px solid rgba(220, 220, 220, 1);position: fixed;top:0;background: #fff;z-index: 999;
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;float: none;position: relative;margin: 0 0.2rem;
+      &.active{
+        color: #ff3333;
+        &:after{
+          content: "";
+          position: absolute;
+          height: .05rem;
+          width: .2rem;
+          left: 50%;
+          margin-left: -.1rem;
+          bottom: 0;
+          background-color: #f33;
+        }
+      }
+    }
+  }
+}
+.crumbs {
+  background: #f3f3f3;
+  border-bottom: 1px #dcdcdc solid;
+  position: relative;
+  height:0.8rem;
+  ul{
+    display: block;text-align: center;
+  }
+  li{
+    width:1.4rem;height:0.5rem;color: #999999;text-align: center;line-height: 0.5rem;display: inline-block;margin: 0.08rem 0.2rem 0;font-size: 0.28rem;
+    &.active{
+      border-radius: 0.5rem;border: 1px solid #e6e6e6;color: #ff3333;background: #fff;
+    }
+  }
+}
+.main {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 0.72rem;
+  .tab-con{
+    width:100%;display: none;
+    height:100%;
+    .title{
+      height: 0.61rem;
+      background-color: rgba(245, 245, 245, 1);
+      box-shadow: 0px 1px 0px 0px rgba(233, 233, 233, 1);
+      text-indent: 0.24rem;font-size: 0.24rem;color:#333;line-height: 0.6rem;overflow: hidden;
+    }
+    &:first-child{
+      display: block;
+    }
+  }
+  .saishi li{
+    a{
+      padding:0.3rem 0.28rem;display: block;border-bottom: 1px solid #e9e9e9;
+    }
+    img{
+      float: left;width:0.42rem;height:0.42rem;border-radius: 50%;
+    }
+    .name{
+      margin-left: 0.3rem;font-size: 0.32rem;color: #333333;float: left;
+    }
+    .info{
+      float: right;font-size: 0.26rem;color: #007dd4;line-height: 0.36rem;
+      p{
+        float: left;margin-right: 0.1rem;
+      }
+      i{
+        float: left;background: url("../../public-resource/imgs/i-more.png") no-repeat center center;
+        width:0.36rem;
+        height:0.36rem;
+        background-size:0.28rem 0.28rem;
+      }
+    }
+  }
+  .matchs li {
+      height: 1.56rem;
+      a {
+        display: block;
+        overflow: hidden;
+        padding:0.32rem .24rem;
+        height: 100%;
+        & > div {
+          height: 100%;
+          float: left;
+        }
+        .tt {
+          width: 1.21rem;
+          font-size: .2rem;
+          line-height: .26rem;
+          color: #999999;
+          .tit{
+            height:1.08rem;overflow: hidden;
+          }
+          em {
+            font-size: .28rem;
+            line-height: .56rem;
+            color: #000;
+          }
+        }
+        .team {
+          width: 2.5rem;
+          margin-left: .55rem;
+          height: 100%;
+          font-size: .28rem;
+          line-height: 0.4rem;
+          position: relative;
+          img {
+            width: .4rem;
+            height: .4rem;
+            margin-right: .1rem;float: left;font-size: 0;
+          }
+          .host, .visit {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height:0.4rem;
+            span{
+              float: left;line-height: 0.45rem;font-size: 0.28rem;
+            }
+          }
+          .visit {margin-top: 0.1rem}
+          .mtit {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            line-height: .34rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+          }
+          .title2{
+            position: absolute;top:50%;left: 0;transform: translateY(-50%);
+          }
+        }
+        .score {
+          font-size: .32rem;
+          width: .6rem;
+          color: #000;
+          text-align: center;
+          .vscore{
+            margin-top: 0.1rem;
+          }
+        }
+        .state {
+          float: right;
+          width: 1.3rem;
+          height: 100%;
+          line-height: 0.92rem;
+          font-size: .24rem;
+          padding: 0;
+          color: #999;
+          text-align: left;
+          em {
+            padding-left: .3rem;
+            display: inline-block;
+            color: #999;
+            background: url(../../public-resource/imgs/i-video-match.png) left center no-repeat;
+            -webkit-background-size: auto .24rem;
+            background-size: auto .24rem;
+          }
+        }
+        .info {
+          height:0.6rem;overflow: hidden;
+          line-height: .3rem;
+          width:1.3rem;
+          margin-top: 12%;
+        }
+      }
+      &.live {
+        a {
+          .score {
+            color: #f33;
+          }
+          .state {
+            position: relative;
+            .info {
+              font-size: .2rem;
+              &::before {
+                content: "";
+                position: absolute;
+                right: 100%;
+                //top: 0;
+                width: .26rem;
+                height: .3rem;
+                background: url(../../public-resource/imgs/i-live-match.png) center no-repeat;
+                -webkit-background-size: .26rem auto;
+                background-size: .26rem auto;
+              }
+            }
+            em {
+              color: #f33;
+              font-size: .24rem;
+              text-align: center;
+              width: 4em;
+              padding: 0;
+              background: none;
+              -webkit-background-size: auto .24rem;
+              background-size: auto .24rem;
+            }
+          }
+        }
+      }
+      &.unstart {
+        .score {
+          i {
+            display: block;
+            height: 100%;
+            width: .6rem;
+            //height: .4rem;
+            background: url("../../public-resource/imgs/i-clock.png") center no-repeat;
+            -webkit-background-size: .4rem auto;
+            background-size: .4rem auto;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #e9e9e9;
+        //-webkit-transform: scaleY(0.5);
+        //-moz-transform: scaleY(0.5);
+        //-ms-transform: scaleY(0.5);
+        //-o-transform: scaleY(0.5);
+        //transform: scaleY(0.5);
+      }
+    }
+  .hc li {
+    //height: 1.56rem;
+    a {
+      display: block;
+      padding:0.32rem .24rem 0.2rem;
+      height: 100%;
+      .row1{
+        height: 100%;
+        & > div {
+          float: left;
+        }
+      }
+
+      .tt {
+        width: 1.21rem;
+        font-size: .2rem;
+        line-height: .26rem;
+        color: #999999;
+        .tit{
+          height:1.08rem;overflow: hidden;
+        }
+        em {
+          font-size: .28rem;
+          line-height: .56rem;
+          color: #000;
+        }
+      }
+      .team {
+        width: 2.5rem;
+        margin-left: .55rem;
+        height: 100%;
+        font-size: .28rem;
+        line-height: 0.4rem;
+        position: relative;
+        img {
+          width: .4rem;
+          height: .4rem;
+          margin-right: .1rem;float: left;font-size: 0;
+        }
+        .host, .visit {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height:0.4rem;
+          span{
+            float: left;line-height: 0.45rem;font-size: 0.28rem;
+          }
+        }
+        .visit {margin-top: 0.1rem}
+        .mtit {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          line-height: .34rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+        }
+        .title2{
+          position: absolute;top:50%;left: 0;transform: translateY(-50%);
+        }
+      }
+      .score {
+        font-size: .32rem;
+        width: 1.2rem;
+        color: #000;
+        text-align: center;
+        height: 1rem;
+        .vscore{
+          margin-top: 0.1rem;
+        }
+      }
+      .row1 .state {
+        float: right;
+        width: 1.3rem;
+        height: 100%;
+        line-height: 0.92rem;
+        font-size: .24rem;
+        padding: 0;
+        color: #999;
+        text-align: right;
+        em {
+          padding-left: .3rem;
+          display: inline-block;
+          color: #999;
+          background: url(../../public-resource/imgs/i-video-match.png) left center no-repeat;
+          -webkit-background-size: auto .24rem;
+          background-size: auto .24rem;
+        }
+      }
+      .info {
+        height:0.6rem;overflow: hidden;
+        line-height: .3rem;
+        width:1.3rem;
+        margin-top: 12%;
+      }
+    }
+    .row2{
+      font-size: 12px;margin-top: 0.1rem;
+      p{
+        float: left;color: #979797;
+      }
+      span{
+        float: right;color: #ff3333;
+      }
+    }
+    &.date{
+      padding:0;width: 7.5rem;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      background-color: #f5f5f5;
+      color: #b5b5b5;
+      font-size: 12px;
+      text-indent: 0.24rem;
+    }
+    &.live {
+      a {
+        .score {
+          color: #f33;
+        }
+        .state {
+          position: relative;
+          .info {
+            font-size: .2rem;
+            &::before {
+              content: "";
+              position: absolute;
+              right: 100%;
+              //top: 0;
+              width: .26rem;
+              height: .3rem;
+              background: url(../../public-resource/imgs/i-live-match.png) center no-repeat;
+              -webkit-background-size: .26rem auto;
+              background-size: .26rem auto;
+            }
+          }
+          em {
+            color: #f33;
+            font-size: .24rem;
+            text-align: center;
+            width: 4em;
+            padding: 0;
+            background: none;
+            -webkit-background-size: auto .24rem;
+            background-size: auto .24rem;
+          }
+        }
+      }
+    }
+    &.unstart {
+      .score {
+        i {
+          display: block;
+          height: 100%;
+          width: 1.2rem;
+          //height: .4rem;
+          background: url("../../public-resource/imgs/i-clock.png") center no-repeat;
+          -webkit-background-size: .4rem auto;
+          background-size: .4rem auto;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e9e9e9;
+      //-webkit-transform: scaleY(0.5);
+      //-moz-transform: scaleY(0.5);
+      //-ms-transform: scaleY(0.5);
+      //-o-transform: scaleY(0.5);
+      //transform: scaleY(0.5);
+    }
+  }
+}
+.bottom_nav{
+  width: 7.5rem;
+  height: 1rem;
+}
+.crumbs {
+  background: #f3f3f3;
+  border-bottom: 1px #ddd solid;
+  position: relative;
+  height:0.7rem;
+}
+.time {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;top:0.04rem;right:1.5rem;
+  .cont{
+    width: 4.3rem;
+    height:0.6rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    float: left;
+    span{
+      display:inline-block;
+      float: left;
+    }
+    .left,.right{
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+    .left{
+      background: url("../../public-resource/imgs/left-arr.png") no-repeat center center;
+      background-size: 0.17rem  0.28rem;
+    }
+    .middle{
+      width: 3.1rem;
+      color: #333;
+      font-size: 0.28rem;
+      text-align: center;
+      height: 0.28rem;
+      line-height: 0.28rem;
+      margin-top: 0.16rem;
+    }
+    .right{
+      background: url("../../public-resource/imgs/right-arr.png") no-repeat center center;
+      background-size: 0.17rem  0.28rem;
+    }
+
+  }
+  .sub{
+    margin-left: 0.3rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    color: #1595ed;
+    font-size: 0.24rem;
+    display: inline-block;
+  }
+}

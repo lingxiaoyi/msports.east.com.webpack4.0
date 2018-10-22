@@ -1,0 +1,116 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+body{
+  padding-bottom:2rem;
+}
+nav{
+  width:100%;font-size: 0.32rem;color: #333333;line-height: 0.72rem;border-bottom: 1px solid #dcdcdc;
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;float: none;position: relative;margin-right: 0.4rem;
+      &.active{
+        color: #ff3333;
+        &:after{
+          content: "";
+          position: absolute;
+          height: .05rem;
+          width: .2rem;
+          left: 50%;
+          margin-left: -.1rem;
+          bottom: 0;
+          background-color: #f33;
+        }
+      }
+    }
+  }
+}
+.main {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  .tab-con{
+    width:100%;display: none;
+    .title{
+      height: 0.61rem;
+      background-color: rgba(245, 245, 245, 1);
+      box-shadow: 0px 1px 0px 0px rgba(233, 233, 233, 1);
+      text-indent: 0.24rem;font-size: 0.24rem;color:#333;line-height: 0.6rem;overflow: hidden;
+    }
+    &:first-child{
+      display: block;
+    }
+  }
+  .matchs li {
+    position: relative;
+    a {
+      display: block;
+      margin: 0 .4rem;padding: 0.17rem 0;
+      height: 100%;border-bottom: solid 1px #e6e6e6;overflow: hidden;
+      .col-1 {
+        width: 0.68rem;height:0.8rem;float: left;text-indent: 0.14rem;line-height: 0.8rem;font-size: 0.3rem;color: #333333;background-size: 0.68rem 0.7rem;background-position:  center bottom ;background-repeat: no-repeat;
+      }
+      .col-2 {
+        margin-left: 0.35rem;width: 4rem;float: left;
+        .head{
+          float: left;width: 0.8rem;border: solid 1px #e6e6e6;overflow: hidden;
+          height: 0.8rem;border-radius: 50%;background: url(//msports.eastday.com/h5/img/portrait.png);background-size: cover;
+          img{
+            width:100%;height:100%;
+          }
+        }
+        .info{
+          float: left;margin-left: 0.2rem;max-width: 3rem;
+          h3{
+            font-size: 0.28rem;margin-top: 0.05rem;font-weight: 400;
+          }
+          p{
+            font-size: 12px;color: #999999;
+          }
+          .col3{
+            color: #ff5050;font-size: 12px;margin-top: 0.05rem;
+          }
+        }
+      }
+      .col-3{
+        float: right;color: #ff5050;font-size: 12px;text-align: center;
+        span{
+          font-size: 0.46rem;line-height: 0.5rem;font-weight: 600;
+        }
+      }
+    }
+    .btn{
+      width: 1.38rem;
+      height: 0.50rem;color: #ffffff;background-color: #ff5050;
+      border-radius: 0.24rem;font-size: 0.28rem;text-align: center;line-height: 0.5rem;position: absolute;right:0.4rem;top:0.3rem;
+      &.active{
+        background-color: #eeeeee;color: #666666;
+      }
+    }
+    &:nth-child(1) .col-1{
+      background-image: url(../../../public-resource/imgs/hc/i-ranking-1.png);
+    }
+    &:nth-child(2) .col-1{
+      background-image: url(../../../public-resource/imgs/hc/i-ranking-2.png);
+    }
+    &:nth-child(3) .col-1{
+      background-image: url(../../../public-resource/imgs/hc/i-ranking-3.png);
+    }
+  }
+}
+.crumbs {
+  background: #f3f3f3;
+  border-bottom: 1px #dcdcdc solid;
+  position: relative;
+  height:0.8rem;
+  ul{
+    display: block;text-align: center;
+  }
+  li{
+    width:1.4rem;height:0.5rem;color: #999999;text-align: center;line-height: 0.5rem;display: inline-block;margin: 0.15rem 0.2rem 0;font-size: 0.28rem;
+    &.active{
+      border-radius: 0.5rem;border: 1px solid #e6e6e6;color: #ff3333;background: #fff;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+html,body{
+  height: 100%;
+}
+body{
+  background-color: #f0f0f0;
+}
+
+.load_form{
+  padding-top: .2rem;
+  position: relative;
+  .putin{
+    padding-left:  .4rem;
+    overflow: hidden;
+    background-color: #fff;
+    input{
+      display: block;
+      width: 100%;
+      font-size: .3rem;
+      line-height: 1.2rem;
+      color: #aaa;
+    }
+    .put_box{
+      height: 1rem;
+      position: relative;
+      border-bottom: 1px solid #e8e8e8;
+      .pass_toggle{
+        position: absolute;
+        right: .36rem;
+        top: 0;
+        width: .6rem;
+        height: 100%;
+        background: url("../../../public-resource/imgs/hc/pass_hide.png") center no-repeat;
+        background-size: .42rem auto;
+        &.show{
+          background-image: url("../../../public-resource/imgs/hc/pass_show.png");
+        }
+      }
+      .get_code{
+        position: absolute;
+        right: .36rem;
+        top: 0;
+        line-height: 1rem;
+        font-size: .28rem;
+        color: #ff4646;
+        &.wait{
+          color: #aaa;
+        }
+      }
+      &:nth-of-type(3){
+        border: 0 none;
+      }
+    }
+  }
+  .tips{
+    display: none;
+    position: absolute;
+    font-size: .26rem;
+    line-height: .7rem;
+    text-align: center;
+    color: #fff;
+    height: .7rem;
+    padding: 0 .2rem;
+    border-radius: .1rem;
+    background-color: rgba(0,0,0,0.7);
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,0);
+  }
+  .btn_box{
+    padding:0 .6rem;
+  }
+  .info{
+    font-size: .24rem;
+    padding:.3rem .6rem;
+    color: #f44b50;
+  }
+  .load_btn{
+    display: block;
+    width: 100%;
+    border-radius: .1rem;
+    font-size: .34rem ;
+    line-height: .8rem;
+    background-color: #d6d7db;
+    color: #999;
+    &.red{
+      color: #fff;
+      background-color: #ff4646;
+    }
+  }
+}

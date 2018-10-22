@@ -1,0 +1,197 @@
+
+.message-tips {
+  position: fixed;
+  z-index: 9999999;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  p {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.05rem;
+    line-height: .9rem;
+    font-size: 0.30rem;
+    padding: 0 0.32rem;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  i {
+    background-size: 0.38rem 0.4rem;
+    width: 0.38rem;
+    height: 0.4rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+    vertical-align: -0.1rem;
+  }
+  &.suc i {
+    background-image: url(~public/imgs/hc/i-success.png);
+  }
+  &.fail i {
+    background-image: url(~public/imgs/hc/i-fail.png);
+  }
+  &.loading i, &.loadingpay i {
+    background-image: url(~public/imgs/hc/i-loading.png);
+    animation: spin 1.5s infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*hc弹窗开始*/
+.mint-msgbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: #fff;
+  width: 5.8rem;
+  border-radius: 0.15rem;
+  font-size: 0.28rem;
+  -webkit-user-select: none;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: .2s;
+  font-weight: 400;
+  .close{
+    width:0.85rem;height:0.85rem;background: url(~public/imgs/hc/i-close-order.png) no-repeat center;background-size: 0.25rem 0.25rem;position: absolute;top:0;right:0;
+  }
+}
+
+.mint-msgbox-header {
+  color: #222222;font-size: 0.34rem;margin-top: 0.5rem;text-align: center;
+}
+
+.mint-msgbox-content {
+  padding: 0 0.5rem;
+}
+
+.mint-msgbox-message {
+  color: #333333;
+  text-align: center;font-size: 0.28rem;line-height: 0.35rem;margin-top: 0.5rem;
+}
+
+.mint-msgbox-btns {
+  height: 0.7rem;
+  line-height: 0.7rem;text-align: center;margin-top: 0.56rem;margin-bottom: 0.46rem;
+}
+
+.mint-msgbox-btn {
+  background-color: #fff;
+  display: inline-block;
+  font-size: 0.32rem;width:2.21rem;border: solid 1px #e6e6e6;border-radius: 0.1rem;color: #333333;height: 0.7rem;
+  &:last-child{
+    color: #fff;background: #ff3333;margin-left: 0.2rem;
+  }
+}
+
+/*hc弹窗结束*/
+//弹窗
+.popup-box {
+  position: fixed;
+  top: 0;
+  width: 7.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  z-index: 99999;
+  .popup {
+    width: 7.12rem;
+    position: absolute;
+    bottom: 0.2rem;
+    background: #fff;
+    border-radius: 0.15rem;
+    overflow: hidden;
+    left: 0.19rem;
+    .title {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-indent: 0.42rem;
+      background-color: #f1f1f1; /*border-radius: 0.15rem;*/
+      font-size: 0.34rem;
+      .btn-close {
+        width: 1rem;
+        height: 100%;
+        background: url(~public/imgs/hc/i-close.png) no-repeat center center;
+        background-size: 0.24rem 0.24rem;
+        float: right;
+      }
+    }
+    .main {
+      padding-bottom: 0.4rem;
+      text-align: center;
+      padding-left: 0.4rem;
+      ul {
+        text-align: left;
+        li {
+          line-height: 0.92rem;
+          border-bottom: 1px solid #e6e6e6;
+          font-size: 0.26rem;
+          color: #666666;
+          height: 0.92rem;
+          overflow: hidden;
+          .l {
+            float: left;
+          }
+          .r {
+            float: right;
+            margin-right: 0.45rem;
+            p {
+              color: #3caaff;
+              font-size: 0.28rem;
+              i {
+                display: inline-block;
+                width: 0.16rem;
+                height: 0.26rem;
+                background: url(~public/imgs/hc/i-arr-r-s.png);
+                background-size: cover;
+                vertical-align: -0.02rem;
+                margin-left: 0.1rem;
+              }
+            }
+            .num {
+              font-size: 0.46rem;
+              color: #222222;
+            }
+            span {
+              color: #ff3333;
+            }
+            .yuanbao {
+              float: left;
+              color: #666666;
+              margin-right: 0.2rem;
+              i {
+                display: inline-block;
+                width: 0.22rem;
+                height: 0.22rem;
+                background: url(~public/imgs/i-yuanbao.png);
+                background-size: cover;
+                vertical-align: -0.02rem;
+                margin-right: 0.1rem;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        width: 6.3rem;
+        display: block;
+        height: 0.80rem;
+        background-color: #ff3333;
+        border-radius: 0.10rem;
+        margin: 0.4rem auto 0;
+        color: #ffffff;
+        font-size: 0.32rem;
+        line-height: 0.8rem;
+      }
+    }
+  }
+}

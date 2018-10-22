@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="hotcss" content="initial-dpr=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-page-mode" content="no-title">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="canonical" href="<%= canonical %>"/>
+    <meta name="Copyright" content="东方体育©版权所有">
+    <link rel="shortcut icon" href="<%= DIRS.BUILD_FILE.images.favicon %>">
+    <link rel="bookmark" href="<%= DIRS.BUILD_FILE.images.favicon %>" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="<%= DIRS.BUILD_FILE.images.favicon %>">
+    <link rel="dns-prefetch" href="<%= HOME_URL %>">
+    <title><%= pageTitle %></title>
+    <meta name="keywords" content="<%= pageKeywords %>">
+    <meta name="description" content="<%= pageDescription %>">
+    <script>
+        "use strict";!function(t,e){var i={};!function(){var n=e.querySelector('meta[name="viewport"]'),a=e.querySelector('meta[name="hotcss"]'),r=t.devicePixelRatio||1,d=750,m=0;if(r=r>=3?3:r>=2?2:1,a){var s=a.getAttribute("content");if(s){var c=s.match(/initial\-dpr=([\d\.]+)/);c&&(r=parseFloat(c[1]));var o=s.match(/max\-width=([\d\.]+)/);o&&(d=parseFloat(o[1]));var u=s.match(/design\-width=([\d\.]+)/);u&&(m=parseFloat(u[1]))}}e.documentElement.setAttribute("data-dpr",r),i.dpr=r,e.documentElement.setAttribute("max-width",d),i.maxWidth=d,m&&(e.documentElement.setAttribute("design-width",m),i.designWidth=m);var l=1/r,h="width=device-width, initial-scale="+l+", minimum-scale="+l+", maximum-scale="+l+", user-scalable=no";n?n.setAttribute("content",h):(n=e.createElement("meta"),n.setAttribute("name","viewport"),n.setAttribute("content",h),e.head.appendChild(n))}(),i.px2rem=function(t,e){return e||(e=parseInt(i.designWidth,10)),750*parseInt(t,10)/e/100},i.rem2px=function(t,e){return e||(e=parseInt(i.designWidth,10)),100*t*e/750},i.mresize=function(){var n=e.documentElement.getBoundingClientRect().width||t.innerWidth;if(i.maxWidth&&n/i.dpr>i.maxWidth&&(n=i.maxWidth*i.dpr),!n)return!1;e.documentElement.style.fontSize=100*n/750+"px",i.callback&&i.callback()},i.mresize(),t.addEventListener("resize",function(){clearTimeout(i.tid),i.tid=setTimeout(i.mresize,33)},!1),t.addEventListener("load",i.mresize,!1),setTimeout(function(){i.mresize()},333),t.hotcss=i}(window,document);
+    </script>
+    <link rel="stylesheet" href="<%= DIRS.BUILD_FILE.dll.css %>">
+    <%= scriptHtml %>
+    <%= statisticsHtml %>
+</head>
+<body id="indexNew">

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="hotcss" content="initial-dpr=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<link rel="stylesheet" href="http://msports.eastday.com/h5/css/base.css"/>-->
+    <script>
+        'use strict'
+        !function(t, e) {
+            var i = {}
+            !function() {
+                var n = e.querySelector('meta[name="viewport"]'),
+                    a = e.querySelector('meta[name="hotcss"]'),
+                    r = t.devicePixelRatio || 1,
+                    d = 750,
+                    m = 0
+                if (r = r >= 3 ? 3 : r >= 2 ? 2 : 1, a) {
+                    var s = a.getAttribute('content')
+                    if (s) {
+                        var c = s.match(/initial\-dpr=([\d\.]+)/)
+                        c && (r = parseFloat(c[1]))
+                        var o = s.match(/max\-width=([\d\.]+)/)
+                        o && (d = parseFloat(o[1]))
+                        var u = s.match(/design\-width=([\d\.]+)/)
+                        u && (m = parseFloat(u[1]))
+                    }
+                }
+                e.documentElement.setAttribute('data-dpr', r), i.dpr = r, e.documentElement.setAttribute('max-width', d), i.maxWidth = d, m && (e.documentElement.setAttribute('design-width', m), i.designWidth = m)
+                var l = 1 / r,
+                    h = 'width=device-width, initial-scale=' + l + ', minimum-scale=' + l + ', maximum-scale=' + l + ', user-scalable=no'
+                n ? n.setAttribute('content', h) : (n = e.createElement('meta'), n.setAttribute('name', 'viewport'), n.setAttribute('content', h), e.head.appendChild(n))
+            }(), i.px2rem = function(t, e) {return e || (e = parseInt(i.designWidth, 10)), 750 * parseInt(t, 10) / e / 100}, i.rem2px = function(t, e) {return e || (e = parseInt(i.designWidth, 10)), 100 * t * e / 750}, i.mresize = function() {
+                var n = e.documentElement.getBoundingClientRect().width || t.innerWidth
+                if (i.maxWidth && n / i.dpr > i.maxWidth && (n = i.maxWidth * i.dpr), !n) return !1
+                e.documentElement.style.fontSize = 100 * n / 750 + 'px', i.callback && i.callback()
+            }, i.mresize(), t.addEventListener('resize', function() {clearTimeout(i.tid), i.tid = setTimeout(i.mresize, 33)}, !1), t.addEventListener('load', i.mresize, !1), setTimeout(function() {i.mresize()}, 333), t.hotcss = i
+        }(window, document)
+    </script>
+    <style>
+        body{
+            margin:0;
+        }
+        p{
+            margin: 0;padding:0;
+        }
+        #ad20180228zty1 {
+            display: block;position: relative;
+        }
+        #ad20180228zty1 a {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: 0;
+            text-decoration: none;
+            padding: 0 12px;
+            font-size: 0;
+        }
+
+        #ad20180228zty1 .imgs {
+            margin-top: 5px;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        #ad20180228zty1 .imgs img{
+            width:32%;float: left;margin-left: 1%;
+        }
+        #ad20180228zty1 .imgs img:last-child{
+            margin: 0;
+        }
+        #ad20180228zty1 img {
+            width: 100%;
+            height: 100%;
+            float: left;
+            border: 0;
+        }
+
+        #ad20180228zty1 .name {
+            font-size: 17px;
+            line-height: 22px;
+            max-height: 44px;
+            overflow: hidden;
+            color: #333;
+            font-weight: 400;
+        }
+
+        #ad20180228zty1 .ico {
+            content:  '';
+            position:  absolute;
+            bottom: -2px;
+            right: 22px;
+            padding:1px 2px ;
+            color:#fff;
+            background-color: #333;
+            font-size: 12px;
+            line-height: 1;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+<div id="ad20180228zty1">
+    <a href="//hyt0.hytslabs.com/" id="tyh5zwxfdj"
+       onclick="top._hmt.push(['_trackEvent',  '直客H5正文下方',  '点击','1'])" target="_blank">
+        <p class="name">每天晚上40分钟，全因吃了这</p>
+        <p class="imgs">
+            <img src="//msports.eastday.com/h5/img/ad/zhike4.png">
+            <img src="//msports.eastday.com/h5/img/ad/zhike5.png">
+            <img src="//msports.eastday.com/h5/img/ad/zhike6.png">
+        </p>
+        <span class="ico">广告</span>
+    </a>
+</div>
+</body>
+<script type="text/javascript">
+    (function() {
+        top.adzhike = top.adzhike || []
+        top.adzhike.push({
+            ev: '#ad20180228zty1  a',
+            btype: 'theme',
+            subtype: 'zty1zk',
+            urls: '//hyt0.hytslabs.com/'
+        })
+    })()
+</script>
+</html>

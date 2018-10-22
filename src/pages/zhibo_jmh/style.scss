@@ -1,0 +1,22 @@
+body{
+  background: #3e9409;
+}
+.main{
+  width:7.5rem;height:100%;background: url(../../public-resource/imgs/zhibo/zhibo-bg.jpg) no-repeat;background-size: cover;overflow: hidden;
+  .head{
+    text-align: center;background: url(../../public-resource/imgs/zhibo/banner.png) no-repeat;background-size: cover;overflow: hidden;width:5.54rem;height:2.57rem;margin: 0.2rem auto;
+
+  }
+  .v-box{
+    width:6.9rem;height:4rem;margin:0.1rem  auto 0;
+  }
+  .content{
+    padding:0.9rem 0.25rem;
+    h3{
+      background: url(../../public-resource/imgs/zhibo/zhibo-title.png) no-repeat;background-size: cover;width:2.69rem;height:0.55rem;line-height: 0.55rem;text-indent:0.65rem ;color:#010101;font-size: 0.28rem;
+    }
+    p{
+      color:#010101;font-size: 0.28rem;line-height: 0.6rem;margin-top: 0.2rem;
+    }
+  }
+}

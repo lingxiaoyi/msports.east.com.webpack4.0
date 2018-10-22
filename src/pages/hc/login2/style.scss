@@ -1,0 +1,271 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+
+  .close {
+    position: absolute;
+    right: .2rem;
+    top: .2rem;
+    width: .5rem;
+    height: .5rem;
+    background: url("../../../public-resource/imgs/hc/i-load-close.png") center no-repeat;
+    -webkit-background-size: .3rem .3rem;
+    background-size: .3rem .3rem;
+  }
+
+  .load_form {
+    padding-top: .6rem;
+    &.none {
+      height: 0;
+      overflow: hidden;
+    }
+    .back {
+      width: 1rem;
+      height: 1rem;
+      background: url("../../../public-resource/imgs/hc/i-back.png") no-repeat center center;
+      background-size: 0.18rem 0.34rem;
+      position: absolute;
+      left: 0.2rem;
+      top: 0;
+    }
+    .icon-h {
+      width: 1.3rem;
+      height: 1.3rem;
+      background: url("../../../public-resource/imgs/hc/logo-login.png") center no-repeat;
+      background-size: cover;
+      margin: 0.55rem auto;
+    }
+    h3 {
+      font-size: .38rem;
+      line-height: .46rem;
+      color: #333;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
+    .form_box {
+      padding: 0 .6rem 0;
+      input {
+        display: block;
+        width: 100%;
+        font-size: 0.3rem;
+        line-height: 1rem;
+        color: #333;
+      }
+      .put_box {
+        border-bottom: 1px solid #e8e8e8;
+        height: 1rem;
+        position: relative;
+        .pass_toggle {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: .6rem;
+          height: 100%;
+          background: url("../../../public-resource/imgs/hc/pass_hide.png") center no-repeat;
+          background-size: .42rem auto;
+          &.show {
+            background-image: url("../../../public-resource/imgs/hc/pass_show.png");
+          }
+        }
+        .get_code {
+          position: absolute;
+          right: 0;
+          top: 0;
+          line-height: 1rem;
+          font-size: .28rem;
+          color: #ff4646;
+          &.wait {
+            color: #aaa;
+          }
+        }
+      }
+      .load_btn {
+        display: block;
+        width: 100%;
+        margin-top: .6rem;
+        border-radius: .1rem;
+        font-size: .34rem;
+        line-height: .8rem;
+        background-color: #d6d7db;
+        color: #999;
+        &.red {
+          color: #fff;
+          background-color: #ff4646;
+        }
+      }
+    }
+    .links {
+      display: none;
+      padding: 0 .6rem;
+      a {
+        font-size: .26rem;
+      }
+      .forget {
+        color: #999;
+        float: left;
+      }
+      .verification {
+        float: right;
+        color: #ff4646;
+
+      }
+    }
+  }
+  .third_party {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 0 .6rem;
+    bottom: 0;
+    left: 0;
+    .cont {
+      border-top: 1px solid #e8e8e8;
+      height: 2.18rem;
+      position: relative;
+      .tit {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        padding: 0 .48rem;
+        font-size: .24rem;
+        color: #999;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+      }
+      .third_load {
+        text-align: center;
+        height: 100%;
+        li {
+          display: inline-block;
+          width: 30%;
+          height: 100%;
+          background: center no-repeat;
+          background-size: auto .4rem;
+          text-align: center;
+          font-size: .24rem;
+          color: #999;
+          line-height: 3.4rem;
+        }
+        .qq {
+          background-image: url("../../../public-resource/imgs/hc/third_qq.png");
+        }
+        .wx {
+          background-image: url("../../../public-resource/imgs/hc/third_wx.png");
+        }
+        .web {
+          background-image: url("../../../public-resource/imgs/hc/third_web.png");
+        }
+      }
+    }
+  }
+}
+
+#verify_box {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  .content_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 5.5rem;
+    height: 3.6rem;
+    border-radius: .3rem;
+    padding: .4rem .34rem;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    .tit {
+      height: .8rem;
+      font-size: .34rem;
+      line-height: .4rem;
+      font-weight: 600;
+      color: #333;
+      span {
+        float: right;
+        font-size: .24rem;
+        padding-left: .36rem;
+        color: #999;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAMAAABRPb9kAAAAM1BMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZlkqvaGAAAAEHRSTlMADOPOrXrwwJAmGZ9jU0IzU9mEIwAAALhJREFUKM+VktsOhCAMRJFy9Xr+/2u3ioYV2IedxNDO0HZsMBXJTWYIh/1HmVYnFsLc0AlFAKvCV9VuIe2HEDXx+IffYNGbkfhkhT9gLXZLni3pCoLyL8yBXY9FKxvsBPUAvfnIZta2oIwVFQ/TI2AGnRRyCuO1/RbGrSLaLY+He3zPzwST9euQztvSrurZRqabEkt7j50br1KCBbZKZ6lvIoHLN62x1D/bLNjoXNTzbX/ywgXx97wP5zgH6xGP0lAAAAAASUVORK5CYII=") left no-repeat;
+        background-size: auto 80%;
+      }
+    }
+    #v_container {
+      float: right;
+      height: .7rem;
+      padding-top: .04rem;
+      width: 1.6rem;
+      #verifyCanvas {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #verify_input {
+      height: .7rem;
+      width: 3rem;
+      float: left;
+      font-size: .14rem;
+      border: 1px solid #9b9b9b;
+      border-radius: .1rem;
+      text-align: left;
+      text-indent: .3rem;
+      line-height: .7rem;
+      &::-webkit-input-placeholder{
+        font-size: .24rem;
+      }
+      &:after{
+        content: '23333';
+      }
+      &:focus{
+        font-size: .3rem;
+        color: #333;
+        &::-webkit-input-placeholder{
+          color: #fff;
+        }
+      }
+    }
+    .info {
+      clear: both;
+      color: #ff4646;
+      font-size: .24rem;
+      line-height: .5rem;
+      height: .5rem;
+      opacity: 0;
+      &.show {
+        opacity: 1;
+      }
+    }
+    #verifybutton {
+      display: block;
+      width: 100%;
+      height: .8rem;
+      color: #fff;
+      background-color: #d6d7db;
+      border-radius: .1rem;
+      &.red {
+        background-color: #ff4646;
+      }
+    }
+  }
+}
+
+.desc {
+  font-size: 0.25rem;
+  padding: 0 0.6rem;
+  margin-top: 0.2rem;
+  color: #999;
+  line-height: 0.36rem;
+  a {
+    color: #333;
+  }
+}

@@ -1,0 +1,633 @@
+@import "~public/sass/hc/common.scss";
+@import "~public/sass/hc/message.scss";
+@import "~public/sass/swiper.scss";
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  padding-bottom: 1rem;
+}
+.separate-line {
+  width: 100%;
+  height: .2rem;
+  background: #f5f5f5;
+}
+nav {
+  width: 100%;
+  font-size: 0.32rem;
+  color: #333333;
+  line-height: 0.72rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: #fff;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      float: none;
+      position: relative;
+      margin-right: 0.4rem;
+      &.active {
+        color: #ff3333;
+        &:after {
+          content: "";
+          position: absolute;
+          height: .05rem;
+          width: .2rem;
+          left: 50%;
+          margin-left: -.1rem;
+          bottom: 0;
+          background-color: #f33;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  min-height: 100%;
+  background-color: #f5f5f5;
+  .part_1, .part_2, .part_3, .part_4, .bottom_nav {
+    background-color: #fff;
+  }
+  .part_tit {
+    font-weight: 600;
+    font-size: .32rem;
+    height: .32rem;
+    line-height: 1;
+    padding-top: .38rem;
+    box-sizing: content-box;
+    text-indent: .24rem;
+    position: relative;
+    overflow: hidden;
+    a {
+      float: right;
+      color: #666;
+      font-weight: 400;
+      line-height: .4rem;
+      font-size: .26rem;
+      padding-right: .14rem;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      height: .32rem;
+      width: .08rem;
+      bottom: 0;
+      left: 0;
+      background-color: #f33;
+    }
+  }
+  .part_1 {
+    height: 4.22rem;
+    overflow: hidden;
+    .swiper-wrapper {
+      height: 100%;
+    }
+  }
+  .part_2 {
+    //height: 4.6rem;
+    padding-bottom: 0.3rem;
+    ul {
+      max-height: 3.6rem;
+      overflow: hidden;
+      li {
+        float: left;
+        height: 1.4rem;
+        width: 1.6rem;
+        margin: 0.4rem 0.137rem 0;
+        .img {
+          width: .98rem;
+          height: .98rem;
+          border-radius: 50%;
+          overflow: hidden;
+          background: url(//msports.eastday.com/h5/img/portrait.png);
+          background-size: cover;
+          margin: 0 auto;
+        }
+        img {
+          display: block;
+          width: .98rem;
+        }
+        .name {
+          font-size: .28rem;
+          text-align: center;
+          line-height: .42rem;
+          height: 0.42rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .part_3 {
+    margin: .14rem 0;
+    padding-bottom: .18rem;
+    position: relative;
+    text-align: center;
+    font-size: .24rem;
+    a {
+      color: #999;
+    }
+    b {
+      font-weight: 400;
+      color: #333;
+      font-size: .3rem;
+    }
+    .box{
+      margin-top: 0.1rem;
+    }
+    .fl{
+      width: 25%;
+      height: 100%;
+      background-color: #fff;
+      a{
+        display: block;
+        icon{
+          width:0.8rem;
+          height:0.8rem;background-repeat:no-repeat ;display: block;margin: 0 auto;background-size: cover;
+        }
+        p{
+          color: #666666;	font-size: 12px;margin-top: 0.1rem;text-align: center;
+        }
+      }
+    }
+    .fl{
+      &:nth-child(1){
+        icon{
+          background-image: url(~public/imgs/hc/icon-yapan.png);
+        }
+      }
+      &:nth-child(2){
+        icon{
+          background-image: url(~public/imgs/hc/icon-jingcai.png);
+        }
+      }
+      &:nth-child(3){
+        icon{
+          background-image: url(~public/imgs/hc/icon-daxiaoqiu.png);
+        }
+      }
+      &:nth-child(4){
+        icon{
+          background-image: url(~public/imgs/hc/icon-mian.png);
+        }
+      }
+    }
+  }
+  .part_4 {
+    ul {
+      padding: 0 .24rem .4rem;
+      li {
+        padding-top: .4rem;
+        border-bottom: 1px solid #eee;
+        .line_1 {
+          height: .9rem;
+          margin-bottom: .2rem;
+          .img {
+            float: left;
+            width: .9rem;
+            height: .9rem;
+            border: 1px solid #f0f0f0;
+            border-radius: 50%;
+            overflow: hidden;
+            background: url(//msports.eastday.com/h5/img/portrait.png);
+            background-size: cover;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .info {
+            float: left;
+            padding-left: .2rem;
+            b {
+              font-weight: 400;
+              color: #333;
+              line-height: .56rem;
+              font-size: .28rem;
+              margin-top: -0.08rem;
+              display: block;
+            }
+            .tag {
+              display: inline-block;
+              font-size: .24rem;
+              line-height: .32rem;
+              border: 1px solid #000;
+              border-radius: .17rem;
+              padding: 0 .12rem;
+            }
+            .b {
+              color: #f33;
+              border-color: #f99;
+            }
+            .r {
+              color: #1b76ff;
+              border-color: #8ab9ff;
+            }
+          }
+          .mz {
+            float: right;
+            color: #f33;
+            font-size: .24rem;
+            text-align: center;
+            margin-top: -0.08rem;
+            b {
+              font-size: .5rem;
+              font-weight: bolder;
+            }
+          }
+        }
+        .line_2 {
+          font-size: .34rem;
+          line-height: .48rem;
+          margin: 0 0 0.2rem;
+        }
+        .line_3 {
+          height: .5rem;
+          background-color: #f5f5f5;
+          line-height: 0.5rem;
+          border-radius: .05rem;
+          text-align: center;
+          color: #666666;
+          margin-top: 0.05rem;
+          .tag {
+            float: left;
+            width: 1.1rem;
+            color: #6699ff;
+            background: #e2eeff;
+            border-radius: 0.05rem 0 0 0.05rem;
+          }
+          .tag2 {
+            float: left;
+            width: 1.29rem;
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              height: .18rem;
+              width: 1px;
+              right: 0;
+              top: 50%;
+              background-color: #d3d2d2;
+              transform: translate(0, -50%);
+            }
+          }
+          .tag3 {
+            float: left;
+            width: 3.47rem;
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              height: .2rem;
+              width: 1px;
+              right: 0;
+              top: 50%;
+              background-color: #d3d2d2;
+              transform: translate(0, -50%);
+            }
+          }
+          .tag4 {
+            float: left;
+            width: 1.1rem;
+          }
+        }
+        .line_4 {
+          position: relative;
+          line-height: .6rem;
+          font-size: .24rem;
+          margin-top: .2rem;
+          &:after {
+            content: '';
+            display: block;
+            clear: both;
+          }
+          .time {
+            color: #999;
+            float: left;
+            padding-right: .26rem;
+            position: relative;
+            &:after {
+              position: absolute;
+              content: '';
+              height: .18rem;
+              width: 1px;
+              right: 0;
+              top: 50%;
+              transform: translate(0, -50%);
+              background-color: #e6e6e6;
+            }
+          }
+          .yb {
+            float: left;
+            color: #f33;
+            padding-right: .32rem;
+            text-indent: .28rem;
+            background: url('../../../public-resource/imgs/hc/yuanbao.png') center right no-repeat;
+            background-size: auto .22rem;
+          }
+          .end {
+            color: #999;
+            text-indent: .28rem;
+            float: left;
+          }
+          .mark {
+            float: right;
+            width: 0.36rem;
+            height: 0.36rem;
+            background-size: cover;
+            background-position: center center;
+            margin-top: 0.12rem;
+            &.red {
+              background-image: url(~public/imgs/hc/i-mark-hong.png);
+            }
+            &.black {
+              background-image: url(~public/imgs/hc/i-mark-hei.png);
+            }
+            &.zou {
+              background-image: url(~public/imgs/hc/i-mark-zou.png);
+            }
+          }
+        }
+      }
+      li:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+//抢红包样式
+.main {
+  .gift-packs {
+    width: 7.5rem;
+    //height: 1.92rem;
+    //height: 0;
+    background: #fff;
+    overflow: hidden;
+    a {
+      display: block;
+      height:  1.78rem;
+      background-size: cover;
+      margin: 0.05rem 0 0;
+      background-position: 0 0.05rem;
+      background-size: 100% auto ;
+      position: relative;
+      .info {
+        //width: 3.5rem;
+        float: left;
+        margin: 0.24rem 0 0 1.05rem;
+        h1 {
+          float: left;
+          font-size: .28rem;
+          color: #ff3333;
+          width: 1.54rem;
+          text-indent: .1rem;
+          padding: 0;
+          font-family: pictos;
+          span {
+            font-weight: 400;
+            font-size: 1rem;
+          }
+        }
+        .text {
+          padding-top: .26rem;
+          float: left;
+          h3 {
+            width: 100%;
+            font-size: .28rem;
+            line-height: .4rem;
+            color: #ff3333;
+          }
+          p {
+            font-size: .24rem;
+            line-height: .3rem;
+            color: #999999;
+            span {
+              color: #ff3333;
+            }
+          }
+        }
+        &.end {
+          h1 {
+            color: #d2d2d2;
+          }
+          .text {
+            h3 {
+              color: #c8c8c8;
+            }
+            p {
+              color: #ff3333;
+            }
+          }
+        }
+      }
+      .num {
+        float: right;
+        width: 1.1rem;
+        height: .94rem;
+        margin-right: .52rem;
+        margin-top: .1rem;
+        font-size: .2rem;
+        line-height: .26rem;
+        color: #ff0400;
+        padding-top: .34rem;
+        text-align: center;
+        position: relative;
+        i{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: -.01rem;
+          top: .02rem;
+        }
+      }
+      .btn{
+        display: none;
+        color: #fff;
+        position: absolute;
+        right: .5rem;
+        top: .4rem;
+        width: 1.1rem;
+        height: 1rem;
+        padding-top: .1rem;
+        transform: scale(.8,.8);
+        font-size: .24rem;
+        line-height: .22rem;
+        text-align: center;
+        font-family: PingFangSC-Regular, sans-serif;
+          .n{
+            font-weight: 900;
+            font-size: .36rem;
+          }
+
+      }
+      &:after{
+        position: absolute;
+        right: .52rem;
+        bottom: .34rem;
+        color: #fff;
+        font-size: .24rem;
+        transform: scale(.86,.86);
+      }
+      &:before{
+        position: absolute;
+        top: .5rem;
+        right: .7rem;
+        color: #814b00;
+        font-weight: 700;
+        font-size: .24rem;
+        transform: rotate(26deg);
+      }
+      &.banner {
+        background-image: url(~public/imgs/hc/hc-banner/banner.jpg);
+        .info,.num{
+          display: none;
+        }
+      }
+      &.banner1 {
+        background-image: url(~public/imgs/hc//hc-banner/banner1.jpg);
+        .info{}
+        .num{
+          display: none;
+        }
+        .btn{
+          display: block;
+        }
+      }
+      &.banner2 {
+        background-image: url(~public/imgs/hc//hc-banner/banner2.jpg);
+        &:after{
+          content: '立即领取';
+        }
+      }
+      &.banner3 {
+        background-image: url(~public/imgs/hc//hc-banner/banner3.jpg);
+        .num{
+          display: none;
+        }
+        &:before{
+          content: '已领取';
+        }
+        &:after{
+          margin-right: -0.2rem;
+          content: '去优惠券查看';
+        }
+      }
+      &.banner4 {
+        background-image: url(~public/imgs/hc//hc-banner/banner4.jpg);
+        .info{
+          h1{
+            color: #d2d2d2;
+          }
+          .text{
+            h3{
+              color: #c8c8c8;
+            }
+            p{
+              color: #ff3333;
+            }
+          }
+        }
+        .num{
+          display: none;
+        }
+        &:before{
+          margin-top: .24rem;
+          content: '已抢光';
+        }
+      }
+    }
+    &.no{
+      display: none;
+    }
+  }
+}
+
+.separate-line {
+  &.no {
+    display: none;
+  }
+}
+
+.swiper-container .swiper-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fs-swiper-container {
+  width: 100%;
+  height: 3.75rem;
+  .swiper-slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      height: 100%;
+    }
+
+    p {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      font-size: 0.28rem;
+      padding: 0 0.9rem 0 0.2rem;
+    }
+
+    span {
+      position: absolute;
+      right: 0.2rem;
+      top: 0;
+      font-size: 0.28rem;
+      i {
+        font-size: 0.24rem;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  text-align: right;
+  padding-right: 0.2rem; /*background: url(~public/imgs/hc/lunbo-bg.png) no-repeat left bottom;background-size: cover;*/
+}
+
+.swiper-pagination-bullet {
+  width: 0.1rem;
+  height: 0.1rem;
+  display: inline-block;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: .7;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 1.1rem 0.06rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fff;
+  border-radius: 100%;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.38rem;
+}

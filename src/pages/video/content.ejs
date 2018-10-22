@@ -1,0 +1,49 @@
+<% if (IS_PRODUCTION) { %>
+<article class="content">
+    <div class="video-wrap">
+        <div class="video-box">
+            #if($mp4url == "" || $mp4url == "null")
+            <img src="$!{imgurl}">
+            <a href="$!{outurl}"></a>
+            #else
+            <video id="J_video" class="video" src="$!{mp4url}" data-type="$!{categoryFirst}" poster="$!{imgurl}" type="$!{videoType}" preload="" controls="false" webkit-playsinline="true" width="100%" height="100%" data-duration="$!{duration}" data-source="$!{page.pageSource}" data-publishtime="$!{time}" data-size="11234" data-width="640" data-height="360">
+            </video>
+            #end
+        </div>
+    </div>
+
+    <div class="video-title">
+        <h1>$!{page.title}</h1>
+        <div class="tag clearfix">
+            <div class="l">
+                $!{page.pageSource}
+            </div>
+            <div class="r">$!{date}</div>
+        </div>
+    </div>
+</article>
+<% }else { %>
+<article class="content">
+    <div class="video-wrap">
+        <div class="video-box">
+            <img src="//imgmini.eastday.com/video/vzixun/20160615/20160615162859788651284_1_mwpm_05501609.jpeg">
+            <!--<a href="http://v.pptv.com/show/s09BviaaMicDqdG4M.html"></a>-->
+            <video id="J_video" class="video" src="http://o6yh618n9.qnssl.com/NQ67ZVSv_3916457051.mp4" data-type="vgaoxiao" poster="//imgmini.eastday.com/video/vzixun/20160615/20160615162859788651284_1_mwpm_05501609.jpeg" type="video/mp4" preload="" controls="none" webkit-playsinline="true" width="100%" height="100%" data-duration="33200" data-source="来源" data-publishtime="2017-02-22 12:12" data-size="11234" data-width="640" data-height="360"></video>
+        </div>
+    </div>
+    <div class="video-title">
+        <h1>斯杯决赛德国69-65克罗地亚斯杯决赛</h1>
+        <div class="tag clearfix">
+            <div class="l">
+                五星体育
+            </div>
+            <div class="r">8月12日</div>
+        </div>
+    </div>
+</article>
+<% } %>
+
+<div class="separate-line"></div>
+<div class="section-title in-title"><h2><span></span>相关视频</h2></div>
+<div id="J_related" class="related"></div>
+<div id="J_commend" class="commend"></div>
