@@ -13,7 +13,7 @@
 git clone
 
 ```
-git clone https://github.com/lingxiaoyi/msports.east.com.webpack3.0.git
+git clone https://github.com/lingxiaoyi/msports.east.com.webpack4.0.git
 ```
 
 1.1.安装
@@ -21,6 +21,7 @@ git clone https://github.com/lingxiaoyi/msports.east.com.webpack3.0.git
 ```
 cnpm install
 npm run start 本地运行
-npm run buildtest 本地打包查看代码
+npm run buildtest 查看本地打包代码
 ```
 - 代码配置较复杂 请查看array_huang大神详细教程.链接地址https://segmentfault.com/a/1190000010317802
+- webpack4.0 新增配置我会在博客上发一些自己遇到的问题

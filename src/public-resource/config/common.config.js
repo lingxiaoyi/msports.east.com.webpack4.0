@@ -323,7 +323,7 @@ if (isOnlinepro) { // 本项目所用的所有接口
         COUNTRY: '//sports.eastday.com/data/zhuanti/worldcup/'
     }
     HCHOST = '//sportsu.dftoutiao.com'
-    moduleExports.API_URL1 = {
+    moduleExports.API_URL = {
         HOST: '//dfsports_h5.dftoutiao.com/dfsports_h5/',
         HOST_LIVE: '//dfsportslive.dftoutiao.com/dfsports/',
         HOST_DSP_LIST: '//dftyttd.dftoutiao.com/partner/list',
