@@ -24,4 +24,4 @@ npm run start 本地运行
 npm run buildtest 查看本地打包代码
 ```
 - 代码配置较复杂 请查看array_huang大神详细教程.链接地址https://segmentfault.com/a/1190000010317802
-- webpack4.0 新增配置我会在博客上发一些自己遇到的问题
+- webpack4.0 新增配置我会在博客上发一些自己遇到的问题1
