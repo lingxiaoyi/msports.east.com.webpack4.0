@@ -1,12 +1,11 @@
 let webpack = require('webpack')
 let HtmlWebpackPlugin = require('html-webpack-plugin')
-let ExtractTextPlugin = require('extract-text-webpack-plugin')
 let path = require('path')
 let dirlets = require('../base/dir-vars.config.js')
 let pageArr = require('../base/page-entries.config.js')
 let HashOutput = require('webpack-plugin-hash-output')
-let MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const InlineChunkWebpackPlugin = require('html-webpack-inline-chunk-plugin')
+let MiniCssExtractPlugin = require('mini-css-extract-plugin')
+//const InlineChunkWebpackPlugin = require('html-webpack-inline-chunk-plugin')
 const isOnlinepro = process.argv.indexOf('--env=onlinepro') !== -1
 
 const devServer = process.argv.join('').indexOf('webpack-dev-server') !== -1 //有这个参数就生成html模板
@@ -85,7 +84,7 @@ pageArr.forEach((page) => {
     const htmlPlugin = new HtmlWebpackPlugin({
         filename: `${filename}`, //vm文件和html文件分开
         template: path.resolve(dirlets.pagesDir, `./${page}/html.js`),
-        chunks: ['manifest', page, 'commons', 'static/commons/ad.channel'],
+        chunks: ['manifest', page, 'commons'],
         hash: false, // 为静态资源生成hash值
         xhtml: false, //是否渲染link为自闭合的标签，true则为自闭合标签
         minify: false

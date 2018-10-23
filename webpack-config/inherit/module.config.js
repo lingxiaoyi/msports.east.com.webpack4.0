@@ -1,6 +1,6 @@
 let dirVars = require('../base/dir-vars.config.js')
-let eslintFormatter = require('eslint-friendly-formatter')
-let path = require('path')
+//let eslintFormatter = require('eslint-friendly-formatter')
+//let path = require('path')
 
 module.exports = {
     rules: [
@@ -34,20 +34,20 @@ module.exports = {
             options: {
               presets: [
                 [
-                  "@babel/preset-env",
-                  {
-                    "targets": {
-                      "browsers": ["last 10 versions"]
-                    },
-                    //"useBuiltIns": 'usage',
-                    "modules": "commonjs"
-                  }
+                    '@babel/preset-env',
+                    {
+                        'targets': {
+                            'browsers': ['last 10 versions']
+                        }, //"useBuiltIns": 'usage',
+                        'modules': 'commonjs'
+                    }
                 ]
               ],
               cacheDirectory: true,
-              plugins: [
-                '@babel/plugin-transform-runtime', "@babel/plugin-transform-object-assign"
-              ]
+                plugins: [
+                    '@babel/plugin-transform-runtime',
+                    '@babel/plugin-transform-object-assign'
+                ]
             }
           },
         {

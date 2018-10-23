@@ -7,7 +7,7 @@ if (isOnlinepro) {
     rootPath = '//msports.eastday.com/h5/'
     outPath = dirVars.buildOnline
 } else if (isTestpro) {
-    rootPath = '//test-msports.dftoutiao.com/msports.east.com/build/'
+    rootPath = '//test-msports.dftoutiao.com/msports.east.com.webpack4.0/build/'
     outPath = dirVars.buildDir
 } else {
     rootPath = '/'
@@ -16,6 +16,6 @@ if (isOnlinepro) {
 module.exports = { ///entry
     path: outPath,
     publicPath: rootPath,
-    filename: 'static/js/[name].js', // [name]表示entry每一项中的key，用以批量指定生成后文件的名称[name].[chunkhash].js
+    filename: 'static2/js/[name].js', // [name]表示entry每一项中的key，用以批量指定生成后文件的名称[name].[chunkhash].js
     //chunkFilename: 'static/js/[id].[chunkhash].bundle.js'
 }
