@@ -13,9 +13,9 @@ if (isOnlinepro) {
     rootPath = '/'
     outPath = dirVars.buildDir
 }
-module.exports = { ///entry
+module.exports = { //entry
     path: outPath,
     publicPath: rootPath,
-    filename: 'static2/js/[name].js', // [name]表示entry每一项中的key，用以批量指定生成后文件的名称[name].[chunkhash].js
+    filename: 'static/js/[name].js', // [name]表示entry每一项中的key，用以批量指定生成后文件的名称[name].[chunkhash].js
     //chunkFilename: 'static/js/[id].[chunkhash].bundle.js'
 }

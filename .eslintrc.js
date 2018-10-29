@@ -28,6 +28,9 @@ module.exports = {
         'no-extend-native': 1,//禁止扩展native对象 警告
         'space-before-function-paren': 0,
         'spaced-comment': 0,//注释风格要不要有空格什么的
+        'block-spacing': 0, //代码块不需要空格
+        'object-curly-spacing': 0, //{}不需要空格
+        'one-var': 0,
         //"semi": ["error", "always"],
         'semi': [2, 'never'],   //分号不出现
         'comma-dangle': [0, 'never'], //对象字面量项尾不能有逗号["error", "always"]这个是必须要逗号

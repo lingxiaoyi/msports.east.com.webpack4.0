@@ -10,11 +10,13 @@ let globInstance1
 let globInstance2
 if (devServer) {
     //index|liveing|data_world_up_duel|detail|video|video_other|data|
-    let minimatch = 'index|saishi|detail' //本地环境需调试的1级页面
+    /*let minimatch = 'index|saishi|detail' //本地环境需调试的1级页面
     globInstance1 = new glob.Glob(`?(${minimatch})`, options)
     //|hc//本地环境需调试的2级页面 |detail_nostart|experts_page|login2|recharge|index|order|message|message_detail|stop_notice|personal
     //globInstance2 = new glob.Glob('?(theme|hc)/!(_)*', options) |order-single|expertslist|experts_page|detail_nostart|plan_list
-    globInstance2 = new glob.Glob('?(theme|hc)/?(index|login2|recharge|detail_nostart|order-single|experts_page|order|expertslist|order)', options)
+    globInstance2 = new glob.Glob('?(theme|hc)/?(index|login2|recharge|detail_nostart|order-single|experts_page|order|expertslist|order)', options)*/
+    globInstance1 = new glob.Glob(`!(_|${minimatch})*`, options)
+    globInstance2 = new glob.Glob(`?(${minimatch})/!(_)*`, options)
 } else {
     globInstance1 = new glob.Glob(`!(_|${minimatch})*`, options)
     globInstance2 = new glob.Glob(`?(${minimatch})/!(_)*`, options)

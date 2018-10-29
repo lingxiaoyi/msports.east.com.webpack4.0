@@ -131,8 +131,8 @@ $(() => {
                     if (res.code === 0) {
                         let data = res.data
                         for (let k in data) {
-                            _util_.CookieUtil.set((k === 'token' && 'hctoken') || k, data[k])
-                            _util_.CookieUtil.set((k === 'accid' && 'hcaccid') || k, data[k])
+                            _util_.CookieUtil.set((k === 'token' && 'hctoken') || k, data[k], 365)
+                            _util_.CookieUtil.set((k === 'accid' && 'hcaccid') || k, data[k], 365)
                         }
                         hcUtil.popMessageTips({
                             icon: 'suc',

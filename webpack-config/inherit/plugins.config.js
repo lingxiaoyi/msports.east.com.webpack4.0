@@ -30,12 +30,20 @@ let configPlugins = [
         automaticNameDelimiter: '-',
         name: true,
         cacheGroups: {
-            commons: {
-                name: 'commons',
-                chunks: 'all',
+            'ad': {
+                name: 'ad',
+                test: path.resolve(dirlets.libsDir, 'ad.channel.js'),
                 minChunks: 8,
                 maxInitialRequests: 5,
-                minSize: 0
+                minSize: 0,
+                priority: 2,
+            },
+            commons: {
+                name: 'commons',
+                minChunks: 8,
+                maxInitialRequests: 5,
+                minSize: 0,
+                priority: 1,
             },
         }
     }),
@@ -84,7 +92,7 @@ pageArr.forEach((page) => {
     const htmlPlugin = new HtmlWebpackPlugin({
         filename: `${filename}`, //vm文件和html文件分开
         template: path.resolve(dirlets.pagesDir, `./${page}/html.js`),
-        chunks: ['manifest', page, 'commons'],
+        chunks: ['manifest', page, 'commons', 'ad'],
         hash: false, // 为静态资源生成hash值
         xhtml: false, //是否渲染link为自闭合的标签，true则为自闭合标签
         minify: false
